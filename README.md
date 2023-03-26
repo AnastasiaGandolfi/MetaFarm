@@ -1,4 +1,4 @@
-# [OpenGarden] ()
+# [OpenGarden]()
 
 ### Team 3 Full Stack 9
 
