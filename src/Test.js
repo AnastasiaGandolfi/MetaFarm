@@ -1,4 +1,10 @@
-import { Palette } from "./components/Palette";
+/* import Typography from "./components/Typography";
+import {Palette} from "./components/Palette"; */
 export function Test() {
-  return <div>{<Palette />}</div>;
+  return (
+    <div>
+      {/* <Typography />
+      <Palette /> */}
+    </div>
+  );
 }
