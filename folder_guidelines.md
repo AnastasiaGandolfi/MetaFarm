@@ -22,8 +22,10 @@ The App.js file is the entry point for the React app and can be used to import a
 ## index.js file 
 The index.js file is used to render the React app to the DOM.
 
-## index.css file
+## common.scss file
 The index.css file is used to style the app.
+
+## base.scss file
 
 ## Routes.js
 The Routes.js file helps create and navigate between the different URLs that make up the website.
