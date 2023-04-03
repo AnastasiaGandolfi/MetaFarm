@@ -1,3 +1,6 @@
+
+# GUIDE LINE FOR FOLDERS
+
 ## components folder
 This directory contains reusable components to use throughout the project.
 
