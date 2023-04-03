@@ -1,0 +1,49 @@
+.container {
+  background-color: #68aefd;
+}
+.title {
+  text-align: center;
+}
+.palette-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  .rgb-code {
+    text-align: center;
+    margin: 3px;
+  }
+  .rgb-name {
+    text-align: center;
+    margin: 0px;
+  }
+  .square {
+    border-radius: 7px;
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+  }
+  .dark-green {
+    background-color: #239c82;
+  }
+  .mid-green {
+    background-color: #7ae19c;
+  }
+  .light-green {
+    background-color: #ace986;
+  }
+  .pastel-green {
+    background-color: #dbf0ec;
+  }
+  .white {
+    background-color: #ffffff;
+  }
+  .black {
+    background-color: #000000;
+  }
+}
+.single-color-container {
+  display: flex;
+  flex-direction: column;
+}

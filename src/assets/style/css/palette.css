@@ -1,0 +1,54 @@
+.container {
+  background-color: #68aefd;
+}
+
+.title {
+  text-align: center;
+}
+
+.palette-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.palette-container .rgb-code {
+  text-align: center;
+  margin: 3px;
+}
+.palette-container .rgb-name {
+  text-align: center;
+  margin: 0px;
+}
+.palette-container .square {
+  border-radius: 7px;
+  height: 45px;
+  width: 45px;
+  margin: 10px;
+}
+.palette-container .dark-green {
+  background-color: #239c82;
+}
+.palette-container .mid-green {
+  background-color: #7ae19c;
+}
+.palette-container .light-green {
+  background-color: #ace986;
+}
+.palette-container .pastel-green {
+  background-color: #dbf0ec;
+}
+.palette-container .white {
+  background-color: #ffffff;
+}
+.palette-container .black {
+  background-color: #000000;
+}
+
+.single-color-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=palette.css.map */
