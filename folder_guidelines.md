@@ -26,6 +26,7 @@ The index.js file is used to render the React app to the DOM.
 The index.css file is used to style the app.
 
 ## base.scss file
+The base.scss file is used to add custom environment variables
 
 ## Routes.js
 The Routes.js file helps create and navigate between the different URLs that make up the website.
