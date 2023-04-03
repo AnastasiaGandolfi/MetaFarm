@@ -1,4 +1,4 @@
-import { Palette } from "./components/Palette";
+//import NOME_COMPONENTE from "components/NOME_COMPONENTE"
 export function Test() {
-  return <div>{<Palette />}</div>;
+  return <div>{/* <NOME_COMPONENTE/> */}</div>;
 }
