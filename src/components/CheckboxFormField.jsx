@@ -1,5 +1,4 @@
-import "../assets/style/css/checkboxformfield.css";
-import "../assets/style/css/typography.css";
+
 import { ReactComponent as Checkbox } from "../assets/icons/svgexport-14.svg";
 import { ReactComponent as Checkedbox } from "../assets/icons/svgexport-15.svg";
 import { useState } from "react";

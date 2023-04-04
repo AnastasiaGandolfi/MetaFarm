@@ -1,6 +1,4 @@
 import React from 'react'
-import '../assets/font/roboto/Roboto-Regular.ttf'
-import '../assets/style/css/typography.css'
 
 export default function Typography() {
     return (
