@@ -25,22 +25,22 @@
     margin: 10px;
   }
   .dark-green {
-    background-color: #239c82;
+    background-color: $darkgreen;
   }
   .mid-green {
-    background-color: #7ae19c;
+    background-color: $mid-green;
   }
   .light-green {
-    background-color: #ace986;
+    background-color: $light-green;
   }
   .pastel-green {
-    background-color: #dbf0ec;
+    background-color: $pastel-green;
   }
   .white {
-    background-color: #ffffff;
+    background-color: $white;
   }
   .black {
-    background-color: #000000;
+    background-color: $black;
   }
 }
 .single-color-container {

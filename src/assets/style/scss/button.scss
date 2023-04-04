@@ -11,7 +11,7 @@ button {
 }
 
 button.rectangle {
-    background-color: #239c82;
+    background-color: $darkgreen;
     color: #fff;
     height: 48px;
     width: 160px;
@@ -22,7 +22,7 @@ button.rectangle {
 }
 
 button.pill-one {
-    background-color: #239c82;
+    background-color: $darkgreen;
     border-radius: 30px;
     height: 30px;
     min-width: 100px;
@@ -33,7 +33,7 @@ button.pill-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #239c82;
+    background-color: $darkgreen;
     color: white;
     border-radius: 30px;
     cursor: default;

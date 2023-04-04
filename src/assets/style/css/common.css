@@ -1,0 +1,166 @@
+.container {
+  background-color: #68aefd; }
+
+.title {
+  text-align: center; }
+
+.palette-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px; }
+  .palette-container .rgb-code {
+    text-align: center;
+    margin: 3px; }
+  .palette-container .rgb-name {
+    text-align: center;
+    margin: 0px; }
+  .palette-container .square {
+    border-radius: 7px;
+    height: 45px;
+    width: 45px;
+    margin: 10px; }
+  .palette-container .dark-green {
+    background-color: #239C82; }
+  .palette-container .mid-green {
+    background-color: #7AE19C; }
+  .palette-container .light-green {
+    background-color: #ACE986; }
+  .palette-container .pastel-green {
+    background-color: #DBF0EC; }
+  .palette-container .white {
+    background-color: #FFFFFF; }
+  .palette-container .black {
+    background-color: #000000; }
+
+.single-color-container {
+  display: flex;
+  flex-direction: column; }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.typography-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #239C82;
+  gap: 10px; }
+  .typography-container .text-head {
+    font-size: 50px;
+    font-weight: 600;
+    color: white; }
+  .typography-container .text-subtle {
+    font-size: 20px;
+    font-weight: 600;
+    color: white; }
+  .typography-container .text-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: white; }
+  .typography-container .text-uppercase-button {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase; }
+  .typography-container .text-collection-name {
+    font-size: 29px;
+    font-weight: 700;
+    color: white; }
+  .typography-container .text-author-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #93d2fd; }
+  .typography-container .text-small {
+    font-size: 14px;
+    font-weight: normal;
+    color: white; }
+  .typography-container .text-bigger-subtle {
+    font-size: 29px;
+    font-weight: 400;
+    color: white; }
+  .typography-container .text-link {
+    text-decoration: none; }
+  .typography-container .text-brand {
+    font-size: 16px;
+    color: white; }
+  .typography-container .text-volume {
+    font-size: 14px;
+    font-weight: 500;
+    color: #949ba4; }
+  .typography-container .text-down {
+    font-size: 14px;
+    font-weight: normal;
+    color: #d9475a; }
+
+button {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3em;
+  border: none;
+  transition-duration: 0.4s;
+  white-space: nowrap; }
+
+button.rectangle {
+  background-color: #239C82;
+  color: #fff;
+  height: 48px;
+  width: 160px; }
+  button.rectangle:hover {
+    opacity: 0.7; }
+
+button.pill-one {
+  background-color: #239C82;
+  border-radius: 30px;
+  height: 30px;
+  min-width: 100px;
+  color: #fff; }
+
+button.pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #239C82;
+  color: white;
+  border-radius: 30px;
+  cursor: default;
+  height: 42px;
+  padding: 8px 16px; }
+
+.checkbox-container {
+  display: flex;
+  background-color: #239C82;
+  justify-content: center;
+  align-items: center; }
+
+.checkbox {
+  margin-right: 10px; }
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .form-field .form-field-input {
+    display: flex;
+    width: 30%; }
+    .form-field .form-field-input input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid red;
+      border-right: none;
+      border-radius: 4px 0 0 4px; }
+    .form-field .form-field-input button[type="submit"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-left: none;
+      border-radius: 0 4px 4px 0;
+      background: #239C82;
+      cursor: pointer; }
+  .form-field .form-error {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%; }

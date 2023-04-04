@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../assets/style/css/button.css';
 
 export function Button({ type, text }) {
   const [style, setStyle] = useState({});
@@ -7,8 +6,8 @@ export function Button({ type, text }) {
   const handleClick = () => {
     if (type === 'pill-one') {
       setStyle((style) => ({
-        backgroundColor: style.backgroundColor === '#dbf0ec' ? '#239c82' : '#dbf0ec',
-        color: style.backgroundColor === '#dbf0ec' ? 'white' : '#239c82'
+        backgroundColor: style.backgroundColor === '$pastel-green' ? '$darkgreen' : '$pastel-green',
+        color: style.backgroundColor === '$pastel-green' ? 'white' : '$darkgreen'
       }));
     }
   };
