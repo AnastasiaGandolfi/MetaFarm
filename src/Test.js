@@ -2,6 +2,7 @@
 import {Palette} from "./components/Palette"; */
 /* import { Button } from "./components/Button";
 import { BsCalendarWeekFill } from "react-icons/bs" */
+import { CheckboxFormField } from "./components/CheckboxFormField";
 export function Test() {
   return (
     <div>
@@ -16,6 +17,7 @@ export function Test() {
       <Button type="pill-one" text="Last 30 Days" />
       <br />
       <Button type="pill-icon" text={<span><BsCalendarWeekFill/> Upcoming</span>} /> */}
+      <CheckboxFormField />
     </div>
   );
 }
