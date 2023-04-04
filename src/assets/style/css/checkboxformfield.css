@@ -1,0 +1,12 @@
+.checkbox-container {
+  display: flex;
+  background-color: #239c82;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=checkboxformfield.css.map */
