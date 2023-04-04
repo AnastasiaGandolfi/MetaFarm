@@ -28,4 +28,16 @@ button.pill-one {
   color: #fff;
 }
 
+button.pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #239c82;
+  color: white;
+  border-radius: 30px;
+  cursor: default;
+  height: 42px;
+  padding: 8px 16px;
+}
+
 /*# sourceMappingURL=button.css.map */
