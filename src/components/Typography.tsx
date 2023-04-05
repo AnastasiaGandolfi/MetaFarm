@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 export default function Typography() {
@@ -12,7 +13,7 @@ export default function Typography() {
             <span className='text-author-name'>Graffiti On Grave</span>
             <span className='text-bigger-subtle'>Subscribe for the latest news, drops & collectibles</span>
             <span className='text-small'>By entering my email and subscribing I confirm and agree to the above.</span>
-            <a href='#' className='text-link'>Privacy Notice</a>
+            <a href='/' className='text-link'>Privacy Notice</a>
             <span className='text-brand'>Philadelphia 76ers</span>
             <span className='text-volume'>Volume</span>
             <span className='text-down'>-7.38%</span>

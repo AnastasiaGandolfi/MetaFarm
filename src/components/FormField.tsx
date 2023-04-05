@@ -4,7 +4,7 @@ export function FormField() {
   const [email, setEmail] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
 
-  function handleInputChange(event) {
+  function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
     setEmail(event.target.value);
   }
 
