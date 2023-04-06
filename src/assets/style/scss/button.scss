@@ -1,45 +1,65 @@
 button {
-    display: inline-block;
-    text-align: center;
-    padding: 0px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.3em;
-    border: none;
-    transition-duration: 0.4s;
-    white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3em;
+  border: none;
+  transition-duration: 0.4s;
+  white-space: nowrap;
 }
 
 button.rectangle {
-    background-color: $darkgreen;
-    color: #fff;
-    height: 48px;
-    width: 160px;
+  background-color: $darkgreen;
+  color: #fff;
+  height: 48px;
+  width: 160px;
 
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 button.pill-one {
-    background-color: $darkgreen;
-    border-radius: 30px;
-    height: 30px;
-    min-width: 100px;
-    color: #fff;
+  background-color: $darkgreen;
+  border-radius: 30px;
+  height: 30px;
+  min-width: 100px;
+  color: #fff;
 }
 .button.active.pill-one {
-    background-color: $pastel-green;
-    color: $darkgreen;
-  }
+  background-color: $pastel-green;
+  color: $darkgreen;
+}
 button.pill-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $darkgreen;
-    color: white;
-    border-radius: 30px;
-    cursor: default;
-    height: 42px;
-    padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $darkgreen;
+  color: white;
+  border-radius: 30px;
+  cursor: default;
+  height: 42px;
+  padding: 8px 16px;
+}
+button.pill-dropdown {
+  background: $darkgreen;
+  border: 1px solid $black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 1.3em;
+  border-radius: 30px;
+  padding: 8px 16px;
+  height: 38px;
+  min-width: 152.5px;
+  cursor: pointer;
+  color: #fff;
+}
+.dropdown-icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  color: #fff;
 }

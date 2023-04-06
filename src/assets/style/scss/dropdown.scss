@@ -1,0 +1,29 @@
+.dropdown-cornice {
+  box-sizing: border-box;
+  margin: 8px 0px 0px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  color: #000;
+  min-width: 150px;
+  z-index: 20;
+  border-radius: 15px;
+  .dropdown-window {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    .dropdown-element {
+      box-sizing: border-box;
+      padding: 8px;
+      margin: 0px;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
