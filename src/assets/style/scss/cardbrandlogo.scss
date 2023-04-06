@@ -1,0 +1,64 @@
+.card-brand-logo-container {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    .card-logo-container {
+        box-sizing: border-box;
+        margin: 0px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        width: 154px;
+        height: 154px;
+        border-radius: 50%;
+
+        .logo {
+            box-sizing: border-box;
+            margin: 0px;
+            width: 154px;
+            height: 154px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            object-fit: cover;
+            text-indent: -10000px;
+            border-style: none;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+    }
+
+    .card-text-container {
+        box-sizing: border-box;
+        margin: 16px 0px 0px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        .text-brand {
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}
+

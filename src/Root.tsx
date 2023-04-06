@@ -10,6 +10,7 @@ import { CheckboxFormField } from "./components/CheckboxFormField";
 import { FormField } from "./components/FormField";
 import Nav from 'react-bootstrap/Nav';
 import { InputSearch } from "./components/InputSearch";
+import CardBrandLogo from "./components/CardBrandLogo";
 
 const ComponentElements: { element: JSX.Element, title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -21,7 +22,8 @@ const ComponentElements: { element: JSX.Element, title: string }[] = [
   { element: <Button type="pill-icon" text={<span><BsCalendarWeekFill /> Upcoming</span>} />, title: "Button" },
   { element: <CheckboxFormField />, title: "CheckboxFormField" },
   { element: <FormField />, title: "FormField" },
-  { element: <InputSearch />, title: "InputSearch" }
+  { element: <InputSearch />, title: "InputSearch" },
+  { element: <CardBrandLogo name='Nome Azienda' src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg" />, title: "CardBrandLogo" }
 ]
 
 export function Root() {
