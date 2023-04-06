@@ -1,21 +1,17 @@
 import { useState } from 'react';
 
-
-export function Button({ type, text }:{type: string, text: string|JSX.Element}) {
-  const [style, setStyle]:[React.CSSProperties, any] = useState({});
+export function Button({ type, text }: { type: string, text: string | JSX.Element }) {
+  const [active, setActive] = useState(false);
 
   const handleClick = () => {
-    if (type === 'pill-one') {
-      setStyle((style:React.CSSProperties) => ({
-        backgroundColor: style.backgroundColor === '$pastel-green' ? '$darkgreen' : '$pastel-green',
-        color: style.backgroundColor === '$pastel-green' ? 'white' : '$darkgreen'
-      }));
-    }
+    setActive(!active);
   };
+
+  const className = `button ${type} ${active ? 'active' : ''}`;
 
   return (
     <div>
-      <button className={type} style={style} onClick={handleClick}>
+      <button className={className} onClick={handleClick}>
         {text}
       </button>
     </div>
