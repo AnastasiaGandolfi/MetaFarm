@@ -3,15 +3,17 @@ import { App } from "./App";
 import { Test } from "./Test";
 import { Components } from "./pages/Components";
 import Typography from "./components/Typography";
-import {Palette} from "./components/Palette";
+import { Palette } from "./components/Palette";
 import { Button } from "./components/Button";
-import { BsCalendarWeekFill } from "react-icons/bs" 
+import { BsCalendarWeekFill } from "react-icons/bs"
 import { CheckboxFormField } from "./components/CheckboxFormField";
 import { FormField } from "./components/FormField";
 import { Card } from "./components/Card"
 import esempioImage from "../src/assets/images/esempio-image-card.avif";
 import smallImage from "../src/assets/images/small-image.avif"; 
 import Nav from 'react-bootstrap/Nav';
+import { InputSearch } from "./components/InputSearch";
+
 
 
 const ComponentElements:{element:JSX.Element,title:string}[] = [
@@ -25,24 +27,26 @@ const ComponentElements:{element:JSX.Element,title:string}[] = [
   {element:<CheckboxFormField/>, title:"CheckboxFormField"},
   {element:<FormField/>, title:"FormField"},
   {element: <Card image={esempioImage} smallImage={smallImage} mainTitle="Loaded Lions" subtitle="Loaded Lion #289" body="1 minted" paragraph="Last Sale" price="3,456" venditeTotali="Total Sales: $4.2K" />, title:"Card-Best-Collection-item"}
+  {element: <InputSearch />, title: "InputSearch" }
+
 ]
 
 export function Root() {
   return (
     <BrowserRouter>
-       <Nav variant="tabs" defaultActiveKey="link-1">
-      <Nav.Item>
-        <Nav.Link href="/home">App</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-1">Components</Nav.Link>
-      </Nav.Item>
-      
-    </Nav>
+      <Nav variant="tabs" defaultActiveKey="link-1">
+        <Nav.Item>
+          <Nav.Link href="/home">App</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Components</Nav.Link>
+        </Nav.Item>
+
+      </Nav>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<Test />} />
-        <Route path="/components" element={<Components elements={ComponentElements}/>} />
+        <Route path="/components" element={<Components elements={ComponentElements} />} />
       </Routes>
     </BrowserRouter>
   );
