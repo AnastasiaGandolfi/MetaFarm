@@ -26,7 +26,7 @@ const ComponentElements:{element:JSX.Element,title:string}[] = [
   {element:<Button type="pill-icon" text={<span><BsCalendarWeekFill/> Upcoming</span>}/>, title:"Button"},
   {element:<CheckboxFormField/>, title:"CheckboxFormField"},
   {element:<FormField/>, title:"FormField"},
-  {element: <Card image={esempioImage} smallImage={smallImage} mainTitle="Loaded Lions" subtitle="Loaded Lion #289" body="1 minted" paragraph="Last Sale" price="3,456" venditeTotali="Total Sales: $4.2K" />, title:"Card-Best-Collection-item"}
+  {element: <Card image={esempioImage} smallImage={smallImage} mainTitle="Loaded Lions" subtitle="Loaded Lion #289" body="1 minted" paragraph="Last Sale" price="3,456" venditeTotali="Total Sales: $4.2K" />, title:"Card-Best-Collection-item"},
   {element: <InputSearch />, title: "InputSearch" }
 
 ]
