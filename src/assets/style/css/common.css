@@ -161,6 +161,79 @@ button.pill-icon {
     justify-content: flex-start;
     width: 30%; }
 
+.input-with-icon-container {
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+  border-radius: 50px;
+  height: 38px;
+  background: #239C82;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 32px;
+  position: relative;
+  width: 354px;
+  color: #FFFFFF; }
+  .input-with-icon-container:hover {
+    background-color: #ACE986; }
+  .input-with-icon-container:focus-within {
+    background: #FFFFFF;
+    border: 1px solid #239C82;
+    color: #239C82; }
+    .input-with-icon-container:focus-within::placeholder {
+      color: #000000; }
+  .input-with-icon-container .input-icon-container {
+    display: flex;
+    flex: 0 0 auto;
+    border-radius: 50px 0px 0px 50px;
+    background: transparent;
+    border: none;
+    width: unset;
+    height: unset;
+    padding: 0px 8px 0px 12px;
+    align-items: center; }
+  .input-with-icon-container .input-container {
+    display: flex;
+    position: relative;
+    width: 100%; }
+    .input-with-icon-container .input-container .input-search {
+      border-radius: 0px 50px 50px 0px;
+      border: none;
+      padding-left: 0px;
+      outline: none;
+      background: transparent;
+      color: #FFFFFF;
+      width: 100%; }
+      .input-with-icon-container .input-container .input-search::placeholder {
+        color: #FFFFFF; }
+      .input-with-icon-container .input-container .input-search:focus {
+        color: #000000; }
+        .input-with-icon-container .input-container .input-search:focus::placeholder {
+          color: #000000; }
+
+.dropdown-menu-container {
+  position: relative;
+  width: 100%; }
+  .dropdown-menu-container .dropdown-menu {
+    box-sizing: border-box;
+    margin: 0px;
+    position: absolute;
+    border: 1px solid #eaeef4;
+    height: auto;
+    top: 20px;
+    right: 5px;
+    background-color: #DBF0EC;
+    overflow: hidden auto;
+    border-radius: 8px; }
+    .dropdown-menu-container .dropdown-menu img {
+      border-radius: 22px;
+      object-fit: cover;
+      margin: 0px 4px 0px 0px;
+      border-style: none;
+      width: 44px;
+      aspect-ratio: auto 44 / 44;
+      height: 44px; }
+
 .components-container {
   background: #DBF0EC;
   height: 100%;
