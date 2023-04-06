@@ -28,7 +28,10 @@ button.pill-one {
     min-width: 100px;
     color: #fff;
 }
-
+.button.active.pill-one {
+    background-color: $pastel-green;
+    color: $darkgreen;
+  }
 button.pill-icon {
     display: inline-flex;
     align-items: center;
