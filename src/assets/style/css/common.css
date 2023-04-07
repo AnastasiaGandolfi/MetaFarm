@@ -451,6 +451,21 @@ button.pill-dropdown {
       color: black;
       cursor: pointer; }
 
+.container-card-best-author {
+  height: 100%;
+  width: 200px;
+  background-color: #239C82;
+  display: grid;
+  text-align: center;
+  border-radius: 5px; }
+  .container-card-best-author .container-card-author-logo-name {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; }
+  .container-card-best-author .card-best-author-title {
+    color: #7AE19C;
+    font-size: 16px; }
+
 .components-container {
   background: #DBF0EC;
   height: 100%;

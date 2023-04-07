@@ -1,0 +1,20 @@
+.container-card-best-author{
+   height:100%;
+   width:200px;
+   background-color:$darkgreen;
+   display: grid;
+   text-align: center;
+   border-radius: 5px;
+
+   .container-card-author-logo-name{
+        display: flex;
+        justify-content: center;
+        padding-top:10px;
+   }
+   .card-best-author-title{
+    color:$mid-green;
+    font-size: 16px;
+   }  
+   
+
+}
