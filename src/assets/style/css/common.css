@@ -400,6 +400,30 @@ button.pill-dropdown {
     width: 100%;
     height: auto; } }
 
+.card-collection-wrapper {
+  position: relative; }
+
+.image-card-collection {
+  position: relative;
+  border-radius: 16px;
+  position: relative; }
+
+.small-image-container {
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+  display: flex;
+  align-items: center; }
+  .small-image-container .small-image-collection {
+    border-radius: 50%;
+    margin-left: 20px; }
+  .small-image-container .card-collection-title {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px; }
+
 .dropdown-cornice {
   box-sizing: border-box;
   margin: 8px 0px 0px;

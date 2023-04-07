@@ -16,6 +16,7 @@ import { InputSearch } from "./components/InputSearch";
 import CardBrandLogo from "./components/CardBrandLogo";
 import { ButtonDropdown } from "./components/ButtonDropdown";
 import BrandCarousel from "./components/BrandCarousel";
+import { CardCollection } from "./components/CardCollection";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -64,6 +65,10 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Dropdown Button",
   },
+  { element: (
+      <CardCollection image={esempioImage} smallImage={smallImage} paragraph="Otherdeed for Otherside" />)
+  , title:"Card-Collection"
+},
 ];
 
 export function Root() {
