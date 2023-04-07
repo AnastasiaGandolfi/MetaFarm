@@ -15,7 +15,7 @@ import Nav from "react-bootstrap/Nav";
 import { InputSearch } from "./components/InputSearch";
 import CardBrandLogo from "./components/CardBrandLogo";
 import { ButtonDropdown } from "./components/ButtonDropdown";
-import BrandCarousel from "./components/BrandCarousel";
+import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
@@ -67,7 +67,8 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Dropdown Button",
   },
-  { element: (
+  {
+    element: (
       <CardCollection image={esempioImage} smallImage={smallImage} paragraph="Otherdeed for Otherside" />)
   , title:"Card-Collection"
 },
