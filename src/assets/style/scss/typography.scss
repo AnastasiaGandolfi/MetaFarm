@@ -3,70 +3,78 @@ body {
 }
 
 .typography-container {
-    display: flex;
-    flex-direction: column;
-    // background-color: $darkgreen;
-    gap: 10px;
+    span,  a {
+        display: block;
+        padding-top: 10px;
+    }
+}
 
-    .text-head {
-        font-size: 50px;
-        font-weight: 600;
-        color: white;
-    }
+.text-head {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
 
-    .text-subtle {
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
-    }
+.text-subtle {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
 
-    .text-button {
-        font-size: 16px;
-        font-weight: 600;
-        color: white;
-    }
+.text-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
 
-    .text-uppercase-button {
-        font-size: 16px;
-        font-weight: 700;
-        color: white;
-        text-transform: uppercase;
-    }
-    .text-collection-name {
-        font-size: 29px;
-        font-weight: 700;
-        color: white;
-    }
-    .text-author-name {
-        font-size: 18px;
-        font-weight: 500;
-        color: rgb(147, 210, 253);
-    }
-    .text-small {
-        font-size: 14px;
-        font-weight: normal;
-        color: white;
-    }
-    .text-bigger-subtle {
-        font-size: 29px;
-        font-weight: 400;
-        color: white;
-    }
-    .text-link {
-        text-decoration: none;
-    }
-    .text-brand {
-        font-size: 16px;
-        color: white;
-    }
-    .text-volume {
-        font-size: 14px;
-        font-weight: 500;
-        color: rgb(148, 155, 164);
-    }
-    .text-down {
-        font-size: 14px;
-        font-weight: normal;
-        color: rgb(217, 71, 90);
-    }
+.text-uppercase-button {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.text-collection-name {
+    font-size: 29px;
+    font-weight: 700;
+    color: white;
+}
+
+.text-author-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(147, 210, 253);
+}
+
+.text-small {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}
+
+.text-bigger-subtle {
+    font-size: 29px;
+    font-weight: 400;
+    color: white;
+}
+
+.text-link {
+    text-decoration: none;
+}
+
+.text-brand {
+    font-size: 16px;
+    color: white;
+}
+
+.text-volume {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(148, 155, 164);
+}
+
+.text-down {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(217, 71, 90);
 }
