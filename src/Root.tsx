@@ -17,6 +17,8 @@ import CardBrandLogo from "./components/CardBrandLogo";
 import { ButtonDropdown } from "./components/ButtonDropdown";
 import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
+import CardBestAuthor from "./components/CardBestAuthor";
+import { icons } from "react-icons/lib";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -68,8 +70,10 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   {
     element: (
       <CardCollection image={esempioImage} smallImage={smallImage} paragraph="Otherdeed for Otherside" />)
-    , title: "Card-Collection"
-  },
+  , title:"Card-Collection"
+},
+{ element: <CardBestAuthor paragraph=" $2,000,000+ "/>,title:"card-best-author"  },
+
 ];
 
 export function Root() {
