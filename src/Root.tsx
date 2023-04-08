@@ -72,7 +72,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
       <CardCollection image={esempioImage} smallImage={smallImage} paragraph="Otherdeed for Otherside" />)
   , title:"Card-Collection"
 },
-{ element: <CardBestAuthor paragraph=" $2,000,000+ "/>,title:"card-best-author"  },
+{ element: <CardBestAuthor paragraph=" $2,000,000+ " />,title:"card-best-author",   },
 
 ];
 
