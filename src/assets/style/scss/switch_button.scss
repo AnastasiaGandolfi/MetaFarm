@@ -1,0 +1,59 @@
+.ToggleSwitch__button {
+    border-radius: 72px;
+    border: 1px solid rgb(98, 105, 115);
+    color: white;
+    padding: 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px -4px 4px 4px; 
+    cursor: pointer;
+    background-color: #DBF0EC;
+    transition-duration: 0.3s;
+    float: left;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  
+    &--active {
+      background-color: #239C82;
+      color: white;
+    }
+  
+    .ToggleSwitch__icon path {
+      fill: #239C82;
+    }
+  
+    .ToggleSwitch__icon--white path {
+      fill: white;
+    }
+  }
+  
+  .ToggleSwitch__button2 {
+    border-radius: 72px;
+    border: 1px solid rgb(98, 105, 115);
+    color: white;
+    padding: 8px 25px 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 4px 4px -4px;
+    cursor: pointer;
+    background-color: #DBF0EC;
+    transition-duration: 0.3s;
+    float: right;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  
+    &--active {
+      background-color: #239C82;
+      color: white;
+    }
+  
+    .ToggleSwitch__icon2 path {
+      fill: #239C82;
+    }
+  
+    .ToggleSwitch__icon2--white path {
+      fill: white;
+    }
+  }

@@ -19,6 +19,7 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
+import { SwitchButton } from "./components/SwitchButton";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -45,6 +46,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <InputSearch />, title: "InputSearch" },
   { element: <CardBrandLogo name='Nome Azienda' src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg" />, title: "CardBrandLogo" },
   { element: <BrandCarousel />, title: "BrandCarousel" },
+  { element: <SwitchButton />, title: "Switch-Button" },
   {
     element: (
       <Card
