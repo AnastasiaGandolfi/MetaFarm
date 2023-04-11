@@ -197,13 +197,17 @@ button.pill-dropdown {
 
 .checkbox-container {
   display: flex;
-  background-color: #239C82;
+  color: #000000;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .checkbox {
   margin-right: 10px;
+}
+
+.dark {
+  color: #000000;
 }
 
 .form-field {
