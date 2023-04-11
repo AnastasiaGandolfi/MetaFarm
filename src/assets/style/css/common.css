@@ -470,6 +470,47 @@ button.pill-dropdown {
       color: black;
       cursor: pointer; }
 
+.navbar-dropdown {
+  align-items: center;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600; }
+  .navbar-dropdown .dropdown-icon {
+    margin-left: 5px;
+    margin-top: 3px;
+    color: #239C82; }
+
+.navbar-dropdown-cornice {
+  display: block; }
+  .navbar-dropdown-cornice .navbar-dropdown-window {
+    max-height: 520px;
+    max-width: 190px;
+    width: auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 8px;
+    z-index: 20; }
+    .navbar-dropdown-cornice .navbar-dropdown-window .navbar-dropdown-element {
+      box-sizing: border-box;
+      text-decoration: none;
+      min-width: 140px;
+      padding-bottom: 16px;
+      margin: 0px;
+      line-height: 1.3em;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+      cursor: pointer; }
+
 .container-card-best-author {
   height: 100%;
   width: 200px;
@@ -499,129 +540,88 @@ button.pill-dropdown {
     font-size: 16px;
     width: 190px; }
 
+.ToggleSwitch__button {
+  border-radius: 72px;
+  border: 1px solid #626973;
+  color: white;
+  padding: 9px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px -4px 4px 4px;
+  cursor: pointer;
+  background-color: #DBF0EC;
+  transition-duration: 0.3s;
+  float: left;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+  .ToggleSwitch__button--active {
+    background-color: #239C82;
+    color: white; }
+  .ToggleSwitch__button .ToggleSwitch__icon path {
+    fill: #239C82; }
+  .ToggleSwitch__button .ToggleSwitch__icon--white path {
+    fill: white; }
+
+.ToggleSwitch__button2 {
+  border-radius: 72px;
+  border: 1px solid #626973;
+  color: white;
+  padding: 8px 25px 10px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 4px 4px -4px;
+  cursor: pointer;
+  background-color: #DBF0EC;
+  transition-duration: 0.3s;
+  float: right;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+  .ToggleSwitch__button2--active {
+    background-color: #239C82;
+    color: white; }
+  .ToggleSwitch__button2 .ToggleSwitch__icon2 path {
+    fill: #239C82; }
+  .ToggleSwitch__button2 .ToggleSwitch__icon2--white path {
+    fill: white; }
+
+.cart-modal {
+  display: none; }
+  .cart-modal-show {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #239C82;
+    width: 20%;
+    min-width: 330px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+    .cart-modal-show .cart-modal-title {
+      display: flex;
+      justify-content: space-between; }
+      .cart-modal-show .cart-modal-title button {
+        background: transparent; }
+        .cart-modal-show .cart-modal-title button:hover {
+          rotate: 180deg; }
+    .cart-modal-show .cart-modal-content {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      padding-top: 70%;
+      gap: 5px; }
+      .cart-modal-show .cart-modal-content button {
+        padding: 15px;
+        background-color: white;
+        color: black; }
+
 .components-container {
   background: #DBF0EC;
   height: 100%;
   width: 100%; }
   .components-container h1 {
     color: #239C82; }
-
-
-    .ToggleSwitch__button {
-      border-radius: 72px;
-      border: 1px solid rgb(98, 105, 115);
-      color: white;
-      padding: 9px 25px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px -4px 4px 4px;
-      cursor: pointer;
-      background-color: #DBF0EC;
-      transition-duration: 0.3s;
-      float: left;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-    
-    .ToggleSwitch__button--active {
-      background-color: #239C82;
-      color: white;
-    }
-    
-    .ToggleSwitch__icon path {
-      fill: #239C82;
-    }
-    
-    .ToggleSwitch__icon--white path {
-      fill: white;
-    }
-    
-    .ToggleSwitch__button2 {
-      border-radius: 72px;
-      border: 1px solid rgb(98, 105, 115);
-      color: white;
-      padding: 8px 25px 10px 19px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 4px 4px -4px;
-      cursor: pointer;
-      background-color: #DBF0EC;
-      transition-duration: 0.3s;
-      float: right;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
-    
-    .ToggleSwitch__button2--active {
-      background-color: #239C82;
-      color: white;
-    }
-    
-    .ToggleSwitch__icon2 path {
-      fill: #239C82;
-    }
-    
-    .ToggleSwitch__icon2--white path {
-      fill: white;
-    }
-    
-
-  /* SELECT LANGUAGE */
-
-  .box-select-language{
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 37.7rem;
-  }
-  
-  .title-select-language{
-    color: #239C82;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .select-language {
-    color: #239C82;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    margin-top: 70px;
-    margin-left: -25px;
-  }
-  
-  .select-language li {
-    list-style: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .select-language li:hover {
-    background-color: #DBF0EC;
-  }
-  
-  .close-icon {
-    border-radius: 15px;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .close-icon:hover {
-    transform: rotate(90deg);
-  }
-  
