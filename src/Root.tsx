@@ -23,6 +23,7 @@ import  SelectLanguage  from "./components/SelectLanguage";
 import { CartModal } from "./components/CartModal";
 import SwitchButton from "./components/SwitchButton";
 import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
+import { BestCollectionItems } from "./components/BestCollectionItems";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -112,6 +113,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "NavBar Dropdown",
   },
+  {element: <BestCollectionItems />, title: "Best Collection Items"},
 ];
 
 export function Root() {

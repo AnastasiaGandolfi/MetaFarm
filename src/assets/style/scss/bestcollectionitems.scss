@@ -1,0 +1,44 @@
+.best-collection-title {
+    text-align: center; 
+}
+
+.button-container-collection {
+    margin-top: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 30px; 
+    justify-content: space-around; 
+    align-items: baseline;
+
+    p {
+        margin-right: 20px; 
+    }
+  
+  
+  .sort-by {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-filters {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-left: 150px; 
+    gap: 20px; 
+  }
+
+  .switch-button-collection {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card-container-collection {
+    margin-top: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
