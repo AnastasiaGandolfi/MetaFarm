@@ -19,8 +19,9 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
-import  SwitchButton  from "./components/SwitchButton";
 import {CartModal} from "./components/CartModal";
+import SwitchButton from "./components/SwitchButton";
+import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -45,7 +46,15 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <CheckboxFormField />, title: "CheckboxFormField" },
   { element: <FormField />, title: "FormField" },
   { element: <InputSearch />, title: "InputSearch" },
-  { element: <CardBrandLogo name='Nome Azienda' src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg" />, title: "CardBrandLogo" },
+  {
+    element: (
+      <CardBrandLogo
+        name="Nome Azienda"
+        src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg"
+      />
+    ),
+    title: "CardBrandLogo",
+  },
   { element: <BrandCarousel />, title: "BrandCarousel" },
   { element: <SwitchButton />, title: "Switch-Button" },
   {
@@ -77,7 +86,34 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
 },
 { element: <CardBestAuthor paragraph=" $2,000,000+ " />,title:"card-best-author",   },
 { element: <CartModal />,title:"Cart Modal",   },
-
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />
+    ),
+    title: "Card-Collection",
+  },
+  {
+    element: <CardBestAuthor paragraph=" $2,000,000+ " />,
+    title: "card-best-author",
+  },
+  {
+    element: (
+      <NavbarDropdownButton
+        type="navbar-dropdown text-button"
+        text="Top Collection"
+        elements={[
+          "Bored Ape Yacht Club",
+          "Otherdeed for Otherside",
+          "Doodles",
+          "Azuki",
+          "CLONE X - X TAKASHI MURAKAMI",
+        ]}
+      />
+    ),
+    title: "NavBar Dropdown",
+  },
 ];
 
 export function Root() {
