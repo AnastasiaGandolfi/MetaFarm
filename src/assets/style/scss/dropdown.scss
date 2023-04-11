@@ -27,3 +27,47 @@
     }
   }
 }
+.navbar-dropdown {
+  align-items: center;
+  color: $black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  .dropdown-icon {
+    margin-left: 5px;
+    margin-top: 3px;
+    color: $darkgreen;
+  }
+}
+.navbar-dropdown-cornice {
+  display: block;
+  .navbar-dropdown-window {
+    max-height: 520px;
+    max-width: 190px;
+    width: auto;
+    background-color: $white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 8px;
+    z-index: 20;
+    .navbar-dropdown-element {
+      box-sizing: border-box;
+      text-decoration: none;
+      min-width: 140px;
+      padding-bottom: 16px;
+      margin: 0px;
+      line-height: 1.3em;
+      font-size: 16px;
+      font-weight: 600;
+      color: $black;
+      cursor: pointer;
+    }
+  }
+}
