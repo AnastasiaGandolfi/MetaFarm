@@ -19,6 +19,7 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
+import { BestCollectionItems } from "./components/BestCollectionItems";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -73,6 +74,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   , title:"Card-Collection"
 },
 { element: <CardBestAuthor paragraph=" $2,000,000+ "/>,title:"card-best-author"  },
+{ element: <BestCollectionItems />, title:"Best-collection-items"},
 
 ];
 

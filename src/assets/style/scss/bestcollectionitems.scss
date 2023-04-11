@@ -1,0 +1,38 @@
+.best-collection-title {
+    text-align: center; 
+}
+
+.button-container-collection {
+    margin-top: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 30px; 
+    justify-content: space-around; 
+    align-items: baseline;
+
+    p {
+        margin-right: 20px; 
+    }
+  
+  
+  .sort-by {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .date-filters {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 150px; 
+    gap: 20px; 
+  }
+}
+
+.card-container-collection {
+    margin-top: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px; 
+    justify-content: center; 
+}

@@ -1,6 +1,11 @@
 import { useState } from 'react';
+type ButtonProps = {
+  type: string;
+  text: string | JSX.Element;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+};
 
-export function Button({ type, text }: { type: string, text: string | JSX.Element }) {
+export function Button ({ type, text, onClick }: ButtonProps)  {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
