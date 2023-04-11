@@ -567,3 +567,61 @@ button.pill-dropdown {
       fill: white;
     }
     
+
+  /* SELECT LANGUAGE */
+
+  .box-select-language{
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 37.7rem;
+  }
+  
+  .title-select-language{
+    color: #239C82;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .select-language {
+    color: #239C82;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 70px;
+    margin-left: -25px;
+  }
+  
+  .select-language li {
+    list-style: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .select-language li:hover {
+    background-color: #DBF0EC;
+  }
+  
+  .close-icon {
+    border-radius: 15px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .close-icon:hover {
+    transform: rotate(90deg);
+  }
+  
