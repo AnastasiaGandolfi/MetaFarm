@@ -19,11 +19,15 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
-import  SelectLanguage  from "./components/SelectLanguage";
+import SelectLanguage from "./components/SelectLanguage";
 import { CartModal } from "./components/CartModal";
 import SwitchButton from "./components/SwitchButton";
 import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
 import { BestCollectionItems } from "./components/BestCollectionItems";
+import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Footer } from "./components/Footer";
+import { title } from "process";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -113,7 +117,28 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "NavBar Dropdown",
   },
-  {element: <BestCollectionItems />, title: "Best Collection Items"},
+  { element: <BestCollectionItems />, title: "Best Collection Items" },
+  {
+    element: (
+      <Footer
+        text="Copyright © 2023 Metafarm.com All rights reserved."
+        icons={[
+          <BsInstagram />,
+          <BsTwitter />,
+          <BsDiscord />,
+          <FaTelegramPlane />,
+        ]}
+        elements={[
+          "Help Center",
+          "Blog",
+          "T&C",
+          "Privacy Notice",
+          "Cookies Preference",
+        ]}
+      />
+    ),
+    title: "Footer",
+  },
 ];
 
 export function Root() {
