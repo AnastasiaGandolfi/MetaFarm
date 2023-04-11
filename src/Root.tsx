@@ -49,7 +49,12 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Button",
   },
-  { element: <CheckboxFormField />, title: "CheckboxFormField" },
+  {
+    element: (
+      <CheckboxFormField text="Digitando la mia mail e iscrivendomi confermo e accetto quanto sopra" />
+    ),
+    title: "CheckboxFormField",
+  },
   { element: <FormField />, title: "FormField" },
   { element: <InputSearch />, title: "InputSearch" },
   {
