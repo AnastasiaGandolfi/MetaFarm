@@ -19,6 +19,7 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
+import {CartModal} from "./components/CartModal";
 import SwitchButton from "./components/SwitchButton";
 import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
 
@@ -80,6 +81,11 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   {
     element: (
+      <CardCollection image={esempioImage} smallImage={smallImage} paragraph="Otherdeed for Otherside" />)
+  , title:"Card-Collection"
+},
+{ element: <CardBestAuthor paragraph=" $2,000,000+ " />,title:"card-best-author",   },
+{ element: <CartModal />,title:"Cart Modal",   },
       <CardCollection
         image={esempioImage}
         smallImage={smallImage}

@@ -692,9 +692,91 @@ button.pill-dropdown {
   fill: white;
 }
 
+.ToggleSwitch__button {
+  border-radius: 72px;
+  border: 1px solid #626973;
+  color: white;
+  padding: 9px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px -4px 4px 4px;
+  cursor: pointer;
+  background-color: #DBF0EC;
+  transition-duration: 0.3s;
+  float: left;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+  .ToggleSwitch__button--active {
+    background-color: #239C82;
+    color: white; }
+  .ToggleSwitch__button .ToggleSwitch__icon path {
+    fill: #239C82; }
+  .ToggleSwitch__button .ToggleSwitch__icon--white path {
+    fill: white; }
+
+.ToggleSwitch__button2 {
+  border-radius: 72px;
+  border: 1px solid #626973;
+  color: white;
+  padding: 8px 25px 10px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 4px 4px -4px;
+  cursor: pointer;
+  background-color: #DBF0EC;
+  transition-duration: 0.3s;
+  float: right;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+  .ToggleSwitch__button2--active {
+    background-color: #239C82;
+    color: white; }
+  .ToggleSwitch__button2 .ToggleSwitch__icon2 path {
+    fill: #239C82; }
+  .ToggleSwitch__button2 .ToggleSwitch__icon2--white path {
+    fill: white; }
+
+.cart-modal {
+  display: none; }
+  .cart-modal-show {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #239C82;
+    width: 20%;
+    min-width: 330px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+    .cart-modal-show .cart-modal-title {
+      display: flex;
+      justify-content: space-between; }
+      .cart-modal-show .cart-modal-title button {
+        background: transparent; }
+        .cart-modal-show .cart-modal-title button:hover {
+          rotate: 180deg; }
+    .cart-modal-show .cart-modal-content {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      padding-top: 70%;
+      gap: 5px; }
+      .cart-modal-show .cart-modal-content button {
+        padding: 15px;
+        background-color: white;
+        color: black; }
+
 .components-container {
   background: #DBF0EC;
   height: 100%;
+  width: 100%; }
+  .components-container h1 {
+    color: #239C82; }
   width: 100%;
 }
 .components-container h1 {
