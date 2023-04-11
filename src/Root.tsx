@@ -19,6 +19,7 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
+import  SelectLanguage  from "./components/SelectLanguage";
 import { CartModal } from "./components/CartModal";
 import SwitchButton from "./components/SwitchButton";
 import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
@@ -57,6 +58,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   { element: <BrandCarousel />, title: "BrandCarousel" },
   { element: <SwitchButton />, title: "Switch-Button" },
+  { element: <SelectLanguage />, title: "SelectLanguage" },
   {
     element: (
       <Card
