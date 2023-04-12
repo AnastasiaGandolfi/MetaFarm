@@ -29,6 +29,63 @@ import { Footer } from "./components/Footer";
 import {Navbar} from "./components/Navbar";
 import { FaTelegramPlane } from "react-icons/fa";
 
+const cardArray:JSX.Element[] = [
+  <CardBrandLogo name="azienda 1" src=""/>,
+  <CardBrandLogo name="azienda 2" src=""/>,
+  <CardBrandLogo name="azienda 3" src=""/>,
+  <CardBrandLogo name="azienda 4" src=""/>,
+  <CardBrandLogo name="azienda 5" src=""/>,
+  <CardBrandLogo name="azienda 6" src=""/>,
+];
+
+const cardsBestAutor:JSX.Element[]=[
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />
+];
+
+const cardsCollection:JSX.Element[]=[
+  <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+]
+
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
   { element: <Palette />, title: "Palette" },
@@ -66,7 +123,9 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "CardBrandLogo",
   },
-  { element: <BrandCarousel />, title: "BrandCarousel" },
+  { element: <BrandCarousel elements={cardArray} display={4}/>, title: "BrandCarousel" }, 
+  { element: <BrandCarousel elements={cardsBestAutor} display={4}/>, title: "BrandCarousel" },
+  { element: <BrandCarousel elements={cardsCollection} display={4}/>, title: "BrandCarousel" },
   { element: <SwitchButton />, title: "Switch-Button" },
   { element: <SelectLanguage />, title: "SelectLanguage" },
   {
