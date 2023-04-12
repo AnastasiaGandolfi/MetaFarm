@@ -1,0 +1,55 @@
+
+.box-select-language {
+background-color: $white;
+border-radius: 15px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+position: relative;
+width: 37.7rem;
+
+.title-select-language {
+color: $darkgreen;
+position: absolute;
+top: 20px;
+left: 15px;
+padding: 10px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.select-language {
+color: $darkgreen;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 5px;
+margin-top: 70px;
+margin-left: -25px;
+
+li {
+  list-style: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $pastel-green;
+  }
+}
+}
+
+.close-icon {
+border-radius: 15px;
+position: absolute;
+top: 25px;
+right: 25px;
+cursor: pointer;
+transition: transform 0.2s ease-in-out;
+
+&:hover {
+  transform: rotate(90deg);
+}
+}
+}

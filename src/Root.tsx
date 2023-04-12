@@ -19,6 +19,15 @@ import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
+import SelectLanguage from "./components/SelectLanguage";
+import { CartModal } from "./components/CartModal";
+import SwitchButton from "./components/SwitchButton";
+import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
+import { BestCollectionItems } from "./components/BestCollectionItems";
+import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
+import { Footer } from "./components/Footer";
+import { title } from "process";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -40,11 +49,26 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Button",
   },
-  { element: <CheckboxFormField />, title: "CheckboxFormField" },
+  {
+    element: (
+      <CheckboxFormField text="Digitando la mia mail e iscrivendomi confermo e accetto quanto sopra" />
+    ),
+    title: "CheckboxFormField",
+  },
   { element: <FormField />, title: "FormField" },
   { element: <InputSearch />, title: "InputSearch" },
-  { element: <CardBrandLogo name='Nome Azienda' src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg" />, title: "CardBrandLogo" },
+  {
+    element: (
+      <CardBrandLogo
+        name="Nome Azienda"
+        src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg"
+      />
+    ),
+    title: "CardBrandLogo",
+  },
   { element: <BrandCarousel />, title: "BrandCarousel" },
+  { element: <SwitchButton />, title: "Switch-Button" },
+  { element: <SelectLanguage />, title: "SelectLanguage" },
   {
     element: (
       <Card
@@ -68,11 +92,57 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   {
     element: (
-      <CardCollection image={esempioImage} smallImage={smallImage} paragraph="Otherdeed for Otherside" />)
-  , title:"Card-Collection"
-},
-{ element: <CardBestAuthor paragraph=" $2,000,000+ "/>,title:"card-best-author"  },
-
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />
+    ),
+    title: "Card-Collection",
+  },
+  {
+    element: <CardBestAuthor paragraph=" $2,000,000+ " />,
+    title: "card-best-author",
+  },
+  { element: <CartModal />, title: "Cart Modal" },
+  {
+    element: (
+      <NavbarDropdownButton
+        type="navbar-dropdown text-button"
+        text="Top Collection"
+        elements={[
+          "Bored Ape Yacht Club",
+          "Otherdeed for Otherside",
+          "Doodles",
+          "Azuki",
+          "CLONE X - X TAKASHI MURAKAMI",
+        ]}
+      />
+    ),
+    title: "NavBar Dropdown",
+  },
+  { element: <BestCollectionItems />, title: "Best Collection Items" },
+  {
+    element: (
+      <Footer
+        text="Copyright © 2023 Metafarm.com All rights reserved."
+        icons={[
+          <BsInstagram />,
+          <BsTwitter />,
+          <BsDiscord />,
+          <FaTelegramPlane />,
+        ]}
+        elements={[
+          "Help Center",
+          "Blog",
+          "T&C",
+          "Privacy Notice",
+          "Cookies Preference",
+        ]}
+      />
+    ),
+    title: "Footer",
+  },
 ];
 
 export function Root() {
