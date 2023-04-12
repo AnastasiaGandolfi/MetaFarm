@@ -1,8 +1,7 @@
-
-import { ReactComponent as Checkbox } from "../assets/icons/svgexport-14.svg";
-import { ReactComponent as Checkedbox } from "../assets/icons/svgexport-15.svg";
+import { text } from "stream/consumers";
 import { useState } from "react";
-export function CheckboxFormField() {
+import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
+export function CheckboxFormField({ text }: { text: string }) {
   const [check, setCheck] = useState(false);
   function handleClick() {
     setCheck((flag) => !flag);
@@ -10,16 +9,14 @@ export function CheckboxFormField() {
   return (
     <div className="checkbox-container ">
       <div className="checkbox">
-        {check === false ? (
-          <Checkbox onClick={handleClick} />
+        {check ? (
+          <GrCheckbox onClick={handleClick} />
         ) : (
-          <Checkedbox onClick={handleClick} />
+          <GrCheckboxSelected onClick={handleClick} />
         )}
       </div>
       <div className="typography-container">
-        <p className="text-small">
-          Digitando la mia mail e iscrivendomi confermo e accetto quanto sopra
-        </p>
+        <p className="text-small dark">{text}</p>
       </div>
     </div>
   );

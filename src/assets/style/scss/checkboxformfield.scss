@@ -1,9 +1,12 @@
 .checkbox-container {
   display: flex;
-  background-color: $darkgreen;
+  color: $black;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 .checkbox {
   margin-right: 10px;
+}
+.dark {
+  color: $black;
 }
