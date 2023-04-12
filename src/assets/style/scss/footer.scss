@@ -1,0 +1,39 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding: 24px 30px;
+  background: $darkgreen;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  .icon-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+      gap: 15px 15px;
+    }
+    .icon {
+      color: $white;
+      margin-right: 15px;
+    }
+    .text-brand {
+      color: $white;
+    }
+  }
+  .link-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
