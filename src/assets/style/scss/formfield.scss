@@ -38,11 +38,11 @@
   margin: 0px;
   display: flex;
   border-radius: 50px;
+  border: 1px solid $pastel-green;
   height: 38px;
   background: $darkgreen;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 32px;
   position: relative;
   width: 354px;
   color: $white;
@@ -112,8 +112,8 @@
     position: absolute;
     border: 1px solid rgb(234, 238, 244);
     height: auto;
-    top: -30px;
-    right: 5px;
+    top: 2px;
+    right: 2px;
     background-color: $pastel-green;
     overflow: hidden auto;
     border-radius: 8px;

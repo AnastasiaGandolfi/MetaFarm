@@ -26,7 +26,7 @@ import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
 import { BestCollectionItems } from "./components/BestCollectionItems";
 import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
 import { Footer } from "./components/Footer";
-import { title } from "process";
+import {Navbar} from "./components/Navbar";
 import { FaTelegramPlane } from "react-icons/fa";
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
@@ -144,6 +144,9 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Footer",
   },
+  {
+    element: <Navbar/>, title: "Navbar"
+  }
 ];
 
 export function Root() {

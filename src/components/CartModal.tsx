@@ -8,7 +8,7 @@ export function CartModal() {
   return (
     <div>
       <button
-        style={{ background: "transparent" }}
+        style={{ background: "transparent", color:"white" }}
         className="shoppingCart"
         onClick={toggleModal}
       >
