@@ -287,6 +287,10 @@ button.pill-dropdown {
   background-size: cover;
   display: flex;
   padding: 30px; }
+  @media (max-width: 640px) {
+    .card-brand-logo-container {
+      min-width: 255px;
+      width: 255px; } }
   .card-brand-logo-container .card-logo-container {
     box-sizing: border-box;
     margin: 0px;
@@ -328,6 +332,11 @@ button.pill-dropdown {
 
 .carousel {
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .carousel {
+      width: 100%;
+      height: auto;
+      overflow: hidden; } }
   .carousel .direction {
     background: none;
     border: none;
