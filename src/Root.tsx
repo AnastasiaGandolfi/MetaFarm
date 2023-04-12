@@ -84,7 +84,6 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Card-Best-Collection-item",
   },
-  { element: <InputSearch />, title: "InputSearch" },
   {
     element: (
       <ButtonDropdown type="pill-dropdown" text={<span>Sales Volume</span>} />

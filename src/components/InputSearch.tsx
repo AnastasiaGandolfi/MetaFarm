@@ -4,7 +4,6 @@ import List from './List';
 
 export const InputSearch = () => {
     const [inputText, setInputText] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
     const [showList, setShowList] = useState(false);
 
     let inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
