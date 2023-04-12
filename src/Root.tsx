@@ -15,7 +15,7 @@ import Nav from "react-bootstrap/Nav";
 import { InputSearch } from "./components/InputSearch";
 import CardBrandLogo from "./components/CardBrandLogo";
 import { ButtonDropdown } from "./components/ButtonDropdown";
-import { BrandCarousel } from "./components/BrandCarousel";
+// import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
@@ -28,6 +28,7 @@ import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
 import { Footer } from "./components/Footer";
 import {Navbar} from "./components/Navbar";
 import { FaTelegramPlane } from "react-icons/fa";
+import {Carousel} from "./components/Carousel";
 
 const cardArray:JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src=""/>,
@@ -123,9 +124,12 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "CardBrandLogo",
   },
-  { element: <BrandCarousel elements={cardArray} display={4}/>, title: "BrandCarousel" }, 
-  { element: <BrandCarousel elements={cardsBestAutor} display={4}/>, title: "BrandCarousel" },
-  { element: <BrandCarousel elements={cardsCollection} display={4}/>, title: "BrandCarousel" },
+  // { element: <BrandCarousel elements={cardArray} display={4}/>, title: "BrandCarousel" }, 
+  // { element: <BrandCarousel elements={cardsBestAutor} display={4}/>, title: "BrandCarousel" },
+  // { element: <BrandCarousel elements={cardsCollection} display={4}/>, title: "Carousel" },
+  { element: <Carousel elements={cardArray} display={4} />, title: "Carousel" },
+  { element: <Carousel elements={cardsBestAutor} display={3} />, title: "Carousel" },
+  { element: <Carousel elements={cardsCollection} display={2} />, title: "Carousel" },
   { element: <SwitchButton />, title: "Switch-Button" },
   { element: <SelectLanguage />, title: "SelectLanguage" },
   {
