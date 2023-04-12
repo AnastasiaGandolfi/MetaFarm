@@ -868,10 +868,64 @@ button.pill-dropdown {
 .components-container {
   background: #DBF0EC;
   height: 100%;
-  width: 100%;
-}
-.components-container h1 {
-  color: #239C82;
-}
+  width: 100%; }
+  .components-container h1 {
+    color: #239C82; }
 
-/*# sourceMappingURL=common.css.map */
+
+    .box-select-language {
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 37.7rem;
+    }
+    
+    .box-select-language .title-select-language {
+      color: darkgreen;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .box-select-language .select-language {
+      color: #239C82;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 70px;
+      margin-left: -25px;
+    }
+    
+    .box-select-language .select-language li {
+      list-style: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+    
+    .box-select-language .select-language li:hover {
+      background-color: #DBF0EC;
+    }
+    
+    .box-select-language .close-icon {
+      border-radius: 15px;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    /* .box-select-language .close-icon:hover {
+      transform: rotate(90deg);
+    }
+     */
+}
