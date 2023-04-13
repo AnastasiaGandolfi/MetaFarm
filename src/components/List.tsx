@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from "./ListData.json"
 import Dropdown from 'react-bootstrap/Dropdown';
 import Spinner from 'react-bootstrap/Spinner';
 
 interface ListProps {
     input: string;
+    isLoading: boolean
 }
 
 function List(props: ListProps) {
-    const [isLoading, setIsLoading] = useState(false);
     //create a new array by filtering the original array
     const filteredData = data.filter((el) => {
         //if no input the return the original
@@ -26,7 +26,7 @@ function List(props: ListProps) {
         <div className='dropdown-menu-container'>
             <Dropdown.Menu className="dropdown-menu" style={{ width: '350px' }} show>
                 <Dropdown.Header>Preferiti:</Dropdown.Header>
-                {isLoading ? <Spinner animation="border" /> :
+                {props.isLoading ? <Spinner animation="border" variant="primary" /> :
                 filteredData.map((item) => (
                     <Dropdown.Item key={item.id}><img src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg" alt='avatar' />{item.text}</Dropdown.Item>
                 ))

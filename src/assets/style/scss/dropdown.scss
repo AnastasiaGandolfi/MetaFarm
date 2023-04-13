@@ -4,7 +4,7 @@
   background-color: #fff;
   display: block;
   position: absolute;
-  color: #000;
+  color: $black;
   min-width: 150px;
   z-index: 20;
   border-radius: 15px;
@@ -22,14 +22,14 @@
       margin: 0px;
       font-size: 16px;
       font-weight: 600;
-      color: black;
+      color: $black;
       cursor: pointer;
     }
   }
 }
 .navbar-dropdown {
   align-items: center;
-  color: $black;
+  color: $white;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -40,11 +40,13 @@
   .dropdown-icon {
     margin-left: 5px;
     margin-top: 3px;
-    color: $darkgreen;
+    color: $white;
   }
 }
 .navbar-dropdown-cornice {
   display: block;
+  position:absolute;
+  top:bottom;
   .navbar-dropdown-window {
     max-height: 520px;
     max-width: 190px;

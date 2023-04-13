@@ -15,7 +15,7 @@ import Nav from "react-bootstrap/Nav";
 import { InputSearch } from "./components/InputSearch";
 import CardBrandLogo from "./components/CardBrandLogo";
 import { ButtonDropdown } from "./components/ButtonDropdown";
-import { BrandCarousel } from "./components/BrandCarousel";
+// import { BrandCarousel } from "./components/BrandCarousel";
 import { CardCollection } from "./components/CardCollection";
 import CardBestAuthor from "./components/CardBestAuthor";
 import { icons } from "react-icons/lib";
@@ -26,8 +26,66 @@ import { NavbarDropdownButton } from "./components/NavbarDropdownButton";
 import { BestCollectionItems } from "./components/BestCollectionItems";
 import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
 import { Footer } from "./components/Footer";
-import { title } from "process";
+import {Navbar} from "./components/Navbar";
 import { FaTelegramPlane } from "react-icons/fa";
+import {Carousel} from "./components/Carousel";
+
+const cardArray:JSX.Element[] = [
+  <CardBrandLogo name="azienda 1" src=""/>,
+  <CardBrandLogo name="azienda 2" src=""/>,
+  <CardBrandLogo name="azienda 3" src=""/>,
+  <CardBrandLogo name="azienda 4" src=""/>,
+  <CardBrandLogo name="azienda 5" src=""/>,
+  <CardBrandLogo name="azienda 6" src=""/>,
+];
+
+const cardsBestAutor:JSX.Element[]=[
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " />
+];
+
+const cardsCollection:JSX.Element[]=[
+  <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+      <CardCollection
+        image={esempioImage}
+        smallImage={smallImage}
+        paragraph="Otherdeed for Otherside"
+      />,
+]
 
 const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Typography />, title: "Typography" },
@@ -66,7 +124,12 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "CardBrandLogo",
   },
-  { element: <BrandCarousel />, title: "BrandCarousel" },
+  // { element: <BrandCarousel elements={cardArray} display={4}/>, title: "BrandCarousel" }, 
+  // { element: <BrandCarousel elements={cardsBestAutor} display={4}/>, title: "BrandCarousel" },
+  // { element: <BrandCarousel elements={cardsCollection} display={4}/>, title: "Carousel" },
+  { element: <Carousel elements={cardArray} display={4} />, title: "Carousel" },
+  { element: <Carousel elements={cardsBestAutor} display={3} />, title: "Carousel" },
+  { element: <Carousel elements={cardsCollection} display={2} />, title: "Carousel" },
   { element: <SwitchButton />, title: "Switch-Button" },
   { element: <SelectLanguage />, title: "SelectLanguage" },
   {
@@ -143,6 +206,9 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "Footer",
   },
+  {
+    element: <Navbar/>, title: "Navbar"
+  }
 ];
 
 export function Root() {
