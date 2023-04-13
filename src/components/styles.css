@@ -2,7 +2,7 @@
     --swiper-navigation-size: 10px;
 }
 .swiper {
-    width: 80%;
+    width: 100%;
     height: 100%;
   }
   
@@ -34,10 +34,10 @@
       stroke: white !important;
   }
   .swiper-button-next{
-    right:0px;
+    right:20px;
   }
   .swiper-button-prev{
-    left:0px;
+    left:20px;
   }
 
   

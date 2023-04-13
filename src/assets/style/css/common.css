@@ -600,47 +600,77 @@ button.pill-dropdown {
   .ToggleSwitch__button2 .ToggleSwitch__icon2--white path {
     fill: white; }
 
-.box-select-language {
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  padding: 10px;
+.language-button {
+  color: #DBF0EC;
+  background-color: transparent;
+  padding: 6px;
+  border: 1px solid #DBF0EC;
+  border-radius: 20%; }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+
+.select-language-modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text99);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 37.7rem; }
-  .box-select-language .title-select-language {
-    color: #239C82;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold; }
-  .box-select-language .select-language {
-    color: #239C82;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    margin-top: 70px;
-    margin-left: -25px; }
-    .box-select-language .select-language li {
-      list-style: none;
-      font-size: 16px;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.2s ease-in-out; }
-      .box-select-language .select-language li:hover {
-        background-color: #DBF0EC; }
-  .box-select-language .close-icon {
+  align-items: center;
+  justify-content: center; }
+  .select-language-modal .box-select-language {
+    background-color: #FFFFFF;
     border-radius: 15px;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out; }
-    .box-select-language .close-icon:hover {
-      transform: rotate(90deg); }
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 37.7rem; }
+    .select-language-modal .box-select-language .title-select-language {
+      color: #239C82;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      z-index: 1000;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold; }
+    .select-language-modal .box-select-language .select-language {
+      color: #239C82;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 70px;
+      margin-left: -25px; }
+      .select-language-modal .box-select-language .select-language li {
+        list-style: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out; }
+        .select-language-modal .box-select-language .select-language li:hover {
+          background-color: #DBF0EC; }
+    .select-language-modal .box-select-language .close-icon {
+      border-radius: 15px;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out; }
+      .select-language-modal .box-select-language .close-icon:hover {
+        transform: rotate(90deg); }
 
 .cart-modal {
   display: none; }
@@ -760,14 +790,13 @@ button.pill-dropdown {
     .navbar .navbar-links a {
       color: #FFFFFF;
       text-decoration: none; }
-    .navbar .navbar-links button {
+    .navbar .navbar-links .register {
       background-color: #DBF0EC;
       color: #239C82;
       padding: 10px 20px 10px 20px; }
 
 .components-container {
-  background: #DBF0EC;
+  background: #1D2D2B;
   height: 100%;
+  color: white;
   width: 100%; }
-  .components-container h1 {
-    color: #239C82; }

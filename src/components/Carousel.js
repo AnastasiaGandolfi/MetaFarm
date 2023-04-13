@@ -35,7 +35,7 @@ export function Carousel({elements, display}) {
           },
           1024: {
             slidesPerView: display,
-            spaceBetween: 50,
+            spaceBetween: 0,
           },
         }}
         className="mySwiper"

@@ -1,16 +1,11 @@
 import logo from "../assets/img/leaves.png";
 import { InputSearch } from "./InputSearch";
 import { NavbarDropdownButton } from "./NavbarDropdownButton";
-import { FaShoppingCart } from "react-icons/fa";
 import {CartModal} from "./CartModal";
 import SelectLanguage from "./SelectLanguage";
-import { useState } from "react";
 
 export function Navbar() {
-  const [toggleModal, setToggleModal] = useState(false);
-  const showModalLanguage= () => {
-    setToggleModal(!toggleModal);
-  }
+
 
   return (
     <div className="navbar">
@@ -34,10 +29,9 @@ export function Navbar() {
         />
         <a className="text-button" href="/create">Create</a> |
         <a className="text-button" href="/login">Accedi</a>
-        <button>Registrati</button> |
-        <span onClick={showModalLanguage}>IT</span> |
+        <button className="register">Registrati</button> |
+        <SelectLanguage/>
         <CartModal/>
-        {toggleModal && <SelectLanguage/>}
       </div>
     </div>
   );
