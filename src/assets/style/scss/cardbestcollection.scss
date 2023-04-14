@@ -1,0 +1,61 @@
+.container-card-brand-logo{
+    //background-color: $mid-green;
+    height:90px;
+    width: 350px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    .container-icon-card-brand-logo{
+        display:flex;
+        place-items: center;
+        gap:15px;
+        margin:10px;        
+        .small-image-collection{
+          border-radius: 50%;
+        }
+      }
+       .container-stats-card-brand-logo{
+        height: 44px;
+        width: 350px;
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;     
+         .container-name-value{
+          display: flex;
+          flex-direction: column;
+          justify-self: center;
+          margin-bottom: auto;
+
+        }
+        .container-percentage-value{
+          display: flex;
+          flex-direction: column;
+          margin-left: auto;
+          margin-bottom: auto;
+        }
+        .container-stats-value{
+          display: flex;
+          flex-direction: column;
+          margin-left: auto;
+          margin-bottom: auto;
+
+        }
+            }
+            .title-card-brand-logo{
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(147, 210, 253);
+            display: flex;
+            flex-shrink: 0;
+            position: absolute;
+            padding-bottom: 60px;
+            padding-left: 92px;
+            
+
+             
+             
+             
+          
+            }
+    }
