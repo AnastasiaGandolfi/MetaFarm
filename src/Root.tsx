@@ -29,6 +29,7 @@ import { Footer } from "./components/Footer";
 import {Navbar} from "./components/Navbar";
 import { FaTelegramPlane } from "react-icons/fa";
 import {Carousel} from "./components/Carousel";
+import  CardBestCollection  from "./components/CardBestCollection";
 
 const cardArray:JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src=""/>,
@@ -208,7 +209,17 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   {
     element: <Navbar/>, title: "Navbar"
-  }
+  },
+  { element: <CardBestCollection 
+    position={1} 
+    smallImage={smallImage}
+    title="Otherdeed for Otherside" 
+    floorPrice="$2.7K" 
+    floorPercentage="+23.03%"
+    volumePrice="$7.6M"
+    volumePercentage="-41.27%"
+
+ />, title:"Card Best Collection", },
 ];
 
 export function Root() {

@@ -795,6 +795,51 @@ button.pill-dropdown {
       color: #239C82;
       padding: 10px 20px 10px 20px; }
 
+.container-card-brand-logo {
+  height: 90px;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid grey; }
+  .container-card-brand-logo .container-icon-card-brand-logo {
+    display: flex;
+    place-items: center;
+    gap: 15px;
+    margin: 10px; }
+    .container-card-brand-logo .container-icon-card-brand-logo .small-image-collection {
+      border-radius: 50%; }
+  .container-card-brand-logo .container-stats-card-brand-logo {
+    height: 44px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .container-card-brand-logo .container-stats-card-brand-logo .container-name-value {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      margin-bottom: auto; }
+    .container-card-brand-logo .container-stats-card-brand-logo .container-percentage-value {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-bottom: auto; }
+    .container-card-brand-logo .container-stats-card-brand-logo .container-stats-value {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-bottom: auto; }
+  .container-card-brand-logo .title-card-brand-logo {
+    font-size: 18px;
+    font-weight: 500;
+    color: #93d2fd;
+    display: flex;
+    flex-shrink: 0;
+    position: absolute;
+    padding-bottom: 60px;
+    padding-left: 92px; }
+
 .components-container {
   background: #1D2D2B;
   height: 100%;
