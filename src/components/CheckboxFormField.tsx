@@ -9,7 +9,7 @@ export function CheckboxFormField({ text }: { text: string }) {
   return (
     <div className="checkbox-container ">
       <div className="checkbox">
-        {check ? (
+        {!check ? (
           <GrCheckbox onClick={handleClick} />
         ) : (
           <GrCheckboxSelected onClick={handleClick} />
