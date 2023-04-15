@@ -1,10 +1,12 @@
 .dropdown-cornice {
+  animation: rotateMenu 800ms ease-in-out forwards;
+  transform-origin: top center;
   box-sizing: border-box;
   margin: 8px 0px 0px;
   background-color: #fff;
   display: block;
   position: absolute;
-  color: $black;
+  color: #000;
   min-width: 150px;
   z-index: 20;
   border-radius: 15px;
@@ -22,14 +24,26 @@
       margin: 0px;
       font-size: 16px;
       font-weight: 600;
-      color: $black;
+      color: black;
       cursor: pointer;
+    }
+    .navbar-dropdown-element {
+      box-sizing: border-box;
+      padding: 8px;
+      margin: 0px;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+      align-self: flex-start;
     }
   }
 }
+
 .navbar-dropdown {
   align-items: center;
-  color: $white;
+  color: $black;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -40,36 +54,18 @@
   .dropdown-icon {
     margin-left: 5px;
     margin-top: 3px;
-    color: $white;
+    color: $darkgreen;
   }
 }
-.navbar-dropdown-cornice {
-  display: block;
-  position:absolute;
-  top:bottom;
-  .navbar-dropdown-window {
-    max-height: 520px;
-    max-width: 190px;
-    width: auto;
-    background-color: $white;
-    border-radius: 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    margin-top: 8px;
-    z-index: 20;
-    .navbar-dropdown-element {
-      box-sizing: border-box;
-      text-decoration: none;
-      min-width: 140px;
-      padding-bottom: 16px;
-      margin: 0px;
-      line-height: 1.3em;
-      font-size: 16px;
-      font-weight: 600;
-      color: $black;
-      cursor: pointer;
-    }
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
   }
 }

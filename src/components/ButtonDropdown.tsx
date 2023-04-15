@@ -5,9 +5,11 @@ import { DropdownElement } from "./DropdownElement";
 export function ButtonDropdown({
   type,
   text,
+  dropdownElement,
 }: {
   type: string;
   text: string | JSX.Element;
+  dropdownElement: Array<string> | Array<JSX.Element>;
 }) {
   const [show, setShow] =
     useState(
@@ -56,21 +58,21 @@ export function ButtonDropdown({
       {show === false ? null : (
         <div className="dropdown-cornice" ref={menuRef}>
           <div className="dropdown-window">
-            <DropdownElement
-              type="dropdown-element"
-              text="Sales Volume"
-              handleClick={handleClick}
-            />
-            <DropdownElement
-              type="dropdown-element"
-              text="Most Likes"
-              handleClick={handleClick}
-            />
-            <DropdownElement
-              type="dropdown-element"
-              text="Most Views"
-              handleClick={handleClick}
-            />
+            {dropdownElement.map((item) =>
+              typeof item === "string" ? (
+                <a
+                  href="#"
+                  onClick={handleVisibility}
+                  className="navbar-dropdown-element"
+                >
+                  {item}
+                </a>
+              ) : (
+                <div onClick={(event) => handleClick(item.props.text)}>
+                  {item}
+                </div>
+              )
+            )}
           </div>
         </div>
       )}
