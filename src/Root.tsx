@@ -31,7 +31,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { Carousel } from "./components/Carousel";
 import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
-
+import  HeroCard from "./components/HeroCard";
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
   <CardBrandLogo name="azienda 2" src="" />,
@@ -239,6 +239,9 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
       />
     ),
     title: "Card Best Collection",
+  },
+  {
+    element: <HeroCard date ="Mon, April 17 " title ="Card title" subtitle="Subtitle"/>, title: "HeroCard",
   },
 ];
 

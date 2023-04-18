@@ -994,5 +994,44 @@ button.pill-dropdown {
   color: white;
   width: 100%;
 }
+/* hero card */
+.hero-card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  width: 1400px;
+  height: 500px;
+  box-shadow: 0 0 50px 10px #239C82;
+}
+
+.hero-button-up {
+  padding: 8px 16px;
+  margin: -10px 0 40px;
+}
+.hero-button-down {
+  margin: 40px 0 10px;
+}
+
+.hero-card-container p {
+  margin: 0px 0px 8px;
+  text-align: center;
+}
+
+.hero-card-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-card-container h3 {
+  text-align: center;
+  color: #239C82;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 /*# sourceMappingURL=common.css.map */
