@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "./Button";
 import { BsCalendarWeekFill } from 'react-icons/bs';
 
-interface CardProps {
+export interface CardProps {
   date: string;
   title: string;
   subtitle: string;
