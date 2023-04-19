@@ -50,6 +50,102 @@ const cardData: CardData[] = [
     venditeTotali: "Total Sales: $10K",
   },
 ];
+const cardDataMostLikes: CardData[] = [
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Most Likes Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Most Likes Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Most Likes Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+]
+const cardDataMostViews: CardData[] = [
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Most Views Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Most Views Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Most Views Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+]
+const cardDataSalesVolume: CardData[] = [
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Sales Volume",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Sales Volume",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Sales Volume",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+]
 
 const cardDataToday: CardData[] = [
   {
@@ -164,9 +260,17 @@ export function BestCollectionItems(): JSX.Element {
       case 3:
         setCards(cardDataLast30Days);
         break;
+      case 4:
+        setCards(cardDataMostLikes);
+        break;
+      case 5:
+        setCards(cardDataMostViews);
+        break;
+        case 6:
+          setCards(cardDataSalesVolume);
+          break;
       default:
         setCards(cardData);
-        console.log(index);
         break;
     }
   }
@@ -181,9 +285,9 @@ export function BestCollectionItems(): JSX.Element {
             type="pill-dropdown"
             text={<span>Sales Volume</span>}
             dropdownElement={[
-              <DropdownElement type="dropdown-element" text="Sales Volume" />,
-              <DropdownElement type="dropdown-element" text="Most Likes" />,
-              <DropdownElement type="dropdown-element" text="Most Views" />,
+              <DropdownElement type="dropdown-element" text="Sales Volume" handle={() => handleFilterClick(6)} />,
+              <DropdownElement type="dropdown-element" text="Most Likes"  handle={() => handleFilterClick(4)} />,
+              <DropdownElement type="dropdown-element" text="Most Views" handle={() => handleFilterClick(5)}/>,
             ]}
           />
         </div>

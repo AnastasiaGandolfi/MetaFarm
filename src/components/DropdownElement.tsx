@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 
+interface DropdownElementProps {
+  type: string;
+  text: string | JSX.Element;
+  handle?: () => void;
+}
+
 export function DropdownElement({
   type,
   text,
-}: {
-  type: string;
-  text: string | JSX.Element;
-}) {
-  return <div className={type}>{text}</div>;
+  handle,
+}: DropdownElementProps) {
+  return (
+    <div className={type} onClick={handle}>
+      {text}
+    </div>
+  );
 }
