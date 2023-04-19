@@ -59,33 +59,31 @@ body {
 .text-head {
   font-size: 50px;
   font-weight: 600;
-  color: white;
-}
+  color: #FFFFFF; }
+
 
 .text-subtle {
   font-size: 20px;
   font-weight: 600;
-  color: white;
+  color: #FFFFFF;
 }
 
 .text-button {
   font-size: 16px;
   font-weight: 600;
-  color: white;
-}
+  color: #FFFFFF; }
 
 .text-uppercase-button {
   font-size: 16px;
   font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-}
+  color: #FFFFFF;
+  text-transform: uppercase; }
 
 .text-collection-name {
   font-size: 29px;
   font-weight: 700;
-  color: white;
-}
+  color: #FFFFFF; }
+
 
 .text-author-name {
   font-size: 18px;
@@ -102,8 +100,7 @@ body {
 .text-bigger-subtle {
   font-size: 29px;
   font-weight: 400;
-  color: white;
-}
+  color: #FFFFFF; }
 
 .text-link {
   text-decoration: none;
@@ -111,8 +108,7 @@ body {
 
 .text-brand {
   font-size: 16px;
-  color: white;
-}
+  color: #FFFFFF; }
 
 .text-volume {
   font-size: 14px;
@@ -910,7 +906,12 @@ button.pill-dropdown {
   display: flex;
   background-color: #239C82;
   height: 100%;
+  max-height: 100px;
   width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   align-items: center;
   padding: 20px 30px 20px 30px;
 }
@@ -941,52 +942,44 @@ button.pill-dropdown {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 2px solid grey;
-}
-.container-card-brand-logo .container-icon-card-brand-logo {
-  display: flex;
-  place-items: center;
-  gap: 15px;
-  margin: 10px;
-}
-.container-card-brand-logo .container-icon-card-brand-logo .small-image-collection {
-  border-radius: 50%;
-}
-.container-card-brand-logo .container-stats-card-brand-logo {
-  height: 44px;
-  width: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.container-card-brand-logo .container-stats-card-brand-logo .container-name-value {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  margin-bottom: auto;
-}
-.container-card-brand-logo .container-stats-card-brand-logo .container-percentage-value {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-bottom: auto;
-}
-.container-card-brand-logo .container-stats-card-brand-logo .container-stats-value {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-bottom: auto;
-}
-.container-card-brand-logo .title-card-brand-logo {
-  font-size: 18px;
-  font-weight: 500;
-  color: rgb(147, 210, 253);
-  display: flex;
-  flex-shrink: 0;
-  position: absolute;
-  padding-bottom: 60px;
-  padding-left: 92px;
-}
+  border-bottom: 2px solid grey; }
+  .container-card-brand-logo .container-icon-card-brand-logo {
+    display: flex;
+    place-items: center;
+    gap: 15px;
+    margin: 10px; }
+    .container-card-brand-logo .container-icon-card-brand-logo .small-image-collection {
+      border-radius: 50%; }
+  .container-card-brand-logo .container-stats-card-brand-logo {
+    height: 44px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .container-card-brand-logo .container-stats-card-brand-logo .container-name-value {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      margin-bottom: auto; }
+    .container-card-brand-logo .container-stats-card-brand-logo .container-percentage-value {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-bottom: auto; }
+    .container-card-brand-logo .container-stats-card-brand-logo .container-stats-value {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-bottom: auto; }
+  .container-card-brand-logo .title-card-brand-logo {
+    font-size: 18px;
+    font-weight: 500;
+    color: #93d2fd;
+    display: flex;
+    flex-shrink: 0;
+    position: absolute;
+    padding-bottom: 60px;
+    padding-left: 92px; }
 
 .components-container {
   background: #1D2D2B;
