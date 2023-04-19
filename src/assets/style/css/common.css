@@ -775,7 +775,12 @@ button.pill-dropdown {
   display: flex;
   background-color: #239C82;
   height: 100%;
+  max-height: 100px;
   width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   align-items: center;
   padding: 20px 30px 20px 30px; }
   .navbar .navbar-brand {
@@ -892,6 +897,9 @@ button.pill-dropdown {
 .fp-slidesNav ul li:hover a.active span,
 .fp-slidesNav ul li a.active span {
   background-color: #DBF0EC; }
+
+.fp-watermark {
+  display: none; }
 
 .components-container {
   background: #1D2D2B;

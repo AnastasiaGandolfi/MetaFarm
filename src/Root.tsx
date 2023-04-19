@@ -226,7 +226,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
 export function Root() {
   return (
     <BrowserRouter>
-      <Nav variant="tabs" defaultActiveKey="/home">
+      {/* <Nav variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">App</Nav.Link>
         </Nav.Item>
@@ -236,7 +236,9 @@ export function Root() {
         <Nav.Item>
           <Nav.Link href="/about" eventKey="link-2">About</Nav.Link>
         </Nav.Item>
-      </Nav>
+      </Nav> */}
+        <Navbar />
+
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<Test />} />
