@@ -33,6 +33,7 @@ import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
 import  HeroCard, { CardProps } from "./components/HeroCard";
 import CarouselS from "./components/CarouselS"
+import { About } from "./pages/About";
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
   <CardBrandLogo name="azienda 2" src="" />,
