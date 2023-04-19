@@ -45,28 +45,28 @@ body {
 .text-head {
   font-size: 50px;
   font-weight: 600;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-subtle {
   font-size: 20px;
   font-weight: 600;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-button {
   font-size: 16px;
   font-weight: 600;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-uppercase-button {
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: #FFFFFF;
   text-transform: uppercase; }
 
 .text-collection-name {
   font-size: 29px;
   font-weight: 700;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-author-name {
   font-size: 18px;
@@ -76,19 +76,19 @@ body {
 .text-small {
   font-size: 14px;
   font-weight: normal;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-bigger-subtle {
   font-size: 29px;
   font-weight: 400;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-link {
   text-decoration: none; }
 
 .text-brand {
   font-size: 16px;
-  color: white; }
+  color: #FFFFFF; }
 
 .text-volume {
   font-size: 14px;
@@ -839,6 +839,59 @@ button.pill-dropdown {
     position: absolute;
     padding-bottom: 60px;
     padding-left: 92px; }
+
+.custom-section {
+  height: 100vh;
+  width: 100%; }
+  .custom-section .slide .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 480px) {
+      .custom-section .slide .text-container .text-slide {
+        width: 100%; } }
+    .custom-section .slide .text-container .text-slide .slide-title {
+      font-size: 5rem;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .custom-section .slide .text-container .text-slide .slide-title {
+          font-size: 50px; } }
+  .custom-section .slide .img-container {
+    /*   display: flex;
+            justify-content: flex-end;
+            align-items: center; */ }
+    .custom-section .slide .img-container img {
+      position: absolute;
+      margin: 0 50px;
+      top: 150px;
+      border-radius: 12px;
+      object-fit: cover;
+      object-position: center;
+      color: transparent;
+      overflow-clip-margin: content-box;
+      overflow: clip;
+      max-width: 612px;
+      max-height: 312px;
+      width: 50%;
+      height: auto; }
+      @media only screen and (max-width: 480px) {
+        .custom-section .slide .img-container img {
+          display: none; } }
+
+#section1 {
+  color: #fff; }
+
+.fp-section {
+  text-align: center; }
+
+.actions {
+  list-style-type: none; }
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+  background-color: #DBF0EC; }
 
 .components-container {
   background: #1D2D2B;

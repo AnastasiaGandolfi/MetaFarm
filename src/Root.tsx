@@ -30,6 +30,7 @@ import {Navbar} from "./components/Navbar";
 import { FaTelegramPlane } from "react-icons/fa";
 import {Carousel} from "./components/Carousel";
 import  CardBestCollection  from "./components/CardBestCollection";
+import { About } from "./pages/About";
 
 const cardArray:JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src=""/>,
@@ -125,7 +126,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     ),
     title: "CardBrandLogo",
   },
-  // { element: <BrandCarousel elements={cardArray} display={4}/>, title: "BrandCarousel" }, 
+  // { element: <BrandCarousel elements={cardArray} display={4}/>, title: "BrandCarousel" },
   // { element: <BrandCarousel elements={cardsBestAutor} display={4}/>, title: "BrandCarousel" },
   // { element: <BrandCarousel elements={cardsCollection} display={4}/>, title: "Carousel" },
   { element: <Carousel elements={cardArray} display={4} />, title: "Carousel" },
@@ -210,11 +211,11 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   {
     element: <Navbar/>, title: "Navbar"
   },
-  { element: <CardBestCollection 
-    position={1} 
+  { element: <CardBestCollection
+    position={1}
     smallImage={smallImage}
-    title="Otherdeed for Otherside" 
-    floorPrice="$2.7K" 
+    title="Otherdeed for Otherside"
+    floorPrice="$2.7K"
     floorPercentage="+23.03%"
     volumePrice="$7.6M"
     volumePercentage="-41.27%"
@@ -225,17 +226,21 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
 export function Root() {
   return (
     <BrowserRouter>
-      <Nav variant="tabs" defaultActiveKey="link-1">
+      <Nav variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">App</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Components</Nav.Link>
+          <Nav.Link href="/components" eventKey="link-1">Components</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/about" eventKey="link-2">About</Nav.Link>
         </Nav.Item>
       </Nav>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/about" element={<About />} />
         <Route
           path="/components"
           element={<Components elements={ComponentElements} />}

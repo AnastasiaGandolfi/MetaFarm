@@ -1,0 +1,77 @@
+.custom-section {
+    height: 100vh;
+    width: 100%;
+
+    .slide {
+
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            .text-slide {
+                @media only screen and (max-width: 480px) {
+                    width: 100%;
+                }
+
+                .slide-title {
+                    font-size: 5rem;
+                    text-align: center;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            /*   display: flex;
+            justify-content: flex-end;
+            align-items: center; */
+
+
+            img {
+                position: absolute;
+                margin: 0 50px;
+                top: 150px;
+                border-radius: 12px;
+                object-fit: cover;
+                object-position: center;
+                color: transparent;
+                overflow-clip-margin: content-box;
+                overflow: clip;
+                max-width: 612px;
+                max-height: 312px;
+                width: 50%;
+                height: auto;
+
+                @media only screen and (max-width: 480px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+#section1 {
+    color: #fff;
+}
+
+.fp-section {
+    text-align: center;
+}
+
+.actions {
+    list-style-type: none;
+}
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+    background-color: $pastel-green;
+}
