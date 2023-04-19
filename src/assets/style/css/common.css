@@ -848,40 +848,39 @@ button.pill-dropdown {
 .custom-section {
   height: 100vh;
   width: 100%; }
-  .custom-section .slide .text-container {
+  .custom-section .slide {
+    position: relative;
+    height: 100vh;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center; }
-    @media only screen and (max-width: 480px) {
-      .custom-section .slide .text-container .text-slide {
-        width: 100%; } }
-    .custom-section .slide .text-container .text-slide .slide-title {
-      font-size: 5rem;
-      text-align: center; }
-      @media screen and (max-width: 768px) {
-        .custom-section .slide .text-container .text-slide .slide-title {
-          font-size: 50px; } }
-  .custom-section .slide .img-container {
-    /*   display: flex;
-            justify-content: flex-end;
-            align-items: center; */ }
-    .custom-section .slide .img-container img {
+    background-size: cover; }
+    .custom-section .slide::before {
+      content: "";
       position: absolute;
-      margin: 0 50px;
-      top: 150px;
-      border-radius: 12px;
-      object-fit: cover;
-      object-position: center;
-      color: transparent;
-      overflow-clip-margin: content-box;
-      overflow: clip;
-      max-width: 612px;
-      max-height: 312px;
-      width: 50%;
-      height: auto; }
-      @media only screen and (max-width: 480px) {
-        .custom-section .slide .img-container img {
-          display: none; } }
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(255, 255, 255, 0.25); }
+    .custom-section .slide .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .custom-section .slide .text-container .text-slide {
+        color: #FFFFFF;
+        width: 70%; }
+        @media only screen and (max-width: 480px) {
+          .custom-section .slide .text-container .text-slide {
+            width: 100%; } }
+        @media screen and (max-width: 992px) {
+          .custom-section .slide .text-container .text-slide .slide-title {
+            font-size: 40px; } }
+        @media screen and (max-width: 768px) {
+          .custom-section .slide .text-container .text-slide .slide-title {
+            font-size: 30px; } }
 
 #section1 {
   color: #fff; }
@@ -896,7 +895,10 @@ button.pill-dropdown {
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li:hover a.active span,
 .fp-slidesNav ul li a.active span {
-  background-color: #DBF0EC; }
+  background-color: #FFFFFF; }
+
+#fp-nav ul li a span {
+  background-color: #FFFFFF; }
 
 .fp-watermark {
   display: none; }

@@ -1,60 +1,53 @@
 .custom-section {
     height: 100vh;
     width: 100%;
+
     .slide {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(255, 255, 255, 0.25);
+        }
 
         .text-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            width: 100%;
 
             .text-slide {
+                color: $white;
+                width: 70%;
+
                 @media only screen and (max-width: 480px) {
                     width: 100%;
                 }
 
                 .slide-title {
-                    font-size: 5rem;
-                    text-align: center;
+                    @media screen and (max-width: 992px) {
+                        font-size: 40px;
+                    }
 
                     @media screen and (max-width: 768px) {
-                        font-size: 50px;
+                        font-size: 30px;
                     }
-                }
-            }
-        }
-
-        .img-container {
-            /*   display: flex;
-            justify-content: flex-end;
-            align-items: center; */
-
-
-            img {
-                position: absolute;
-                margin: 0 50px;
-                top: 150px;
-                border-radius: 12px;
-                object-fit: cover;
-                object-position: center;
-                color: transparent;
-                overflow-clip-margin: content-box;
-                overflow: clip;
-                max-width: 612px;
-                max-height: 312px;
-                width: 50%;
-                height: auto;
-
-                @media only screen and (max-width: 480px) {
-                    display: none;
                 }
             }
         }
     }
 }
-
-
 
 #section1 {
     color: #fff;
@@ -72,9 +65,13 @@
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li:hover a.active span,
 .fp-slidesNav ul li a.active span {
-    background-color: $pastel-green;
+    background-color: $white;
 }
 
-.fp-watermark{
-    display:none;
+#fp-nav ul li a span {
+    background-color: $white;
+}
+
+.fp-watermark {
+    display: none;
 }
