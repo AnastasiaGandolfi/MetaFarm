@@ -36,6 +36,10 @@ import { DropdownElement } from "./components/DropdownElement";
 import  HeroCard, { CardProps } from "./components/HeroCard";
 import CarouselS from "./components/CarouselS"
 
+
+
+import { About } from "./pages/About";
+
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
   <CardBrandLogo name="azienda 2" src="" />,
@@ -230,6 +234,17 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     element: <Navbar />,
     title: "Navbar",
   },
+  { element: <CardBestCollection
+    position={1}
+    smallImage={smallImage}
+    title="Otherdeed for Otherside"
+    floorPrice="$2.7K"
+    floorPercentage="+23.03%"
+    volumePrice="$7.6M"
+    volumePercentage="-41.27%"
+
+ />, title:"Card Best Collection", },
+
   {
     element: (
       <CardBestCollection
@@ -254,7 +269,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     { date: 'Mon,April 17', title: 'Card 3', subtitle: 'Subtitle for card 3' },
     { date: 'Mon,April 17', title: 'Card 4', subtitle: 'Subtitle for card 4' },
   ];
-  
+
   const carouselElement = {
     element: <CarouselS cards={cards} />,
     title: 'CarouselS',
@@ -263,18 +278,27 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
 export function Root() {
   return (
     <BrowserRouter>
-      <Nav variant="tabs" defaultActiveKey="link-1">
+      {/* <Nav variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">App</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Components</Nav.Link>
+          <Nav.Link href="/components" eventKey="link-1">Components</Nav.Link>
         </Nav.Item>
-      </Nav>
+        <Nav.Item>
+          <Nav.Link href="/about" eventKey="link-2">About</Nav.Link>
+        </Nav.Item>
+      </Nav> */}
+        <Navbar />
+
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<Test />} />
+
         <Route path="/home" element={<HomePage />} />
+
+        <Route path="/about" element={<About />} />
+
         <Route
           path="/components"
           element={<Components elements={ComponentElements} />}

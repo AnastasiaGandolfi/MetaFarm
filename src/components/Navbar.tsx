@@ -28,8 +28,8 @@ export function Navbar() {
           ]}
         />
         <a className="text-button" href="/create">Create</a> |
-        <a className="text-button" href="/login">Accedi</a>
-        <button className="register">Registrati</button> |
+        <a className="text-button" href="/login">Sign in</a>
+        <button className="register">Sign up</button> |
         <SelectLanguage/>
         <CartModal/>
       </div>

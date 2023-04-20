@@ -45,28 +45,42 @@ body {
 .text-head {
   font-size: 50px;
   font-weight: 600;
-  color: white; }
+
+
+  color: #FFFFFF; }
+
+
 
 .text-subtle {
   font-size: 20px;
   font-weight: 600;
-  color: white; }
+
+  color: #FFFFFF;
+}
+
 
 .text-button {
   font-size: 16px;
   font-weight: 600;
-  color: white; }
+
+  color: #FFFFFF; }
+
 
 .text-uppercase-button {
   font-size: 16px;
   font-weight: 700;
-  color: white;
+
+  color: #FFFFFF;
+
   text-transform: uppercase; }
 
 .text-collection-name {
   font-size: 29px;
   font-weight: 700;
-  color: white; }
+
+  color: #FFFFFF; }
+
+
 
 .text-author-name {
   font-size: 18px;
@@ -81,14 +95,20 @@ body {
 .text-bigger-subtle {
   font-size: 29px;
   font-weight: 400;
-  color: white; }
+
+  color: #FFFFFF; }
+
 
 .text-link {
   text-decoration: none; }
 
 .text-brand {
   font-size: 16px;
-  color: white; }
+
+
+
+  color: #FFFFFF; }
+
 
 .text-volume {
   font-size: 14px;
@@ -777,9 +797,15 @@ button.pill-dropdown {
   display: flex;
   background-color: #239C82;
   height: 100%;
+  max-height: 100px;
   width: 100%;
+
   max-height: 100px;
   position: fixed;
+
+  position: fixed;
+  z-index: 1000;
+
   top: 0;
   left: 0;
   align-items: center;

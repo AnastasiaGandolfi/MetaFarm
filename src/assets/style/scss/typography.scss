@@ -12,32 +12,32 @@ body {
 .text-head {
     font-size: 50px;
     font-weight: 600;
-    color: white;
+    color: $white;
 }
 
 .text-subtle {
     font-size: 20px;
     font-weight: 600;
-    color: white;
+    color: $white;
 }
 
 .text-button {
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: $white;
 }
 
 .text-uppercase-button {
     font-size: 16px;
     font-weight: 700;
-    color: white;
+    color: $white;
     text-transform: uppercase;
 }
 
 .text-collection-name {
     font-size: 29px;
     font-weight: 700;
-    color: white;
+    color: $white;
 }
 
 .text-author-name {
@@ -49,13 +49,13 @@ body {
 .text-small {
     font-size: 14px;
     font-weight: normal;
-    color: white;
+    color: $white;
 }
 
 .text-bigger-subtle {
     font-size: 29px;
     font-weight: 400;
-    color: white;
+    color: $white;
 }
 
 .text-link {
@@ -64,7 +64,7 @@ body {
 
 .text-brand {
     font-size: 16px;
-    color: white;
+    color: $white;
 }
 
 .text-volume {
