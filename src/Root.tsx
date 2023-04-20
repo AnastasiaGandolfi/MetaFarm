@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { App } from "./App";
 import { Test } from "./Test";
+import { HomePage } from "./pages/HomePage";
 import { Components } from "./pages/Components";
+
 import Typography from "./components/Typography";
 import { Palette } from "./components/Palette";
 import { Button } from "./components/Button";
@@ -33,7 +35,11 @@ import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
 import  HeroCard, { CardProps } from "./components/HeroCard";
 import CarouselS from "./components/CarouselS"
+
+
+
 import { About } from "./pages/About";
+
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
   <CardBrandLogo name="azienda 2" src="" />,
@@ -288,7 +294,11 @@ export function Root() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<Test />} />
+
+        <Route path="/home" element={<HomePage />} />
+
         <Route path="/about" element={<About />} />
+
         <Route
           path="/components"
           element={<Components elements={ComponentElements} />}
