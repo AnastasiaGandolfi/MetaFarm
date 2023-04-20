@@ -34,7 +34,9 @@ import { Carousel } from "./components/Carousel";
 import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
 import  HeroCard, { CardProps } from "./components/HeroCard";
-import CarouselS from "./components/CarouselS"
+import CarouselS from "./components/CarouselS";
+import { ComponentBestCollection } from "./components/ComponentBestCollection";
+
 
 
 
@@ -262,6 +264,8 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   {
     element: <HeroCard date ="Mon, April 17 " title ="Card title" subtitle="Subtitle"/>, title: "HeroCard",
   },
+  { element: <ComponentBestCollection />, title: "Best Collection" },
+
 ]
   const cards: CardProps[] = [
     { date: 'Mon,April 17', title: 'Card 1', subtitle: 'Subtitle for card 1' },
