@@ -38,6 +38,7 @@ import CarouselS from "./components/CarouselS";
 import { ComponentBestCollection } from "./components/ComponentBestCollection";
 import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
+import Filter from "./components/Filter";
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -269,6 +270,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     title: "HeroCard",
   },
   { element: <ComponentBestCollection />, title: "Best Collection" },
+  { element: <Filter />, title: "Filter" },
 ];
 const cards: CardProps[] = [
   { date: "Mon,April 17", title: "Card 1", subtitle: "Subtitle for card 1" },
