@@ -57,7 +57,16 @@
     color: $darkgreen;
   }
 }
-
+.css-uvoz8d {
+  box-sizing: border-box;
+  margin: 0px 0px 0px 8px;
+  line-height: 1.3em;
+  color: $black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  font-weight: normal;
+}
 @keyframes rotateMenu {
   0% {
     transform: rotateX(-90deg);
