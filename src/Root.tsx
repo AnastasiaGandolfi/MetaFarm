@@ -33,13 +33,10 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { Carousel } from "./components/Carousel";
 import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
-import  HeroCard, { CardProps } from "./components/HeroCard";
+import HeroCard, { CardProps } from "./components/HeroCard";
 import CarouselS from "./components/CarouselS";
 import { ComponentBestCollection } from "./components/ComponentBestCollection";
-
-
-
-
+import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
 
 const cardArray: JSX.Element[] = [
@@ -236,16 +233,20 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     element: <Navbar />,
     title: "Navbar",
   },
-  { element: <CardBestCollection
-    position={1}
-    smallImage={smallImage}
-    title="Otherdeed for Otherside"
-    floorPrice="$2.7K"
-    floorPercentage="+23.03%"
-    volumePrice="$7.6M"
-    volumePercentage="-41.27%"
-
- />, title:"Card Best Collection", },
+  {
+    element: (
+      <CardBestCollection
+        position={1}
+        smallImage={smallImage}
+        title="Otherdeed for Otherside"
+        floorPrice="$2.7K"
+        floorPercentage="+23.03%"
+        volumePrice="$7.6M"
+        volumePercentage="-41.27%"
+      />
+    ),
+    title: "Card Best Collection",
+  },
 
   {
     element: (
@@ -262,22 +263,24 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     title: "Card Best Collection",
   },
   {
-    element: <HeroCard date ="Mon, April 17 " title ="Card title" subtitle="Subtitle"/>, title: "HeroCard",
+    element: (
+      <HeroCard date="Mon, April 17 " title="Card title" subtitle="Subtitle" />
+    ),
+    title: "HeroCard",
   },
   { element: <ComponentBestCollection />, title: "Best Collection" },
+];
+const cards: CardProps[] = [
+  { date: "Mon,April 17", title: "Card 1", subtitle: "Subtitle for card 1" },
+  { date: "Mon,April 17", title: "Card 2", subtitle: "Subtitle for card 2" },
+  { date: "Mon,April 17", title: "Card 3", subtitle: "Subtitle for card 3" },
+  { date: "Mon,April 17", title: "Card 4", subtitle: "Subtitle for card 4" },
+];
 
-]
-  const cards: CardProps[] = [
-    { date: 'Mon,April 17', title: 'Card 1', subtitle: 'Subtitle for card 1' },
-    { date: 'Mon,April 17', title: 'Card 2', subtitle: 'Subtitle for card 2' },
-    { date: 'Mon,April 17', title: 'Card 3', subtitle: 'Subtitle for card 3' },
-    { date: 'Mon,April 17', title: 'Card 4', subtitle: 'Subtitle for card 4' },
-  ];
-
-  const carouselElement = {
-    element: <CarouselS cards={cards} />,
-    title: 'CarouselS',
-  };
+const carouselElement = {
+  element: <CarouselS cards={cards} />,
+  title: "CarouselS",
+};
 
 export function Root() {
   return (
@@ -293,7 +296,7 @@ export function Root() {
           <Nav.Link href="/about" eventKey="link-2">About</Nav.Link>
         </Nav.Item>
       </Nav> */}
-        <Navbar />
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<App />} />
@@ -307,6 +310,7 @@ export function Root() {
           path="/components"
           element={<Components elements={ComponentElements} />}
         />
+        <Route path="/sinlge-nft-page" element={<NftPage />} />
       </Routes>
     </BrowserRouter>
   );
