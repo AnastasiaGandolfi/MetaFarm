@@ -2425,6 +2425,10 @@ body {
   background-size: cover;
   display: flex; }
 
+.filter-bc-section-container {
+  display: flex;
+  flex-wrap: wrap; }
+
 .components-container {
   background: #1D2D2B;
   height: 100%;

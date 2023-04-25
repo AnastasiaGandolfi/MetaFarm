@@ -39,6 +39,7 @@ import { ComponentBestCollection } from "./components/ComponentBestCollection";
 import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
 import Filter from "./components/Filter";
+import Marketplace from "./components/Marketplace";
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -302,6 +303,7 @@ export function Root() {
 
       <Routes>
         <Route path="/" element={<App />} />
+
         <Route path="/test" element={<Test />} />
 
         <Route path="/home" element={<HomePage />} />
@@ -312,7 +314,9 @@ export function Root() {
           path="/components"
           element={<Components elements={ComponentElements} />}
         />
-        <Route path="/sinlge-nft-page" element={<NftPage />} />
+        <Route path="/single-nft-page" element={<NftPage />} />
+        
+        <Route path="/marketplace" element={<Marketplace />} />
       </Routes>
     </BrowserRouter>
   );
