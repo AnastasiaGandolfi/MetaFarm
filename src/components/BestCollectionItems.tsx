@@ -280,7 +280,7 @@ export function BestCollectionItems(): JSX.Element {
       <h1 className="best-collection-title">Best Collection Items</h1>
       <div className="button-container-collection">
         <div className="sort-by">
-          <p style={{ color: "black", fontSize: "24px" }}>Sort by</p>
+          <p style={{ color: "white", fontSize: "24px" }}>Sort by</p>
           <ButtonDropdown
             type="pill-dropdown"
             text={<span>Sales Volume</span>}
