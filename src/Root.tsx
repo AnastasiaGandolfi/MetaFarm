@@ -41,6 +41,9 @@ import { About } from "./pages/About";
 import Filter from "./components/Filter";
 import Marketplace from "./components/Marketplace";
 import  Signup  from './pages/Signup'
+import CreatorPage from "./pages/CreatorPage";
+import original from "../src/assets/images/original.png";
+import iconcreator from"../src/assets/images/icon-creator.jpeg";
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -319,6 +322,10 @@ export function Root() {
         
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/CreatorPage" element={<CreatorPage image={original} icon={iconcreator} name="Otherdeed for Otherside"
+                                                         collectibles={29993} owners={8} floorprice="2.3K" volumetraded="1.1B"
+                                                         description="this is the description of the creator" /> }/>
+
       </Routes>
     </BrowserRouter>
   );

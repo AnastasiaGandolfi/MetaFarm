@@ -1,0 +1,97 @@
+.image-creator{
+    width: 100%;
+    height: 400px;
+}
+.container-icon-creator{
+display: flex;
+justify-content: center;
+
+.icon-creator{
+    border-radius: 50%;
+    border: 7px solid $darkgreen;
+    position: relative;
+    bottom: 100px;
+}
+}
+.container-name-creator{
+display: flex;
+justify-content: center;
+margin-top: -60px;
+.verified-creator{
+    color:$darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+}
+
+.container-sub-icon{
+width: 72%;
+display: flex;
+justify-content: flex-end;
+.watchlist-icon-creator{
+    height: 28px;
+    width: 28px;
+}
+}
+
+.container-stats-creator{
+width: 42%;
+border-radius: 8px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+
+margin-top: 25px;
+background-color: $darkgreen;
+.collectibles-stats-contaiiner{
+margin-left: 30px;
+}
+.owners-stats-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.floor-price-stats-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 25px;
+
+.buy-now-p{
+    font-size: 12px;
+
+}
+
+}
+.volume-traded-stats-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: 30px;
+}
+}
+.container-description-creator{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+width:100%;
+margin-top: 30px;
+margin-bottom: 70px;
+}
+
+
+
+p{
+font-size: 18px;
+color:$light-green;
+}
