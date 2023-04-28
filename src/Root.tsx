@@ -40,6 +40,7 @@ import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
 import Filter from "./components/Filter";
 import Marketplace from "./components/Marketplace";
+import  Signup  from './pages/Signup'
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -317,6 +318,7 @@ export function Root() {
         <Route path="/single-nft-page" element={<NftPage />} />
         
         <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
