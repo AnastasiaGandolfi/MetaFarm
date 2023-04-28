@@ -43,10 +43,6 @@ export default function Filter() {
                                             <div className="title-container">
                                                 <div className="checkbox-wrapper checkbox-container">
                                                     <input type="checkbox" className="styles-checkbox" />
-                                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="styles-check-svg">
-                                                        <path d="M2 8.31579L5.5 12L12 2" stroke="white" stroke-width="3" stroke-linecap="round">
-                                                        </path>
-                                                    </svg>
                                                 </div>
                                                 <div className="filter-style">
                                                     <img src="https://media.nft.crypto.com/75c36624-6eb1-487f-aa5a-1de8c3b71538/original.jpeg" className="styles-img" />
@@ -64,15 +60,10 @@ export default function Filter() {
                                             <div className="title-container">
                                                 <div className="checkbox-wrapper checkbox-container">
                                                     <input type="checkbox" className="styles-checkbox" />
-                                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="styles_checkMark__pQ-r5">
-                                                        <path d="M2 8.31579L5.5 12L12 2" stroke="white" stroke-width="3" stroke-linecap="round">
-                                                        </path>
-                                                    </svg>
                                                 </div>
                                                 <div className="filter-style">
                                                     <img src="https://media.nft.crypto.com/77ffeae9-9666-4da9-9386-a87b73c2b6d7/original.png" className="styles-img" />
                                                 </div>
-                                                {/* SONO ARRIVATA QUI */}
                                                 <div className="collection-name" style={{ wordBreak: "break-all" }}>Bored Ape Yacht Club</div>
                                             </div>
                                             <div className="check-container">
@@ -86,10 +77,6 @@ export default function Filter() {
                                         <div className="title-container">
                                             <div className="checkbox-wrapper checkbox-container">
                                                 <input type="checkbox" className="styles-checkbox" />
-                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="styles_checkMark__pQ-r5">
-                                                    <path d="M2 8.31579L5.5 12L12 2" stroke="white" stroke-width="3" stroke-linecap="round">
-                                                    </path>
-                                                </svg>
                                             </div>
                                             <div className="filter-style">
                                                 <img src="https://media.nft.crypto.com/5d705f0f-8553-41cc-babb-973e96dc86d8/original.jpeg" className="styles-img" />
@@ -98,7 +85,7 @@ export default function Filter() {
                                         </div>
                                         <div className="check-container">
                                             <span className="icon-card">
-                                                < BsFillPatchCheckFill />
+                                                <BsFillPatchCheckFill />
                                             </span>
                                         </div>
                                     </label>
@@ -106,10 +93,6 @@ export default function Filter() {
                                         <div className="title-container">
                                             <div className="checkbox-wrapper checkbox-container">
                                                 <input type="checkbox" className="styles-checkbox" />
-                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="styles_checkMark__pQ-r5">
-                                                    <path d="M2 8.31579L5.5 12L12 2" stroke="white" stroke-width="3" stroke-linecap="round">
-                                                    </path>
-                                                </svg>
                                             </div>
                                             <div className="filter-style">
                                                 <img src="https://media.nft.crypto.com/20ffa91a-45e3-4235-bc8e-4a72adf9d039/original.png" className="styles-img" />
@@ -127,10 +110,6 @@ export default function Filter() {
                                         <div className="title-container">
                                             <div className="checkbox-wrapper checkbox-container">
                                                 <input type="checkbox" className="styles-checkbox" />
-                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="styles_checkMark__pQ-r5">
-                                                    <path d="M2 8.31579L5.5 12L12 2" stroke="white" stroke-width="3" stroke-linecap="round">
-                                                    </path>
-                                                </svg>
                                             </div>
                                             <div className="filter-style">
                                                 <img src="https://media.nft.crypto.com/6b32b537-c7a7-4820-a640-e39576aa8508/original.png" className="styles-img" />
@@ -148,10 +127,6 @@ export default function Filter() {
                                         <div className="title-container">
                                             <div className="checkbox-wrapper checkbox-container">
                                                 <input type="checkbox" className="styles-checkbox" />
-                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="styles_checkMark__pQ-r5">
-                                                    <path d="M2 8.31579L5.5 12L12 2" stroke="white" stroke-width="3" stroke-linecap="round">
-                                                    </path>
-                                                </svg>
                                             </div>
                                             <div className="filter-style">
                                                 <img src="https://media.nft.crypto.com/ad95ecc9-6d0a-4a97-bf21-2e1cf9747a93/original.jpeg" className="styles-img" />
