@@ -77,13 +77,21 @@ export function NftInfo({ elementArray }: { elementArray: Array<string> }) {
   ) => {
     setValue(newValue);
   };
+
+  function toggleActiveStyles(indexActtive: Number) {
+    if (value === indexActtive) {
+      return "nft-details-tab-active";
+    } else {
+      return "nft-details-tab";
+    }
+  }
   return (
     <div>
       <div className="css-1xm42rb">
         <div className="tabs-tabs">
           {elementArray.map((element, index) => (
             <div
-              className="nft-details-tab"
+              className={toggleActiveStyles(index)}
               onClick={(event) => handleChange(event, index)}
             >
               <div className="css-15clvx7" key={index}>

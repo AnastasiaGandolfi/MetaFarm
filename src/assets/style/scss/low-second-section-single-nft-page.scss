@@ -1,0 +1,492 @@
+body {
+  background-color: $white;
+}
+.css-1xifris {
+  box-sizing: border-box;
+  margin: 0px;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  .all-container {
+    max-width: 1272px;
+    padding-top: 153px;
+    padding-left: 128px;
+    padding-right: 128px;
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-flex: 1;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .page-container {
+      flex-direction: column;
+      box-sizing: border-box;
+      margin: 0px 0px 24px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      .section-container {
+        box-sizing: border-box;
+        margin: 0px 0px 24px;
+        flex-direction: row;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        .statistic-container {
+          width: 60%;
+          margin-left: 48px;
+          box-sizing: border-box;
+          flex-direction: column;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          .top-statistic-container {
+            box-sizing: border-box;
+            margin: 0px;
+            flex-direction: column;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            .css-xmzy0r {
+              margin-top: 8px;
+              box-sizing: border-box;
+              margin: 24px 0px 0px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              .css-v0b2st {
+                box-sizing: border-box;
+                margin: 0px;
+                height: 22px;
+                width: 100%;
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                .button-ratio {
+                  align-items: center;
+                  background: $white;
+                  border: 1px solid $darkgreen;
+                  border-radius: 8px;
+                  color: $darkgreen;
+                  font-size: 12px;
+                  font-weight: 500;
+                  display: flex;
+                  gap: 4px;
+                  justify-content: center;
+                  line-height: 14px;
+                  padding: 6px 8px;
+                  white-space: nowrap;
+                  .css-dhk0gj {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    font-size: 24px;
+                    display: inline-flex;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    align-items: center;
+                  }
+                }
+              }
+            }
+            .css-1xkdge7 {
+              box-sizing: border-box;
+              margin: 24px 0px 8px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: flex;
+              align-items: center;
+              .nft-summary {
+                color: $black;
+                font-size: 29px;
+                font-weight: 700;
+                margin-right: 8px;
+                overflow-wrap: anywhere;
+              }
+              .css-9h7yvd {
+                margin: 0px;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex: 0 0 auto;
+                text-align: center;
+                border: 1px solid $darkgreen;
+                box-sizing: border-box;
+                border-radius: 30px;
+                min-width: 45px;
+                padding: 6px 8px;
+                height: fit-content;
+                .css-1cufir3 {
+                  box-sizing: border-box;
+                  margin: 0px;
+                  line-height: 1.3em;
+                  color: $darkgreen;
+                  width: 100%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+              }
+            }
+            .css-j9au5h {
+              box-sizing: border-box;
+              margin: 0px;
+              -webkit-box-pack: justify;
+              justify-content: space-between;
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: flex;
+              .css-17kuy89 {
+                box-sizing: border-box;
+                margin: 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                .css-14xuj6k {
+                  display: flex;
+                  -webkit-box-align: center;
+                  align-items: center;
+                  .css-1otewz {
+                    .css-15o39v9 {
+                      box-sizing: border-box;
+                      margin: 0px;
+                      line-height: 1.3em;
+                      color: $black;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      font-size: 16px;
+                      font-weight: normal;
+                    }
+                  }
+                  .css-1otewz {
+                    .css-4z733i {
+                      box-sizing: border-box;
+                      margin: 0px;
+                      line-height: 1.3em;
+                      color: $black;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      font-size: 29px;
+                      font-weight: 600;
+                    }
+                  }
+                }
+              }
+              .price-allert {
+                background: 0 0;
+                border: 0;
+                cursor: pointer;
+                height: 28px;
+                padding: 0;
+              }
+            }
+            .css-et2jx0 {
+              box-sizing: border-box;
+              margin: 0px;
+              flex-direction: column;
+              width: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: flex;
+              .nft-detail-container {
+                font-size: 16px;
+                line-height: 22px;
+                .css-1ropvg2 p {
+                  overflow-wrap: anywhere;
+                  white-space: pre-wrap;
+                  display: block;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                }
+              }
+              .nft-detail-container-tags {
+                display: flex;
+                margin: 16px 0;
+                overflow: auto;
+                .single-tag-detail {
+                  padding-right: 10px;
+                  .single-tag {
+                    border: 1px solid $darkgreen;
+                    border-radius: 4px;
+                    color: $darkgreen;
+                    padding: 10px 5px;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+            }
+          }
+          .css-znm2i9 {
+            box-sizing: border-box;
+            margin: 16px 0px 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .css-1xm42rb {
+              flex-direction: row;
+              align-items: flex-start;
+              box-sizing: border-box;
+              margin: 0px;
+              -webkit-box-align: unset;
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: flex;
+              .tabs-tabs {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                overflow: auto;
+                margin-bottom: 32px;
+                .nft-details-tab-active {
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 22px;
+                  background-image: linear-gradient(
+                    90deg,
+                    $darkgreen,
+                    $mid-green
+                  );
+                  background-position: 0 100%;
+                  background-repeat: no-repeat;
+                  background-size: 100% 3px;
+                  margin-right: 46px;
+                  align-items: center;
+                  color: #000;
+                  cursor: pointer;
+                  display: flex;
+                  flex-direction: row;
+                  height: 100%;
+                  justify-content: center;
+                  padding-bottom: 16px;
+                  .css-15clvx7 {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    line-height: 1.3em;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    font-size: 16px;
+                    font-weight: 600;
+                  }
+                }
+                .nft-details-tab {
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 22px;
+                  background-position: 0 100%;
+                  background-repeat: no-repeat;
+                  background-size: 100% 3px;
+                  margin-right: 46px;
+                  align-items: center;
+                  color: #000;
+                  cursor: pointer;
+                  display: flex;
+                  flex-direction: row;
+                  height: 100%;
+                  justify-content: center;
+                  padding-bottom: 16px;
+                  .css-15clvx7 {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    line-height: 1.3em;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    font-size: 16px;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+            .owner-list {
+              display: flex;
+              flex-direction: column;
+              padding-bottom: 8px;
+              margin-bottom: 10px;
+              border-bottom: 1px solid rgb(227, 227, 227);
+              .owner-tab-container {
+                display: grid;
+                grid-template-columns: 70% 30%;
+                width: 100%;
+                .user-profile-container {
+                  width: 100%;
+                  align-items: center;
+                  display: flex;
+                  flex-direction: row;
+                  .user-profile-link {
+                    color: #000;
+                    cursor: pointer;
+                    text-decoration: none;
+                    background-color: transparent;
+                    .css-wpyvqd {
+                      box-sizing: border-box;
+                      margin: 0px;
+                      padding-right: 8px;
+                      height: 40px;
+                      position: relative;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      .css-12pdu1u {
+                        box-sizing: border-box;
+                        margin: 0px;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 40px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        .owner-image {
+                          box-sizing: border-box;
+                          margin: 0px;
+                          width: 40px;
+                          height: 40px;
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          border-radius: 50%;
+                          object-fit: cover;
+                          text-indent: -10000px;
+                        }
+                      }
+                    }
+                  }
+                  .user-profile {
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    white-space: normal;
+                    word-break: break-all;
+                    margin-left: 8px;
+                    .user-profile-title {
+                      color: #626973;
+                      display: flex;
+                      font-size: 14px;
+                      justify-content: flex-start;
+                      line-height: 21px;
+                      white-space: normal;
+                      word-break: break-all;
+                    }
+                    .wallet-container {
+                      display: flex;
+                      .user-name-container {
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        white-space: normal;
+                        word-break: break-all;
+                        .user-profile-link {
+                          color: #000;
+                          cursor: pointer;
+                          text-decoration: none;
+                          .user-profile-name {
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            display: -webkit-box;
+                            overflow: hidden;
+                            white-space: normal;
+                            word-break: break-all;
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 22px;
+                            text-overflow: ellipsis;
+                            cursor: pointer;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .css-1tfcze1 {
+                  box-sizing: border-box;
+                  margin: 0px;
+                  flex-direction: row;
+                  -webkit-box-align: center;
+                  align-items: center;
+                  -webkit-box-pack: justify;
+                  justify-content: space-between;
+                  flex: 0 0 30%;
+                  overflow: hidden;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  display: flex;
+                  .css-1wiov8 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    box-sizing: border-box;
+                    margin: 0px 8px 0px 0px;
+                    line-height: 1.3em;
+                    color: rgb(98, 105, 115);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    font-size: 16px;
+                    font-weight: normal;
+                  }
+                  .css-84wpv7 {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  }
+                  a {
+                    text-decoration: none;
+                    color: $black;
+                    margin-left: 70px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: normal;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes growDown {
+  0% {
+    transform: scaleX(0);
+  }
+  80% {
+    transform: scaleX(1.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
