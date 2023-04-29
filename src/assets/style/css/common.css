@@ -2436,10 +2436,6 @@ body {
   width: 100%; }
 
 
-   /* .navbar {
-    display: none;
-  } 
-   */
   /* Login container */
 .login-container {
   position: relative; 
@@ -2525,6 +2521,9 @@ label {
 .btn-primary:hover {
   background-color: #239c82cc;
 }
+.btn-primary:active{
+  background-color:#239c82cc;
+}
 
 .select-language-container {
     position: absolute;
@@ -2596,19 +2595,8 @@ label {
   font-size: 15px
  }
 
-.image-green {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.image-green img {
-  width: 100%;
-  height: auto;
-}
 .right-section {
-  background-size: cover;
-  background-position: center center;
+  color: #DBF0EC;
   padding: 50px;
   position: absolute;
   top: 0;
@@ -2618,18 +2606,26 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right top, #1d2d2b, #214741, #226257, #227e6d, #239c82);
+   background-image: linear-gradient(to right top, #1d2d2b, #214741, #226257, #227e6d, #239c82); 
 }
+.icon-svg{
+  width: 24px;
+  height: 24px;
+   margin-right: 10px;
 
+}
 .title-right{
  text-align: start;
  font-size: 40px;
+ padding-bottom:30px;
 
 }
 .subtitle-right {
+  line-height: 1.5;
   margin-left: 10px;
   font-size: 20px;
 }
+
 .next{
   color: #FFFFFF;
   padding-top: 10px;
