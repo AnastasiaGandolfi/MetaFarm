@@ -3,9 +3,15 @@ import { InputSearch } from "./InputSearch";
 import { NavbarDropdownButton } from "./NavbarDropdownButton";
 import {CartModal} from "./CartModal";
 import SelectLanguage from "./SelectLanguage";
+import { useLocation } from 'react-router-dom';
+
 
 export function Navbar() {
-
+  const location = useLocation();
+  if (location.pathname === '/signup') {
+    return null; 
+  }
+ 
 
   return (
     <div className="navbar">
