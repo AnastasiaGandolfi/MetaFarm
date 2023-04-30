@@ -1,3 +1,4 @@
+
 .login-container {
   position: relative;
   display: flex;
@@ -5,21 +6,23 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-//   background-color: $darkgreen;
-background: rgb(35,156,130);
-background: radial-gradient(circle, rgba(35,156,130,1) 4%, rgba(29,45,43,1) 56%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, #239c82 4%, #1d2d2b 56%, #000000 100%);
 }
+
+
 form {
   background-color: $cyan-blue;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px #0000001a;
   padding: 50px;
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
   position: relative;
   right: calc((100% - 500px) / 2 - 300px);
+  
 }
+
+
 h1 {
   font-size: 36px;
   font-weight: 500;
@@ -158,22 +161,89 @@ label {
     #227e6d,
     #239c82
   );
+  /* new code */
+  overflow: hidden;
 }
 
+.right-section .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 600px;
+}
+
+.right-section .line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 75%,
+      #ffffff 100%
+    );
+    animation: drop 5s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+
+  &:nth-child(1) {
+    margin-left: -25%;
+
+    &::after {
+      animation-delay: 2s;
+    }
+  }
+
+  &:nth-child(3) {
+    margin-left: 25%;
+
+    &::after {
+      animation-delay: 2.5s;
+    }
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+
 .title-right {
+  text-shadow: rgba(10,206,150,1) 0px 0px 120px;
   display: inline-block;
   vertical-align: middle;
   font-size: 40px;
 }
-.icon-svg {
-	margin-right: 1rem; 
-}
+
 .subtitle-right {
   line-height: 1.5;
   font-size: 20px;
 }
 .text-right {
   color: $white;
+  margin-left: 20px;
 }
 .next {
   color: $white;
@@ -184,8 +254,3 @@ label {
   }
 }
 
-.password-error {
-	color: red;
-  font-size: 14px;
-  padding-bottom:20px;
-}

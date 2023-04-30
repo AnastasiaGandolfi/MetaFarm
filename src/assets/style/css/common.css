@@ -2624,13 +2624,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #239c82;
-  background: radial-gradient(circle, #239c82 4%, #1d2d2b 56%, black 100%); }
+  background: radial-gradient(circle, #239c82 4%, #1d2d2b 56%, #000000 100%); }
 
 form {
   background-color: #2A2D33;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px #0000001a;
   padding: 50px;
   max-width: 500px;
   width: 100%;
@@ -2762,22 +2760,67 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right top, #1d2d2b, #214741, #226257, #227e6d, #239c82); }
+  background-image: linear-gradient(to right top, #1d2d2b, #214741, #226257, #227e6d, #239c82);
+  /* new code */
+  overflow: hidden; }
+
+.right-section .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 600px; }
+
+.right-section .line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden; }
+  .right-section .line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 5s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97); }
+  .right-section .line:nth-child(1) {
+    margin-left: -25%; }
+    .right-section .line:nth-child(1)::after {
+      animation-delay: 2s; }
+  .right-section .line:nth-child(3) {
+    margin-left: 25%; }
+    .right-section .line:nth-child(3)::after {
+      animation-delay: 2.5s; }
+
+@keyframes drop {
+  0% {
+    top: -50%; }
+  100% {
+    top: 110%; } }
 
 .title-right {
+  text-shadow: #0ace96 0px 0px 120px;
   display: inline-block;
   vertical-align: middle;
   font-size: 40px; }
-
-.icon-svg {
-  margin-right: 1rem; }
 
 .subtitle-right {
   line-height: 1.5;
   font-size: 20px; }
 
 .text-right {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin-left: 20px; }
 
 .next {
   color: #FFFFFF;
@@ -2785,11 +2828,6 @@ label {
   .next a {
     color: #239C82;
     text-decoration: none; }
-
-.password-error {
-  color: red;
-  font-size: 14px;
-  padding-bottom: 20px; }
 
 .image-creator {
   width: 100%;
