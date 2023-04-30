@@ -94,13 +94,13 @@ export function HomePage() {
               Subscribe for the latest news, drops & collectibles
             </h3>
             <FormField />
-            <p className="written-content">
+            <small className="written-content">
               After reading the Privacy Notice, you may subscribe for our
               newsletter to get special offers and occasional surveys delivered
               to your inbox. Unsubscribe at any time by clicking on the link in
               the email.
-            </p>
-            <CheckboxFormField />{" "}
+            </small>
+          
             <span className="written-content">
               By entering my email and subscribing I confirm and agree to the
               above.
