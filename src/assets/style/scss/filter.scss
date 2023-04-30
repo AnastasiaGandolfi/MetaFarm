@@ -1,0 +1,291 @@
+@mixin filter-container {
+    box-sizing: border-box;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin filters {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+@mixin title-container {
+    box-sizing: border-box;
+    margin: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+@mixin title {
+    line-height: 1.3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+@mixin title-row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-container {
+    @include filter-container;
+
+    .filter-panel-container {
+        display: flex;
+        box-sizing: border-box;
+        margin: 0px 24px 0px 0px;
+        flex-direction: column;
+        flex-shrink: 0;
+        padding-bottom: 72px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        left: 0;
+        user-select: none;
+
+        @media screen and (min-width: 992px) {
+            top: calc(110px);
+            height: calc((100vh - 74px) - 36px);
+            padding-top: 4px;
+            position: sticky;
+            width: 326px;
+            z-index: auto;
+            margin: 24px;
+
+        }
+
+        .filter-panel {
+            background-color: $darkgreen;
+            height: 100%;
+            position: sticky;
+            flex: 1 1;
+            overflow-y: auto;
+            width: 100%;
+
+            @media screen and (max-width: 992px) {
+                padding: 20px;
+            }
+
+            .filters {
+                @include filters();
+
+                @media screen and (min-width: 992px) {
+                    width: 322px;
+                }
+
+                .title-row {
+                    @include title-row;
+
+                    @media screen and (min-width: 992px) {
+                        padding: 10px 16px 10px 12px;
+                    }
+
+                    .title-container {
+                        @include title-container();
+
+                        .title {
+                            @include title;
+                        }
+                    }
+                }
+
+                .separator {
+                    align-items: center;
+                    display: flex;
+                    text-align: center;
+                }
+
+                .filter-card {
+                    flex-shrink: 0;
+                    @include filters;
+
+                    .title-row {
+                        @include title-row;
+
+                        .title {
+                            @include title;
+                            @media screen and (max-width: 992px) {
+                                padding: 10px 0px;
+                            }
+                        }
+                    }
+
+                    .filter-container {
+                        display: block;
+
+                        .search-bar-container {
+                            @include filters;
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            width: 100%;
+                            margin-bottom: 18px;
+                            cursor: pointer;
+
+                            @media screen and (min-width: 992px) {
+                                padding: 10px 16px 10px 12px;
+                            }
+
+                            .search-box {
+                                align-items: center;
+                                position: relative;
+                                width: 100%;
+
+                                .search-icon {
+                                    left: 12px;
+                                    position: absolute;
+                                    z-index: 1;
+                                }
+
+                                .form-field {
+                                    display: flex;
+                                    flex-direction: column;
+                                    position: relative;
+                                    width: 100%;
+
+                                    .input-container {
+                                        flex-direction: row;
+                                        width: 100%;
+
+                                        .prefix-container {
+                                            display: flex;
+                                            position: relative;
+                                            width: 100%;
+
+                                            .input-field-container {
+                                                position: relative;
+                                                width: 100%;
+
+                                                .form-field-input {
+                                                    box-sizing: border-box;
+                                                    width: 100%;
+                                                    overflow: visible;
+                                                    border: 1px solid $darkgreen;
+                                                    border-radius: 8px;
+                                                    padding: 13px 8px 13px 32px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .checkbox-row {
+                            align-items: center;
+                            display: flex;
+                        }
+
+                        .collection-row {
+                            justify-content: space-between;
+                        }
+
+                        .filter-row {
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: $white;
+                                color: $darkgreen;
+                            }
+
+                            @media screen and (min-width: 992px) {
+                                padding: 10px 16px 10px 12px;
+                            }
+
+                            .title-container {
+                                @include title-container;
+
+                                @media screen and (max-width: 992px) {
+                                    padding: 10px 16px 10px 12px;
+                                }
+
+                                .checkbox-wrapper {
+                                    cursor: pointer;
+                                    height: 24px;
+                                    position: relative;
+                                }
+
+                                .checkbox-container {
+                                    box-sizing: border-box;
+                                    margin: 0px 10px 0px 0px;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    display: flex;
+
+                                    .styles-checkbox {
+                                        background-color: $white;
+                                        border: 1px solid #e3e3e3;
+                                        border-radius: 4px;
+                                        height: 100%;
+                                        width: 24px;
+                                        box-sizing: border-box;
+                                        padding: 0;
+
+                                        .styles-check-svg {
+                                            height: 16px;
+                                            padding: 4px;
+                                            position: absolute;
+                                            width: 16px;
+                                        }
+                                    }
+                                }
+
+                                .styles-img {
+                                    box-sizing: border-box;
+                                    margin: 0px 10px 0px 0px;
+                                    width: 24px;
+                                    height: 24px;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+
+                                .collection-name {
+                                    line-height: 1.3em;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    -webkit-box-orient: vertical;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 1;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: normal;
+                                    box-sizing: border-box;
+                                    margin: 0px;
+                                }
+
+                                .check-container {
+                                    box-sizing: border-box;
+                                    margin: 0px 0px 0px 8px;
+                                    flex-shrink: 0;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.filter-style {
+    box-sizing: border-box;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
