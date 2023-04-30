@@ -92,8 +92,12 @@
     padding: 5rem;
     text-transform: uppercase;
     
+    h1{
+      color:#7AE19C;
+    }
+    
     .output {
-      color: rgba(128, 255, 128, 0.8);
+      color:#7AE19C;
       text-shadow:
           0 0 1px rgba(51, 255, 51, 0.4),
           0 0 2px rgba(255, 255, 255, 0.8);
@@ -141,3 +145,38 @@
   100% { transform: translateX(0); }
 }
   }
+
+.typing-demo {
+  width: 80ch;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.line-one {
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation-delay: 0s;
+}
+
+.line-two {
+  opacity: 0;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation-delay: 2s;
+}
+
+.line-three {
+  opacity: 0;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation-delay: 4s;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+} 

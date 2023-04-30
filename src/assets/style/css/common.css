@@ -3062,8 +3062,10 @@ img.four-image {
     max-width: 100%;
     padding: 5rem;
     text-transform: uppercase; }
+    .page-not-found-due .terminal h1 {
+      color: #7AE19C; }
     .page-not-found-due .terminal .output {
-      color: rgba(128, 255, 128, 0.8);
+      color: #7AE19C;
       text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8); }
       .page-not-found-due .terminal .output::before {
         content: "> "; }
@@ -3096,6 +3098,33 @@ img.four-image {
     transform: translateX(5px) rotate(2deg); }
   100% {
     transform: translateX(0); } }
+
+.typing-demo {
+  width: 80ch;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.line-one {
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation-delay: 0s; }
+
+.line-two {
+  opacity: 0;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation-delay: 2s; }
+
+.line-three {
+  opacity: 0;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 .introduction-section {
   display: flex;
