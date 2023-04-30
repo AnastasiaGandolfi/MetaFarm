@@ -1,0 +1,38 @@
+.introduction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-image {
+    max-width: 800px; 
+    height: auto; 
+  }
+  
+  .intro-text {
+    text-align: center;
+    margin-top: -100px; 
+    color: $white; 
+    font-size: 48px; 
+  }
+  
+  .intro-button {
+    margin-top: 20px;
+    background-color: $darkgreen; 
+    color: $white; 
+    border-radius: 16px; 
+    padding: 0px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 30px;
+    min-width: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .logo-image {
+        max-width: 100%;
+        margin-bottom: 20px; 
+        margin-top: 20px; 
+
+    }
+    
+  }
