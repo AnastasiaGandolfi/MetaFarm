@@ -1,0 +1,28 @@
+.page-not-found {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  
+    img {
+      width: 400px;
+      height: 400px;
+  
+    }
+  
+    .orange-image {
+      transform: rotate(15deg);
+    }
+  }
+  
+  .page-not-found-wrapper {
+   padding-top: 0; 
+
+    h1{
+  
+    color: orange; 
+    font-size: 58px;
+     
+    }
+  }

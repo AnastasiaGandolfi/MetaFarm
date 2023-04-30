@@ -3,6 +3,8 @@ import { App } from "./App";
 import { Test } from "./Test";
 import { HomePage } from "./pages/HomePage";
 import { Components } from "./pages/Components";
+import  PageNotFound  from "./pages/PageNotFound"; 
+import PageNotFoundDue from "./pages/PageNotFoundDue"; 
 
 import Typography from "./components/Typography";
 import { Palette } from "./components/Palette";
@@ -322,6 +324,8 @@ export function Root() {
         
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/page-not-found" element={<PageNotFoundDue />} />
+        <Route path="/pagenotfound" element={<PageNotFound />} />
         <Route path="/CreatorPage" element={<CreatorPage image={original} icon={iconcreator} name="Otherdeed for Otherside"
                                                          collectibles={29993} owners={8} floorprice="2.3K" volumetraded="1.1B"
                                                          description="this is the description of the creator" /> }/>

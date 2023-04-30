@@ -1,0 +1,77 @@
+.page-not-found-due{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  
+    img.four-image {
+      width: 300px; 
+      height: 300px;
+    }
+    
+    .pompelmo-image {
+      width: 500px;
+      height: 500px;
+      animation: bounce 1s infinite;
+    }
+    
+  }
+  
+  .page-not-found-wrapper {
+    margin-top: -50px; 
+    padding-top: 0; 
+  
+    h1 {
+      color: white; 
+      font-size: 48px; 
+    }
+  }
+  
+  .page-not-found-title-due {
+    color: white;
+    text-align: center;
+    font-size: 32px; 
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(-50px); }
+  }
+  
+  .pompelmo-image {
+    animation: bounce 1s infinite;
+  }
+  
+  .page-not-found-link {
+    color: white; 
+    text-decoration: none;
+  }
+  
+  .page-not-found-link:hover {
+    color: $darkgreen; 
+  }
+  
+  .go-back-button {
+    background-color: $darkgreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 100px; 
+  }
+  
+  .go-back-button:hover {
+    background-color: $pastel-green;
+  }
+  
