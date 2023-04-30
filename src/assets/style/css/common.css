@@ -2875,3 +2875,99 @@ p {
   height: 100%;
   color: white;
   width: 100%; }
+
+.page-not-found-due {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; }
+  .page-not-found-due img.four-image {
+    width: 300px;
+    height: 300px; }
+  .page-not-found-due .pompelmo-image {
+    width: 500px;
+    height: 500px;
+    animation: bounce 1s infinite; }
+
+.page-not-found-wrapper {
+  margin-top: -50px;
+  padding-top: 0; }
+  .page-not-found-wrapper h1 {
+    color: white;
+    font-size: 48px; }
+
+.page-not-found-title-due {
+  color: white;
+  text-align: center;
+  font-size: 32px; }
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50px); }
+  50% {
+    transform: translateX(50px); }
+  100% {
+    transform: translateX(-50px); } }
+
+.pompelmo-image {
+  animation: bounce 1s infinite; }
+
+.page-not-found-link {
+  color: white;
+  text-decoration: none; }
+
+.page-not-found-link:hover {
+  color: #239C82; }
+
+.go-back-button {
+  background-color: #239C82;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  margin-bottom: 100px; }
+
+.go-back-button:hover {
+  background-color: #DBF0EC; }
+
+.introduction-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.logo-image {
+  max-width: 800px;
+  height: auto; }
+
+.intro-text {
+  text-align: center;
+  margin-top: -100px;
+  color: #FFFFFF;
+  font-size: 48px; }
+
+.intro-button {
+  margin-top: 20px;
+  background-color: #239C82;
+  color: #FFFFFF;
+  border-radius: 16px;
+  padding: 0px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  min-width: 200px; }
+
+@media screen and (max-width: 768px) {
+  .logo-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px; } }

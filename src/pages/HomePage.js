@@ -5,6 +5,7 @@ import { CheckboxFormField } from "../components/CheckboxFormField";
 import CardBestAuthor from "../components/CardBestAuthor";
 import CardBrandLogo from "../components/CardBrandLogo";
 import { CardCollection } from "../components/CardCollection";
+import { IntroductionSection } from "../components/IntroductionSection";
 
 import CarouselS from "../components/CarouselS";
 import esempioImage from "../assets/images/esempio-image-card.avif";
@@ -79,6 +80,7 @@ export function HomePage() {
         <Navbar />
       </div>
       <div className="main-content">
+        <IntroductionSection />
         <div className="hero-card-home-wrapper">
           <h1 className="hero-title">Buy, sell, and showcase NFTS</h1>
           <h4 className="sub-title-home">from leading creators and brands</h4>

@@ -4,6 +4,8 @@ import { Test } from "./Test";
 import { HomePage } from "./pages/HomePage";
 import { Components } from "./pages/Components";
 
+import PageNotFoundDue from "./pages/PageNotFoundDue"; 
+
 import Typography from "./components/Typography";
 import { Palette } from "./components/Palette";
 import { Button } from "./components/Button";
@@ -11,6 +13,7 @@ import { BsCalendarWeekFill } from "react-icons/bs";
 import { CheckboxFormField } from "./components/CheckboxFormField";
 import { FormField } from "./components/FormField";
 import { Card } from "./components/Card";
+import { IntroductionSection } from "./components/IntroductionSection";
 import esempioImage from "../src/assets/images/esempio-image-card.avif";
 import smallImage from "../src/assets/images/small-image.avif";
 import Nav from "react-bootstrap/Nav";
@@ -130,6 +133,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   { element: <FormField />, title: "FormField" },
   { element: <InputSearch />, title: "InputSearch" },
+  { element: <IntroductionSection/>, title: "Intro" },
   {
     element: (
       <CardBrandLogo
@@ -322,6 +326,8 @@ export function Root() {
         
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/page-not-found" element={<PageNotFoundDue />} />
+        
         <Route path="/CreatorPage" element={<CreatorPage image={original} icon={iconcreator} name="Otherdeed for Otherside"
                                                          collectibles={29993} owners={8} floorprice="2.3K" volumetraded="1.1B"
                                                          description="this is the description of the creator" /> }/>
