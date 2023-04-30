@@ -1,8 +1,11 @@
 .container-top-collection{
     width: 1176px;
     height:100%;
+    margin-left:auto;
+      margin-right:auto;
    
     .container-card-best-collection{
+      
        display:flex;
        flex-direction: row;
        flex-wrap: wrap;

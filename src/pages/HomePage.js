@@ -14,6 +14,7 @@ import { BestCollectionItems } from "../components/BestCollectionItems";
 import { Footer } from "../components/Footer"; 
 import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
+import { ComponentBestCollection } from "../components/ComponentBestCollection";
 
 const cardArray = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -124,6 +125,7 @@ export function HomePage() {
 
         <div className="top-collection-section">
           <h1 className="top-collection-title"> Top Collection</h1>
+          <ComponentBestCollection />
         </div>
 
         <div className="top-creators-section">

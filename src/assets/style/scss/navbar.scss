@@ -1,21 +1,30 @@
 .navbar{
     display:flex;
+    flex-wrap: nowrap;
     background-color: $darkgreen;
     height: 100%;
     max-height:100px;
     width: 100%;
-
     max-height: 100px; 
     position: fixed; 
     top: 0; 
     left: 0; 
-
     z-index:1000;
-  
-
     align-items: center;
     padding: 20px 30px 20px 30px;
-    z-index: 999; 
+    z-index: 999;
+    .navbar-hamburger{
+        display:none;
+        @media (max-width: 1320px){
+            display:block;
+        }
+    }
+    .navbar-responsive{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:50px;
+    }
     .navbar-brand{
         display:flex;
         align-items: center;
@@ -27,6 +36,9 @@
         align-items: center;
         gap: 20px;
         color:$white;
+        @media (max-width: 1320px){
+            display:none;
+        }
         a{
             color: $white;
             text-decoration: none;
