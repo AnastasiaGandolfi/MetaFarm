@@ -751,6 +751,14 @@ button.pill-dropdown {
   justify-content: center;
   flex-wrap: wrap; }
 
+@media (max-width: 768px) {
+  .button-container-collection {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; } }
+
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -973,11 +981,18 @@ button.pill-dropdown {
   .hero-card-container .hero-button-down {
     margin: 40px 0 10px; }
 
-/* Aggiungi questo stile al tuo foglio di stile CSS */
+@media (max-width: 768px) {
+  .hero-card-container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    width: 768px; }
+  h2 {
+    font-size: 24px; } }
+
 body {
   background-color: #1D2D2B; }
 
-/* Modifica il margine superiore della hero-card-home-wrapper */
 .hero-card-home-wrapper {
   margin-top: 120px;
   display: flex;
@@ -996,7 +1011,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     height: auto;
-    width: 100%; } }
+    max-width: 100%; } }
 
 .form-field-container {
   position: relative; }
@@ -1034,7 +1049,6 @@ body {
   .sub-title-home {
     margin-bottom: 20px; }
   .written-content {
-    font-size: 1rem;
     line-height: 1.5;
     text-align: center; } }
 
@@ -1125,6 +1139,66 @@ body {
     margin-top: 40px;
     display: grid;
     place-items: center; }
+
+@media (max-width: 768px) {
+  .container-top-collection {
+    max-width: 100%; }
+    .container-top-collection .container-card-best-collection {
+      flex-direction: column;
+      align-items: center; }
+    .container-top-collection .button-container-top-collection {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    .container-top-collection .date-filters {
+      display: flex;
+      flex-direction: column; }
+    .container-top-collection .container-button-see-all-best-collection {
+      margin-top: 30px; } }
+
+@media (max-width: 768px) and (min-width: 768px) and (max-width: 992px) {
+  .container-top-collection {
+    max-width: 100%;
+    margin-left: 20px; }
+  .container-card-best-collection {
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto; }
+  .button-container-top-collection {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .date-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; }
+  .container-button-see-all-best-collection {
+    margin-top: 30px; } }
+
+@media (max-width: 768px) and (min-width: 992px) {
+  .container-top-collection {
+    width: 1176px;
+    margin-left: auto;
+    margin-right: auto; }
+  .container-card-best-collection {
+    flex-direction: row;
+    justify-content: space-between; }
+  .button-container-top-collection {
+    margin-top: 50px;
+    gap: 20px;
+    align-items: center; }
+  .date-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; }
+  .container-button-see-all-best-collection {
+    margin-top: 40px; } }
 
 .css-1xifris {
   box-sizing: border-box;
@@ -2971,3 +3045,14 @@ p {
     max-width: 100%;
     margin-bottom: 20px;
     margin-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .logo-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .intro-text {
+    text-align: center;
+    margin-top: -100px;
+    color: #FFFFFF;
+    font-size: 32px; } }

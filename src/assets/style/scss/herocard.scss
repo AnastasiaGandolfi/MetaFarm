@@ -40,3 +40,17 @@
     margin: 40px 0 10px;
   }
 }
+
+//responsive 
+@media (max-width: 768px) {
+  .hero-card-container {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  width: 768px; 
+  }
+  
+  h2 {
+  font-size: 24px;
+  }
+  }
