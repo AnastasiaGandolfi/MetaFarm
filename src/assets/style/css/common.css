@@ -2624,7 +2624,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #239C82; }
+  background: #239c82;
+  background: radial-gradient(circle, #239c82 4%, #1d2d2b 56%, black 100%); }
 
 form {
   background-color: #2A2D33;
@@ -2702,7 +2703,7 @@ label {
   padding-bottom: 20px; }
   .hide-navbar a {
     text-decoration: none;
-    color: #1D2D2B; }
+    color: #FFFFFF; }
   .hide-navbar::before {
     content: "";
     display: inline-block;
@@ -2710,24 +2711,21 @@ label {
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #1D2D2B;
+    border-right: 5px solid #FFFFFF;
     margin-right: 5px; }
 
 .footer-links {
   position: absolute;
-  bottom: 90px;
-  width: 100%;
+  bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
-  padding-right: 300px; }
+  padding-right: 15%; }
   .footer-links a {
     margin-right: 20px;
     margin-top: 25px;
-    margin-bottom: px;
-    color: #333;
+    color: #FFFFFF;
     font-size: 14px;
     text-decoration: none; }
 
@@ -2766,20 +2764,20 @@ label {
   justify-content: center;
   background-image: linear-gradient(to right top, #1d2d2b, #214741, #226257, #227e6d, #239c82); }
 
-.icon-svg {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px; }
-
 .title-right {
-  text-align: start;
-  font-size: 40px;
-  padding-bottom: 30px; }
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 40px; }
+
+.icon-svg {
+  margin-right: 1rem; }
 
 .subtitle-right {
   line-height: 1.5;
-  margin-left: 10px;
   font-size: 20px; }
+
+.text-right {
+  color: #FFFFFF; }
 
 .next {
   color: #FFFFFF;
@@ -2787,6 +2785,11 @@ label {
   .next a {
     color: #239C82;
     text-decoration: none; }
+
+.password-error {
+  color: red;
+  font-size: 14px;
+  padding-bottom: 20px; }
 
 .image-creator {
   width: 100%;
