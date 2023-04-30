@@ -13,6 +13,7 @@ import { BsCalendarWeekFill } from "react-icons/bs";
 import { CheckboxFormField } from "./components/CheckboxFormField";
 import { FormField } from "./components/FormField";
 import { Card } from "./components/Card";
+import { IntroductionSection } from "./components/IntroductionSection";
 import esempioImage from "../src/assets/images/esempio-image-card.avif";
 import smallImage from "../src/assets/images/small-image.avif";
 import Nav from "react-bootstrap/Nav";
@@ -132,6 +133,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   { element: <FormField />, title: "FormField" },
   { element: <InputSearch />, title: "InputSearch" },
+  { element: <IntroductionSection/>, title: "Intro" },
   {
     element: (
       <CardBrandLogo
