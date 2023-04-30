@@ -10,7 +10,7 @@ import { useLocation } from 'react-router-dom';
 
 export function Navbar() {
   const location = useLocation();
-  if (location.pathname === '/signup') {
+  if (location.pathname === '/signup' || location.pathname === '/page-not-found') {
     return null; 
   }
  

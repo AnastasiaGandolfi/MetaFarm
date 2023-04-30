@@ -1,77 +1,143 @@
-.page-not-found-due{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-  
-    img.four-image {
-      width: 300px; 
-      height: 300px;
-    }
-    
-    .pompelmo-image {
-      width: 500px;
-      height: 500px;
-      animation: bounce 1s infinite;
-    }
-    
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:70px;
+}
+  img.four-image {
+    width: 400px; 
+    height: 400px;
   }
-  
-  .page-not-found-wrapper {
-    margin-top: -50px; 
-    padding-top: 0; 
-  
-    h1 {
-      color: white; 
-      font-size: 48px; 
-    }
-  }
-  
-  .page-not-found-title-due {
-    color: white;
-    text-align: center;
-    font-size: 32px; 
-  }
-  
-  @keyframes bounce {
-    0% { transform: translateX(-50px); }
-    50% { transform: translateX(50px); }
-    100% { transform: translateX(-50px); }
-  }
-  
+
   .pompelmo-image {
-    animation: bounce 1s infinite;
+    width: 500px;
+    height: 500px;
+    animation: shake 0.3s ease-in-out infinite;
   }
   
-  .page-not-found-link {
-    color: white; 
+  .noise {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .02;
+  }
+  
+  .page-not-found-due {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #000000;
+    background-image: radial-gradient(#239c82cc,#041607);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inconsolata', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: rgba(128, 255, 128, 0.8);
+    text-shadow:
+      0 0 1ex rgba(51, 255, 51, 1),
+      0 0 2px rgba(255, 255, 255, 0.8);
+  
+    .overlay {
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        repeating-linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0) 100%);
+      background-size: auto 5px;
+      // z-index: 1;
+  
+      &::before {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          0deg,
+          transparent 0%,
+          rgba(32, 128, 32, 0.2) 2%,
+          rgba(32, 128, 32, 0.8) 3%,
+          rgba(32, 128, 32, 0.2) 3%,
+          transparent 100%);
+        background-repeat: no-repeat;
+        animation: scan 6.5s linear 0s infinite;
+      }
+    }
+  
+  .terminal {
+    box-sizing: inherit;
+    // position: absolute;
+    height: 100%;
+    width: 1000px;
+    max-width: 100%;
+    padding: 5rem;
+    text-transform: uppercase;
+    
+    .output {
+      color: rgba(128, 255, 128, 0.8);
+      text-shadow:
+          0 0 1px rgba(51, 255, 51, 0.4),
+          0 0 2px rgba(255, 255, 255, 0.8);
+          
+      &::before {
+        content: "> ";
+      }
+    }
+  }
+  a {
+    color: #fff;
     text-decoration: none;
   }
   
-  .page-not-found-link:hover {
-    color: $darkgreen; 
+  a::before {
+    content: "[";
   }
   
-  .go-back-button {
-    background-color: $darkgreen;
-    border: none;
+  a::after {
+    content: "]";
+  }
+  
+  .errorcode {
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin: 0 auto;
-    font-size: 24px;
-    width: 200px;
-    height: 60px;
-    border-radius: 30px;
-    margin-top: 30px;
-    cursor: pointer;
-    margin-bottom: 100px; 
   }
-  
-  .go-back-button:hover {
-    background-color: $pastel-green;
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
   }
-  
+  35% {
+    transform: translateY(100%);
+  }
+  70% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-2deg); }
+  75% { transform: translateX(5px) rotate(2deg); }
+  100% { transform: translateX(0); }
+}
+  }
