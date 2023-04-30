@@ -42,3 +42,14 @@
     justify-content: center; 
     flex-wrap: wrap;
 }
+
+
+@media (max-width: 768px) {
+  .button-container-collection{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
