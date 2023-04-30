@@ -36,3 +36,21 @@
     }
     
   }
+
+   //responsive 
+ @media screen and (max-width: 768px) {
+  .logo-image {
+      max-width: 100%;
+      margin-bottom: 20px; 
+      margin-top: 20px; 
+
+  }
+  .intro-text {
+    text-align: center;
+    margin-top: -100px; 
+    color: $white; 
+    font-size: 32px; 
+  }
+  
+  
+}
