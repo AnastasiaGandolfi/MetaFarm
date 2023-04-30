@@ -585,12 +585,12 @@ export function ComponentBestCollection(): JSX.Element {
         break;
     }
   }
-  return (
-    <div className="container-top-collection">
-      <h1 className="top-collection-title">Top Collection</h1>
+    return(
+        <div className="container-top-collection" style={{color:"white"}}>
+
       <div className="button-container-top-collection">
         <div className="sort-by">
-          <p style={{ color: "black", fontSize: "24px" }}>Sort by</p>
+          <p style={{ color: "white", fontSize: "24px" }}>Sort by</p>
           <ButtonDropdown
             type="pill-dropdown"
             text={<span>Sales Volume</span>}

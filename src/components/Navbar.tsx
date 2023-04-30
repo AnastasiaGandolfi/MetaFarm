@@ -1,8 +1,10 @@
 import logo from "../assets/img/leaves.png";
 import { InputSearch } from "./InputSearch";
-import { NavbarDropdownButton } from "./NavbarDropdownButton";
+import { FaHamburger } from "react-icons/fa";
 import {CartModal} from "./CartModal";
 import SelectLanguage from "./SelectLanguage";
+import { ButtonDropdown } from "./ButtonDropdown";
+import { NavbarModal } from "./NavbarModal";
 import { useLocation } from 'react-router-dom';
 
 
@@ -22,23 +24,24 @@ export function Navbar() {
       <div className="navbar-links">
         <a className="text-button" href="/marketPlace">MarketPlace</a>
         <a className="text-button" href="/drop">Drop</a>
-        <NavbarDropdownButton
-          type="navbar-dropdown text-button"
-          text="Top Collection"
-          elements={[
-            "Bored Ape Yacht Club",
-            "Otherdeed for Otherside",
-            "Doodles",
-            "Azuki",
-            "CLONE X - X TAKASHI MURAKAMI",
-          ]}
-        />
+        <ButtonDropdown
+        type="navbar-dropdown text-button"
+        text="Top Collection"
+        dropdownElement={[
+          "Bored Ape Yacht Club",
+          "Otherdeed for Otherside",
+          "Doodles",
+          "Azuki",
+          "CLONE X - X TAKASHI MURAKAMI",
+        ]}
+      />
         <a className="text-button" href="/create">Create</a> |
         <a className="text-button" href="/login">Sign in</a>
         <button className="register">Sign up</button> |
         <SelectLanguage/>
         <CartModal/>
       </div>
+        <NavbarModal/>
     </div>
   );
 }
