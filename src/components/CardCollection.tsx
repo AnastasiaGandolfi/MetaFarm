@@ -9,9 +9,9 @@ type CardImage = {
 export function CardCollection({ image, smallImage, paragraph }: CardImage) {
   return (
     <div className="card-collection-wrapper" style={{ margin: "10px" }}>
-      <img className="image-card-collection" src={image} />
+      <img className="image-card-collection" src={image} alt=""/>
       <div className="small-image-container">
-        <img className="small-image-collection" src={smallImage} />
+        <img className="small-image-collection" src={smallImage} alt=""/>
         <span>
           {" "}
           <p className="card-collection-title">{paragraph}</p>{" "}

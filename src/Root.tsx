@@ -60,13 +60,12 @@ const cardArray: JSX.Element[] = [
 ];
 
 const cardsBestAutor: JSX.Element[] = [
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />
 ];
 
 const cardsCollection: JSX.Element[] = [
@@ -202,7 +201,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     title: "Card-Collection",
   },
   {
-    element: <CardBestAuthor paragraph=" $2,000,000+ " />,
+    element: <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src=""/>,
     title: "card-best-author",
   },
   { element: <CartModal />, title: "Cart Modal" },

@@ -446,26 +446,26 @@ button.pill-dropdown {
 
 .image-card-collection {
   position: relative;
-  border-radius: 16px;
-  position: relative; }
+  border-radius: 16px; }
 
 .small-image-container {
   position: absolute;
   z-index: 1;
-  top: 300px;
+  bottom: 15px;
   display: flex;
   align-items: center;
-  height: 50px;
-  width: 50px; }
+  height: 40px;
+  width: 40px; }
   .small-image-container .small-image-collection {
     border-radius: 50%;
     margin-left: 20px; }
   .small-image-container .card-collection-title {
     color: #FFFFFF;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    margin-left: 20px; }
+    margin-left: 20px;
+    width: 100%; }
 
 .dropdown-cornice {
   animation: rotateMenu 800ms ease-in-out forwards;
@@ -1176,8 +1176,10 @@ button.pill-dropdown {
   height: 500px;
   box-shadow: 0 0 50px 10px #239C82; }
   .hero-card-container p {
-    color: #FFFFFF;
+    color: #ACE986;
     margin: 0 0 8px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.59);
     text-align: center; }
   .hero-card-container h2 {
     font-size: 30px;
@@ -1185,7 +1187,8 @@ button.pill-dropdown {
     text-align: center; }
   .hero-card-container h3 {
     text-align: center;
-    color: #FFFFFF;
+    color: #00d0ff;
+    font-weight: 800;
     font-size: 18px;
     font-weight: 500; }
   .hero-card-container .hero-button-up {

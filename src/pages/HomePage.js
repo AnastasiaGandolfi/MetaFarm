@@ -10,68 +10,98 @@ import esempioImage from "../assets/images/esempio-image-card.avif";
 import smallImage from "../assets/images/small-image.avif";
 import { Carousel } from "../components/Carousel";
 import { BestCollectionItems } from "../components/BestCollectionItems";
-import { Footer } from "../components/Footer"; 
+import { Footer } from "../components/Footer";
 import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { ComponentBestCollection } from "../components/ComponentBestCollection";
+import useSWR from "swr";
+import { useEffect, useState } from "react";
+const fetcher = (url) => fetch(url).then((result) => result.json());
 
-const cardArray = [
-  <CardBrandLogo name="azienda 1" src="" />,
-  <CardBrandLogo name="azienda 2" src="" />,
-  <CardBrandLogo name="azienda 3" src="" />,
-  <CardBrandLogo name="azienda 4" src="" />,
-  <CardBrandLogo name="azienda 5" src="" />,
-  <CardBrandLogo name="azienda 6" src="" />,
-];
+function useBrands() {
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5001/api/getBrands`,
+    fetcher
+  );
+  const [brands, setBrands] = useState([]);
+  return [data, error, isLoading, brands, setBrands];
+}
 
-const cardsBestAutor = [
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-];
+function useFeaturedCollections() {
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5001/api/getFeaturedCollections`,
+    fetcher
+  );
+  const [featuredCollections, setFeaturedCollections] = useState([]);
+  return [data, error, isLoading, featuredCollections, setFeaturedCollections];
+}
 
-const cardsCollection = [
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-  <CardCollection
-    image={esempioImage}
-    smallImage={smallImage}
-    paragraph="Otherdeed for Otherside"
-  />,
-];
+function useCreators() {
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5001/api/getTopCreators`,
+    fetcher
+  );
+  const [topCreators, setTopCreators] = useState([]);
+  return [data, error, isLoading, topCreators, setTopCreators];
+}
+
+const cardsBestAutor = [<CardBestAuthor paragraph=" $2,000,000+ " />];
+
 export function HomePage() {
+  const [dataBrands, errorBrands, isLoadingBrands, brands, setBrands] = useBrands();
+  const [
+    dataFeaturedCollections,
+    errorFeaturedCollections,
+    isLoadingFeatured,
+    featuredCollections,
+    setFeaturedCollections,
+  ] = useFeaturedCollections();
+
+  const [
+    dataTopCreators,
+    errorTopCreators,
+    isLoadingTopCreators,
+    topCreators,
+    setTopCreators,
+  ] = useCreators();
+
+  useEffect(() => {
+    const newBrands = [];
+    if (!isLoadingBrands) {
+      for (const brand of dataBrands) {
+        newBrands.push(<CardBrandLogo name={brand.name} src={brand.src} />);
+      }
+    }
+    setBrands(newBrands);
+  }, [isLoadingBrands]);
+
+  useEffect(() => {
+    const newCreators = [];
+    if (!isLoadingTopCreators) {
+      console.log(dataTopCreators)
+      for (const creator of dataTopCreators) {
+        newCreators.push(<CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} />);
+      }
+    }
+    setTopCreators(newCreators);
+  }, [isLoadingTopCreators]);
+
+  useEffect(() => {
+    const newCollections = [];
+    if (!isLoadingFeatured) {
+      for (const collection of dataFeaturedCollections) {
+        newCollections.push(
+          <CardCollection
+            image={collection.src}
+            smallImage={collection.small_src}
+            paragraph={collection.name}
+          />
+        );
+      }
+    }
+    setFeaturedCollections(newCollections);
+  }, [isLoadingFeatured]);
+
   return (
     <div>
       <div className="header">
@@ -100,7 +130,7 @@ export function HomePage() {
               to your inbox. Unsubscribe at any time by clicking on the link in
               the email.
             </small>
-          
+
             <span className="written-content">
               By entering my email and subscribing I confirm and agree to the
               above.
@@ -112,15 +142,15 @@ export function HomePage() {
           <div>
             <h1 className="brands-title">Brands</h1>
 
-            <Carousel elements={cardArray} display={4} />
+            <Carousel elements={brands} display={7} />
           </div>
         </div>
 
         <div className="feature-section">
           <div className="feature-title">
-            <h1 className="feature-title">Feature</h1>
+            <h1 className="feature-title">Featured collections</h1>
           </div>
-          <Carousel elements={cardsCollection} display={2} />
+          <Carousel elements={featuredCollections} display={5} />
         </div>
 
         <div className="top-collection-section">
@@ -131,32 +161,32 @@ export function HomePage() {
         <div className="top-creators-section">
           <div className="top-creator-title">
             <h1 className="top-creator-title">Top Creators</h1>
-            <Carousel elements={cardsBestAutor} display={3} />
+            <Carousel elements={topCreators} display={6} />
           </div>
         </div>
         <div className="best-collection-section">
           <div className="best-collection-title">
             <h1 className="best-collection-title"></h1>
-            
           </div>
-          < BestCollectionItems />
+          <BestCollectionItems />
         </div>
         <div className="footer-home">
-        <Footer
-        text="Copyright © 2023 Metafarm.com All rights reserved."
-        icons={[
-          <BsInstagram />,
-          <BsTwitter />,
-          <BsDiscord />,
-          <FaTelegramPlane />,
-        ]}
-        elements={[
-          "Help Center",
-          "Blog",
-          "T&C",
-          "Privacy Notice",
-          "Cookies Preference",
-        ]} />
+          <Footer
+            text="Copyright © 2023 Metafarm.com All rights reserved."
+            icons={[
+              <BsInstagram />,
+              <BsTwitter />,
+              <BsDiscord />,
+              <FaTelegramPlane />,
+            ]}
+            elements={[
+              "Help Center",
+              "Blog",
+              "T&C",
+              "Privacy Notice",
+              "Cookies Preference",
+            ]}
+          />
         </div>
       </div>
     </div>

@@ -13,8 +13,10 @@
 
 
   p {
-    color: #FFFFFF;
+    color: $light-green;
     margin: 0 0 8px;
+    font-weight:600;
+    background-color: rgba(0, 0, 0, 0.59);
     text-align: center;
   }
 
@@ -26,7 +28,8 @@
 
   h3 {
     text-align: center;
-    color: #FFFFFF;
+    color: rgb(0, 208, 255);
+    font-weight: 800;
     font-size: 18px;
     font-weight: 500;
   }

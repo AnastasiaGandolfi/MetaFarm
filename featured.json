@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Loaded Lions",
+        "src": "https://media.nft.crypto.com/c2171b65-de04-4863-83ca-62b027108e67/original.jpeg?d=lg-cover",
+        "small-src":"https://media.nft.crypto.com/273dc24c-5b5f-45d9-83d3-5db578bdce79/original.gif"
+    },
+    {
+        "name":"Cyber Cubs",
+        "src": "https://media.nft.crypto.com/9929f09f-235d-4fe0-b10a-a302e5de1105/original.jpeg?d=lg-cover",
+        "small-src":"https://media.nft.crypto.com/3b55fd06-9bbb-42a9-94ba-4c4b8f47dd6f/original.gif"
+    },
+    {
+        "name":"Crypto.com Land",
+        "src": "https://media.nft.crypto.com/20e22c4b-b15a-4bb1-8d62-ff561e861c29/original.png?d=lg-cover",
+        "small-src":"https://media.nft.crypto.com/d6e25381-a895-4a7a-8e89-0c91de162218/original.png?d=sm-logo"
+    },
+    {
+        "name":"VVS Miner Mole",
+        "src": "https://media.nft.crypto.com/57ec0796-09d6-4aa5-b83c-34721eec775b/original.jpg?d=lg-cover",
+        "small-src":"https://media.nft.crypto.com/ec0dda17-8099-4bd0-81ae-a1ad5f18630c/original.jpeg?d=sm-logo"
+    },
+    {
+        "name":"Otherdeed for Otherside",
+        "src": "https://media.nft.crypto.com/982a3246-943e-4538-bf44-dabbee93929c/original.jpeg?d=lg-cover",
+        "small-src":"https://media.nft.crypto.com/5d705f0f-8553-41cc-babb-973e96dc86d8/original.jpeg?d=sm-logo"
+    },
+    {
+        "name":"Pudgy Penguins",
+        "src": "https://media.nft.crypto.com/7e5bbf10-d793-45bd-a280-d0e0ed78c881/original.png?d=lg-cover",
+        "small-src":"https://media.nft.crypto.com/ca7abb7f-4e58-4015-854c-94e96cbdc9e6/original.png?d=sm-logo"
+    }
+]

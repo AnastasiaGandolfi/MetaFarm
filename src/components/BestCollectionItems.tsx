@@ -307,9 +307,9 @@ export function BestCollectionItems(): JSX.Element {
             text="Last 30 Days"
             handle={() => handleFilterClick(3)}
           />
-          <div className="switch-button-collection">
+          {/* <div className="switch-button-collection">
             <SwitchButton />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="card-container-collection">
