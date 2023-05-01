@@ -36,8 +36,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { Carousel } from "./components/Carousel";
 import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
-import HeroCard, { CardProps } from "./components/HeroCard";
-import CarouselS from "./components/CarouselS";
+import  HeroCard from "./components/HeroCard";
 import { ComponentBestCollection } from "./components/ComponentBestCollection";
 import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
@@ -47,6 +46,7 @@ import  Signup  from './pages/Signup'
 import CreatorPage from "./pages/CreatorPage";
 import original from "../src/assets/images/original.png";
 import iconcreator from"../src/assets/images/icon-creator.jpeg";
+import HeroCarousel from "./components/HeroCarousel";
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -155,8 +155,11 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     element: <Carousel elements={cardsCollection} display={2} />,
     title: "Carousel",
   },
+  {
+    element: <HeroCarousel />, title: "HeroCarousel"},
   { element: <SwitchButton />, title: "Switch-Button" },
   { element: <SelectLanguage />, title: "SelectLanguage" },
+ 
   {
     element: (
       <Card
@@ -281,17 +284,6 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <ComponentBestCollection />, title: "Best Collection" },
   { element: <Filter />, title: "Filter" },
 ];
-const cards: CardProps[] = [
-  { date: "Mon,April 17", title: "Card 1", subtitle: "Subtitle for card 1" },
-  { date: "Mon,April 17", title: "Card 2", subtitle: "Subtitle for card 2" },
-  { date: "Mon,April 17", title: "Card 3", subtitle: "Subtitle for card 3" },
-  { date: "Mon,April 17", title: "Card 4", subtitle: "Subtitle for card 4" },
-];
-
-const carouselElement = {
-  element: <CarouselS cards={cards} />,
-  title: "CarouselS",
-};
 
 export function Root() {
   return (

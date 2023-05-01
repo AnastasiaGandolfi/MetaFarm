@@ -2,13 +2,13 @@ import React from "react";
 import { Button } from "./Button";
 import { BsCalendarWeekFill } from 'react-icons/bs';
 
-export interface CardProps {
+interface CardProps {
   date: string;
   title: string;
   subtitle: string;
 }
 
-const Card: React.FC<CardProps> = ({ date, title, subtitle }) => {
+const HeroCard: React.FC<CardProps> = ({ date, title, subtitle }) => {
   return (
     <div className="hero-card-container">
       <div className="hero-button-up">
@@ -30,7 +30,8 @@ const Card: React.FC<CardProps> = ({ date, title, subtitle }) => {
         <Button type="rectangle" text="View Drop" />
       </div>
     </div>
-  );
-};
+  )
+        }
+    
 
-export default Card;
+        export default HeroCard;

@@ -6,8 +6,6 @@ import CardBestAuthor from "../components/CardBestAuthor";
 import CardBrandLogo from "../components/CardBrandLogo";
 import { CardCollection } from "../components/CardCollection";
 import { IntroductionSection } from "../components/IntroductionSection";
-
-import CarouselS from "../components/CarouselS";
 import esempioImage from "../assets/images/esempio-image-card.avif";
 import smallImage from "../assets/images/small-image.avif";
 import { Carousel } from "../components/Carousel";
