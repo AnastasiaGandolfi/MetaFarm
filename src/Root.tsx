@@ -309,6 +309,7 @@ export function Root() {
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/page-not-found" element={<PageNotFoundDue />} />
+          <Route path="/*" element={<PageNotFoundDue/>}/>
 
           <Route
             path="/CreatorPage"
