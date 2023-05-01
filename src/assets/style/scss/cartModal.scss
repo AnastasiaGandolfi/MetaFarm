@@ -1,39 +1,276 @@
-.cart-modal{
-    display:none;
-    &-show{
-        position:fixed;
-        right:0;
-        top:100px;
-        height:100%;
-        background: $darkgreen;
-        width: 20%;
-        min-width:330px;
-        z-index:1000;
-        display:flex;
-        flex-direction: column;
-        padding:10px;
-        .cart-modal-title{
-            display:flex;
-            justify-content: space-between;
-            button{
-                background: transparent;
-                &:hover{
-                    rotate: 180deg;
-                }
-            }
+.cart-modal {
+  display: none;
+  &-show {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: $darkgreen;
+    width: 20%;
+    min-width: 330px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .cart-modal-title {
+      display: flex;
+      justify-content: space-between;
+      button {
+        background: transparent;
+        &:hover {
+          rotate: 180deg;
         }
-        .cart-modal-content{
-            display:flex;
-            flex-direction: column;
-            align-self: center;
-            align-items: center;
-            padding-top:70%;
-            gap:5px;
-            button{
-                padding:15px;
-                background-color: white;
-                color:black;
-            }
-        }
+      }
     }
+    .cart-modal-content {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      padding-top: 70%;
+      gap: 5px;
+      button {
+        padding: 15px;
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+.css-254xoi {
+  box-sizing: border-box;
+  margin: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px 16px;
+  height: 90px;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  .css-84wpv7 {
+    box-sizing: border-box;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .css-1uzwutr {
+      box-sizing: border-box;
+      margin: 0px;
+      width: 68px;
+      height: 68px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      img {
+        border-radius: 16px;
+        object-fit: cover;
+        border-style: none;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .css-1uteaqm {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding-left: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    .css-1ne6jb4 {
+      box-sizing: border-box;
+      margin: 0px;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      .css-lgrjkx {
+        box-sizing: border-box;
+        margin: 0px 8px 0px 0px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: rgb(123, 132, 155);
+        word-break: break-all;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+      }
+      .css-8whbca {
+        box-sizing: border-box;
+        margin: 0px;
+        width: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .css.nrqnxi {
+      box-sizing: border-box;
+      margin: 0px;
+      -webkit-box-align: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      .css-1vhipj4 {
+        box-sizing: border-box;
+        margin: 0px 8px 0px 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+        word-break: break-all;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+      }
+    }
+    .css-awommn {
+      box-sizing: border-box;
+      margin: 0px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      color: rgb(255, 255, 255);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .css-q1q1q7 {
+    box-sizing: border-box;
+    margin: 0px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 40px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    cursor: pointer;
+    .css-17bbcc5 {
+      box-sizing: border-box;
+      margin: 0px;
+      font-size: 24px;
+      display: inline-flex;
+      width: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.css-1w0xktf {
+  box-sizing: border-box;
+  margin: 0px;
+  flex-direction: column;
+  width: inherit;
+  padding-left: 16px;
+  padding-right: 22px;
+  position: fixed;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  .css-1wa71j8 {
+    box-sizing: border-box;
+    margin: 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    .css-nrqnxi {
+      box-sizing: border-box;
+      margin: 0px;
+      -webkit-box-align: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      .css-1udpzby {
+        font-size: 20px;
+        line-height: 26px;
+        box-sizing: border-box;
+        margin: 0px 4px 0px 0px;
+        color: rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .css-fvr380 {
+        box-sizing: border-box;
+        margin: 0px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .css-17bbcc5 {
+          box-sizing: border-box;
+          margin: 0px;
+          font-size: 24px;
+          display: inline-flex;
+          width: 20px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .css-j8ju1b {
+      box-sizing: border-box;
+      margin: 0px;
+      font-size: 20px;
+      line-height: 26px;
+      color: rgb(255, 255, 255);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .css-xyr7jv {
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    margin: 0px 0px 12px;
+    border-radius: 4px;
+    background: linear-gradient(
+        90deg,
+        rgb(2, 122, 66) 0%,
+        rgb(7, 230, 100) 100%
+      )
+      0% 0% / cover no-repeat;
+    background-repeat: no-repeat;
+    .css-ty9yqy {
+      box-sizing: border-box;
+      margin: 0px;
+      line-height: 1.3em;
+      color: rgb(255, 255, 255);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
 }

@@ -4,7 +4,7 @@ import { Test } from "./Test";
 import { HomePage } from "./pages/HomePage";
 import { Components } from "./pages/Components";
 
-import PageNotFoundDue from "./pages/PageNotFoundDue"; 
+import PageNotFoundDue from "./pages/PageNotFoundDue";
 
 import Typography from "./components/Typography";
 import { Palette } from "./components/Palette";
@@ -43,10 +43,11 @@ import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
 import Filter from "./components/Filter";
 import Marketplace from "./components/Marketplace";
-import  Signup  from './pages/Signup'
+import Signup from "./pages/Signup";
 import CreatorPage from "./pages/CreatorPage";
 import original from "../src/assets/images/original.png";
-import iconcreator from"../src/assets/images/icon-creator.jpeg";
+import iconcreator from "../src/assets/images/icon-creator.jpeg";
+import { CartProvider } from "./CartContext";
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -133,7 +134,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   { element: <FormField />, title: "FormField" },
   { element: <InputSearch />, title: "InputSearch" },
-  { element: <IntroductionSection/>, title: "Intro" },
+  { element: <IntroductionSection />, title: "Intro" },
   {
     element: (
       <CardBrandLogo
@@ -295,8 +296,9 @@ const carouselElement = {
 
 export function Root() {
   return (
-    <BrowserRouter>
-      {/* <Nav variant="tabs" defaultActiveKey="/home">
+    <CartProvider>
+      <BrowserRouter>
+        {/* <Nav variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">App</Nav.Link>
         </Nav.Item>
@@ -307,32 +309,44 @@ export function Root() {
           <Nav.Link href="/about" eventKey="link-2">About</Nav.Link>
         </Nav.Item>
       </Nav> */}
-      <Navbar />
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<App />} />
+        <Routes>
+          <Route path="/" element={<App />} />
 
-        <Route path="/test" element={<Test />} />
+          <Route path="/test" element={<Test />} />
 
-        <Route path="/home" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
 
-        <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
 
-        <Route
-          path="/components"
-          element={<Components elements={ComponentElements} />}
-        />
-        <Route path="/single-nft-page" element={<NftPage />} />
-        
-        <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/page-not-found" element={<PageNotFoundDue />} />
-        
-        <Route path="/CreatorPage" element={<CreatorPage image={original} icon={iconcreator} name="Otherdeed for Otherside"
-                                                         collectibles={29993} owners={8} floorprice="2.3K" volumetraded="1.1B"
-                                                         description="this is the description of the creator" /> }/>
+          <Route
+            path="/components"
+            element={<Components elements={ComponentElements} />}
+          />
+          <Route path="/single-nft-page" element={<NftPage />} />
 
-      </Routes>
-    </BrowserRouter>
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/page-not-found" element={<PageNotFoundDue />} />
+
+          <Route
+            path="/CreatorPage"
+            element={
+              <CreatorPage
+                image={original}
+                icon={iconcreator}
+                name="Otherdeed for Otherside"
+                collectibles={29993}
+                owners={8}
+                floorprice="2.3K"
+                volumetraded="1.1B"
+                description="this is the description of the creator"
+              />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
