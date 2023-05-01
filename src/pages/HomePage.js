@@ -20,7 +20,7 @@ const fetcher = (url) => fetch(url).then((result) => result.json());
 
 function useBrands() {
   const { data, error, isLoading } = useSWR(
-    `http://localhost:5001/api/getBrands`,
+    `https://metafarm.me/api/getBrands`,
     fetcher
   );
   const [brands, setBrands] = useState([]);
@@ -29,7 +29,7 @@ function useBrands() {
 
 function useFeaturedCollections() {
   const { data, error, isLoading } = useSWR(
-    `http://localhost:5001/api/getFeaturedCollections`,
+    `https://metafarm.me/api/getFeaturedCollections`,
     fetcher
   );
   const [featuredCollections, setFeaturedCollections] = useState([]);
@@ -38,7 +38,7 @@ function useFeaturedCollections() {
 
 function useCreators() {
   const { data, error, isLoading } = useSWR(
-    `http://localhost:5001/api/getTopCreators`,
+    `https://metafarm.me/api/getTopCreators`,
     fetcher
   );
   const [topCreators, setTopCreators] = useState([]);
