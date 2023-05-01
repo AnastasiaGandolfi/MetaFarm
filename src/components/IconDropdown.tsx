@@ -5,13 +5,11 @@ export function IconDropdown({
   classe,
   icon,
   iconArray,
-  shareTextArray,
 }: {
   text?: string;
   classe: string;
   icon: JSX.Element;
   iconArray: Array<JSX.Element>;
-  shareTextArray: Array<string>;
 }) {
   const [flag, setFlag] = useState(false);
   function handleShow() {
@@ -28,10 +26,9 @@ export function IconDropdown({
         <div className="css-sgtua3">
           <div className="css-19fff7r">
             {iconArray.map((item, index) => (
-              <a href="#" onClick={handleShow}>
+              <div className="css-20ggg8s" onClick={handleShow}>
                 {item}{" "}
-                <span className="text-small">{shareTextArray.at(index)}</span>
-              </a>
+              </div>
             ))}
           </div>
         </div>

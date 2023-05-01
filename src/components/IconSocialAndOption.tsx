@@ -12,8 +12,23 @@ import { SlOptions } from "react-icons/sl";
 import { TbRefresh } from "react-icons/tb";
 import { IconDropdown } from "./IconDropdown";
 import { OptionDropdown } from "./OptionDropdown";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  EmailShareButton,
+} from "react-share";
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  EmailIcon,
+} from "react-share";
 
 export function IconSocialAndOption() {
+  const shareUrl = "https://metafarm.me/";
   return (
     <div className="css-8g204a">
       <div className="css-nrqnxi">
@@ -49,20 +64,26 @@ export function IconSocialAndOption() {
                     text="Share"
                     icon={<FaShare />}
                     iconArray={[
-                      <BsFacebook />,
-                      <BsTwitter />,
-                      <FaTelegramPlane />,
-                      <BsWhatsapp />,
-                      <GrMail />,
-                      <BsLink />,
-                    ]}
-                    shareTextArray={[
-                      "Facebook",
-                      "Twitter",
-                      "Telegram",
-                      "Whatsaap",
-                      "Email",
-                      "Copy Link",
+                      <FacebookShareButton url={shareUrl}>
+                        <FacebookIcon size={20} round={true} />
+                        <span className="span-social">Facebook</span>
+                      </FacebookShareButton>,
+                      <TwitterShareButton url={shareUrl}>
+                        <TwitterIcon size={20} round={true} />
+                        <span className="span-social">Twitter</span>
+                      </TwitterShareButton>,
+                      <TelegramShareButton url={shareUrl}>
+                        <TelegramIcon size={20} round={true} />
+                        <span className="span-social">Telegram</span>
+                      </TelegramShareButton>,
+                      <WhatsappShareButton url={shareUrl}>
+                        <WhatsappIcon size={20} round={true} />
+                        <span className="span-social">Whatsapp</span>
+                      </WhatsappShareButton>,
+                      <EmailShareButton url={shareUrl}>
+                        <EmailIcon size={20} round={true} />
+                        <span className="span-social">Email</span>
+                      </EmailShareButton>,
                     ]}
                   />
                 </div>

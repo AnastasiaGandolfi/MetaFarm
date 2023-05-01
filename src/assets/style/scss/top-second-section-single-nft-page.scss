@@ -86,13 +86,13 @@
                     display: inline-flex;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    color: $darkgreen;
+                    color: $dark-green-opacity;
                   }
                   .back-section-text {
                     box-sizing: border-box;
                     margin: 0px;
                     line-height: 1.3em;
-                    color: $darkgreen;
+                    color: $dark-green-opacity;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 18px;
@@ -223,15 +223,15 @@
                               background-repeat: no-repeat;
                               background-size: cover;
                               display: flex;
-                              a {
+                              .css-20ggg8s {
                                 text-decoration: none;
                                 margin-bottom: 8px;
-                                color: $black;
-                              }
-                              .text-small {
                                 font-size: 14px;
                                 font-weight: normal;
                                 color: $black;
+                                span {
+                                  margin-left: 8px;
+                                }
                               }
                             }
                           }
@@ -295,6 +295,9 @@
                             margin-bottom: 8px;
                             background: transparent;
                             color: $black;
+                          }
+                          span {
+                            margin-left: 8px;
                           }
                           .text-small {
                             font-size: 14px;

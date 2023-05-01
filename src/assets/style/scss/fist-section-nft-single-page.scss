@@ -11,6 +11,7 @@
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $white;
   display: flex;
   .all-container {
     max-width: 1272px;
@@ -40,6 +41,7 @@
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
+
         display: flex;
         .information-container {
           width: 40%;
@@ -52,7 +54,6 @@
           display: flex;
           .image-container {
             box-sizing: border-box;
-            margin: -10px;
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -85,6 +86,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               display: flex;
+              color: $black;
               a {
                 text-decoration: none;
                 color: $black;
@@ -102,7 +104,7 @@
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 margin-top: 16px;
                 .section-container {
-                  background: $white;
+                  background: $dark-green-opacity;
                   border: 1px solid $darkgreen;
                   border-radius: 4px;
                   box-sizing: border-box;
@@ -119,7 +121,7 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    color: $darkgreen;
+                    color: $dark-charcoal;
                     font-size: 12px;
                     font-weight: 600;
                     line-height: 14px;
@@ -135,10 +137,11 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    color: $darkestgreen;
                   }
                   .sub-title-section {
                     word-wrap: break-word;
-                    color: $darkgreen;
+                    color: $darkestgreen;
                     font-size: 12px;
                     font-style: normal;
                     font-weight: 600;
