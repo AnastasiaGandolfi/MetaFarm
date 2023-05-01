@@ -1,5 +1,5 @@
 import { Navbar } from "../components/Navbar";
-import HeroCard from "../components/HeroCard";
+import HeroCarousel from "../components/HeroCarousel";
 import { FormField } from "../components/FormField";
 import { CheckboxFormField } from "../components/CheckboxFormField";
 import CardBestAuthor from "../components/CardBestAuthor";
@@ -82,7 +82,7 @@ export function HomePage() {
         <div className="hero-card-home-wrapper">
           <h1 className="hero-title">Buy, sell, and showcase NFTS</h1>
           <h4 className="sub-title-home">from leading creators and brands</h4>
-          <HeroCard />
+          <HeroCarousel />
         </div>
 
         <div className="form-field-container">
