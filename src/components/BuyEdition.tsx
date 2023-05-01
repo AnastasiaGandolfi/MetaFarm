@@ -1,5 +1,33 @@
-import React from "react";
-export function BuyEdition({ link }: { link: string }) {
+import React, { useState } from "react";
+import { useContext } from "react";
+import CartContext from "../CartContext";
+
+export function BuyEdition({
+  link,
+  nftName,
+  collection,
+  nftSerialNumber,
+  cost,
+}: {
+  link: string;
+  nftName: string;
+  collection: string;
+  nftSerialNumber: number;
+  cost: number;
+}) {
+  const { addToCart, aviableButton, flag } = useContext(CartContext);
+  const { removeToCart } = useContext(CartContext);
+  const { items } = useContext(CartContext);
+  const nftNameAndNumber = `${nftName}${nftSerialNumber}`;
+
+  function handleFlag(flag: boolean) {
+    if (!flag) {
+      addToCart(nftNameAndNumber, link, collection, nftSerialNumber, cost);
+    } else {
+      removeToCart(items, nftSerialNumber, cost);
+    }
+  }
+
   return (
     <div className="buy-Edition-container">
       <div className="asset-container">
@@ -8,7 +36,10 @@ export function BuyEdition({ link }: { link: string }) {
         </div>
         <div className="asset-information">
           <div className="css-10a3ax5">
-            <div className="css-ligk6yf">Carota Club #8756</div>
+            <div className="css-ligk6yf">
+              {nftName}
+              {nftSerialNumber}
+            </div>
           </div>
         </div>
       </div>
@@ -17,7 +48,12 @@ export function BuyEdition({ link }: { link: string }) {
           <div className="css-1dr203x">
             <div className="css-dgr9ig">
               <div className="css-178q20">
-                <button className="css-aeet0h">Add to Cart</button>
+                <button
+                  className={String(aviableButton())}
+                  onClick={() => handleFlag(flag)}
+                >
+                  {!flag ? <div>Add To Cart</div> : <div>Remove From Cart</div>}
+                </button>
               </div>
             </div>
             <div className="css-178q20">

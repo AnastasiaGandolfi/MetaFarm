@@ -258,6 +258,10 @@ export function NftPage() {
             link={
               "https://media.nft.crypto.com/fa8dcbfb-0129-421a-b495-aa2857f37853/original.jpeg?d=lg-logo"
             }
+            nftName="Carota Club #"
+            collection="Carota Club"
+            nftSerialNumber={8756}
+            cost={175}
           />
         </div>
       </div>
