@@ -161,7 +161,6 @@ label {
     #227e6d,
     #239c82
   );
-  /* new code */
   overflow: hidden;
 }
 
@@ -257,4 +256,44 @@ label {
 .password-error {
   color: red;
   margin-bottom: 15px;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .logo {
+  max-width: 100px;
+  max-height: 50px;
+}
+  .login-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  form {
+    padding: 20px 40px;
+    margin-left: -50px;
+    margin-top:90px;
+  }
+  .hide-navbar {
+    position: absolute;
+    margin-top:50px;
+    margin-left:100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1
+  }
+  .right-section {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px;
+
+  }
+  .text-right{
+    margin-left:0;
+  }
 }
