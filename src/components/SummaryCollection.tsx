@@ -35,7 +35,7 @@ export function SummaryCollection({
             <a href="#" className="collection-detail-container">
               <UserInfo
                 imglink={
-                  "https://media.nft.crypto.com/3b55fd06-9bbb-42a9-94ba-4c4b8f47dd6f/original.gif"
+                  "https://media.nft.crypto.com/273dc24c-5b5f-45d9-83d3-5db578bdce79/original.gif"
                 }
               />
             </a>

@@ -256,7 +256,7 @@ export function NftPage() {
           </div>
           <BuyEdition
             link={
-              "https://media.nft.crypto.com/fa8dcbfb-0129-421a-b495-aa2857f37853/original.jpeg?d=lg-logo"
+              "https://media.nft.crypto.com/be061a51-c0fd-4a4d-872b-9f3fccd3e719/original.jpeg?d=lg-logo"
             }
             nftName="Carota Club #"
             collection="Carota Club"
