@@ -1,12 +1,12 @@
 import { TbDiscountCheckFilled } from "react-icons/tb"
 import { TbCircle1Filled } from "react-icons/tb"
 import CardBrandLogo from "./CardBrandLogo";
-export default function CardBestAuthor({paragraph}:{paragraph:string;}) {
+export default function CardBestAuthor({paragraph, name,src}:{paragraph:string;name:string,src:string}) {
 return(
     <div className="container-card-best-author" style={{margin:"10px"}}>
       <div className="container-name-e-logo">
     <div className="container-card-author-logo-name">
-    <CardBrandLogo name="Aston Martin  F1 " src="https://www.laminam.com/wp-content/uploads/2020/08/Collection-Bianco-Assoluto.jpg" />
+    <CardBrandLogo name={name} src={src} />
     <div className="verified-logo-card-best-author"> <TbDiscountCheckFilled/></div>
     </div>
       </div>

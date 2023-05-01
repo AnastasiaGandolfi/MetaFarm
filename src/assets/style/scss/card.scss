@@ -120,17 +120,16 @@
   .image-card-collection {
     position: relative; 
     border-radius: 16px; 
-    position: relative; 
  }
 
  .small-image-container {
   position: absolute;
   z-index: 1; 
-  top: 300px; 
+  bottom: 15px; 
   display: flex;
   align-items: center;
-  height: 50px; 
-  width: 50px; 
+  height: 40px; 
+  width: 40px; 
 
   .small-image-collection {
     border-radius: 50%; 
@@ -140,10 +139,10 @@
   .card-collection-title {
     color: $white; 
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-left: 20px; 
-    
+    width:100%;
   }
 
 }

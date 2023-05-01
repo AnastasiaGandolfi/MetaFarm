@@ -43,6 +43,7 @@ import { About } from "./pages/About";
 import Filter from "./components/Filter";
 import Marketplace from "./components/Marketplace";
 import Signup from "./pages/Signup";
+import Create from "./pages/Create";
 import CreatorPage from "./pages/CreatorPage";
 import original from "../src/assets/images/original.png";
 import HeroCarousel from "./components/HeroCarousel";
@@ -59,13 +60,12 @@ const cardArray: JSX.Element[] = [
 ];
 
 const cardsBestAutor: JSX.Element[] = [
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
-  <CardBestAuthor paragraph=" $2,000,000+ " />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />
 ];
 
 const cardsCollection: JSX.Element[] = [
@@ -201,7 +201,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     title: "Card-Collection",
   },
   {
-    element: <CardBestAuthor paragraph=" $2,000,000+ " />,
+    element: <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src=""/>,
     title: "card-best-author",
   },
   { element: <CartModal />, title: "Cart Modal" },
@@ -278,7 +278,8 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   {
     element: (
-      <HeroCard date="Mon, April 17 " title="Card title" subtitle="Subtitle" />
+      <HeroCard date="Mon, April 17 " title="Card title" subtitle="Subtitle"     src= 'url("https://media.nft.crypto.com/4f21e1eb-c29d-491c-8b4d-008352b1676b/original.png?d=lg-cover")'
+      />
     ),
     title: "HeroCard",
   },
@@ -290,27 +291,14 @@ export function Root() {
   return (
     <CartProvider>
       <BrowserRouter>
-        {/* <Nav variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home">App</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/components" eventKey="link-1">Components</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/about" eventKey="link-2">About</Nav.Link>
-        </Nav.Item>
-      </Nav> */}
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<App />} />
 
-          <Route path="/test" element={<Test />} />
-
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
 
           <Route path="/about" element={<About />} />
+          <Route path="/create" element={<Create />} />
 
           <Route
             path="/components"

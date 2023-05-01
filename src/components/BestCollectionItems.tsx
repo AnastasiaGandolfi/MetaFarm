@@ -244,6 +244,36 @@ const cardDataLast30Days: CardData[] = [
     price: "$9.99",
     venditeTotali: "Total Sales: $10K",
   },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Last 30 Days Card 1",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Last 30 Days Card 2",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
+  {
+    image: esempioImage,
+    smallImage: smallImage,
+    mainTitle: "Last 30 Days Card 3",
+    subtitle: "Subtitle",
+    body: "Some text",
+    paragraph: "Some paragraph",
+    price: "$9.99",
+    venditeTotali: "Total Sales: $10K",
+  },
 ];
 
 export function BestCollectionItems(): JSX.Element {
@@ -277,7 +307,7 @@ export function BestCollectionItems(): JSX.Element {
 
   return (
     <div>
-      <h1 className="best-collection-title">Best Collection Items</h1>
+      <h1 className="best-collection-title">Top Collectibles</h1>
       <div className="button-container-collection">
         <div className="sort-by">
           <p style={{ color: "white", fontSize: "24px" }}>Sort by</p>
@@ -307,12 +337,12 @@ export function BestCollectionItems(): JSX.Element {
             text="Last 30 Days"
             handle={() => handleFilterClick(3)}
           />
-          <div className="switch-button-collection">
+          {/* <div className="switch-button-collection">
             <SwitchButton />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="card-container-collection">
+      <div className="card-container-collection" >
         {cards.map((card, index) => (
           <Card
             key={index}

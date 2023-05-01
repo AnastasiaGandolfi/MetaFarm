@@ -5,7 +5,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/img/logo-nobg.png";
 import { FaExclamationCircle } from 'react-icons/fa';
-import 'animate.css';
+// import 'animate.css';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -55,7 +55,7 @@ function Login() {
         <a href="#">Terms</a>
     </div>
       <nav className="hide-navbar">
-        <Link to="/home">Back</Link>
+        <Link to="/">Back</Link>
       </nav>
       <img src={logo} alt="Logo" className="logo" style={{position: "absolute", top:"0px", left:"20px", width: 200, height: 120}} />
 

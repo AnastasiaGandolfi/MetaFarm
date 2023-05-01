@@ -1,31 +1,30 @@
 .best-collection-title {
-    text-align: center; 
+  text-align: center;
 }
 
 .button-container-collection {
-    margin-top: 50px; 
-    display: flex; 
-    flex-direction: row; 
-    gap: 30px; 
-    justify-content: space-around; 
-    align-items: baseline;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: baseline;
 
-    p {
-        margin-right: 20px; 
-    }
-  
-  
+  p {
+    margin-right: 20px;
+  }
+
   .sort-by {
     display: flex;
     align-items: center;
   }
-  
+
   .date-filters {
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
-    margin-left: 150px; 
-    gap: 20px; 
+    align-items: center;
+    margin-left: 150px;
+    gap: 20px;
   }
 
   .switch-button-collection {
@@ -35,21 +34,34 @@
 }
 
 .card-container-collection {
-    margin-top: 50px; 
-    display: flex; 
-    flex-direction: row; 
-    gap: 10px; 
-    justify-content: center; 
-    flex-wrap: wrap;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-
 @media (max-width: 768px) {
-  .button-container-collection{
+  .button-container-collection {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+  .card-container-collection {
+    width: 80%;
+    
+  }
+}
+
+@media(max-width:1440px){
+  .card-container-collection {
+    width: 70%;
+    
   }
 }

@@ -6,11 +6,12 @@ interface CardProps {
   date: string;
   title: string;
   subtitle: string;
+  src:string;
 }
 
-const HeroCard: React.FC<CardProps> = ({ date, title, subtitle }) => {
+const HeroCard: React.FC<CardProps> = ({ date, title, subtitle, src }) => {
   return (
-    <div className="hero-card-container">
+    <div className="hero-card-container" style={{background:src}}>
       <div className="hero-button-up">
         <Button
           type="pill-icon"

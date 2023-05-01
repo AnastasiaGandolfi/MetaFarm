@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import pompelmoImage from "../assets/img/Pompelmo.png";
 import fourOrangeImage from "../assets/img/fourorange (1).png";
 import { Link } from "react-router-dom";
-import "animate.css";
+// import "animate.css";
 
 function PageNotFound() {
   const lineOneRef = useRef(null);
