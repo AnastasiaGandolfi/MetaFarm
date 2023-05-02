@@ -10,7 +10,7 @@ const fetcher = (url) => fetch(url).then((result) => result.json());
 
 function useTopCollections() {
   const { data, error, isLoading } = useSWR(
-    `http://localhost:3001/api/getNFTData`,
+    `https://metafarm.me/api/getNFTData`,
     fetcher
   );
   const [topCollections, setTopCollections] = useState([]);

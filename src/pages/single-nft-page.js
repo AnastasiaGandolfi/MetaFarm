@@ -28,7 +28,7 @@ const fetcher = (url) => fetch(url).then((result) => result.json());
 
 function useNFT(id) {
   const { data, error, isLoading } = useSWR(
-    `http://localhost:3001/api/getNFTById/${id}`,
+    `https://metafarm.me/api/getNFTById/${id}`,
     fetcher
   );
   const [NFT, setNFT] = useState([]);
