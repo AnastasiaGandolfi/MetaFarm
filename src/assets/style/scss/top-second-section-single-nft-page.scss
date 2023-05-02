@@ -86,13 +86,13 @@
                     display: inline-flex;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    color: $dark-green-opacity;
+                    color: $white;
                   }
                   .back-section-text {
                     box-sizing: border-box;
                     margin: 0px;
                     line-height: 1.3em;
-                    color: $dark-green-opacity;
+                    color: $white;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 18px;
@@ -134,7 +134,7 @@
                       .bsHeart {
                         width: 24px !important;
                         height: 23px;
-                        color: $darkgreen;
+                        color: $white;
                       }
                     }
                     .css-1nhwfv9 {
@@ -142,6 +142,7 @@
                       margin: 0px 0px 0px 8px;
                       background-repeat: no-repeat;
                       background-size: cover;
+                      color: $light-grey;
                     }
                   }
                   .css-2fead {
@@ -156,6 +157,7 @@
                       margin: 0px 0px 0px 8px;
                       background-repeat: no-repeat;
                       background-size: cover;
+                      color: $light-grey;
                     }
                   }
                   .css-84wpv7 {
@@ -163,6 +165,7 @@
                     margin: 0px;
                     background-repeat: no-repeat;
                     background-size: cover;
+
                     .css-14bjdul {
                       box-sizing: border-box;
                       margin: 0px;
@@ -261,6 +264,7 @@
                         margin: 0px;
                         background-repeat: no-repeat;
                         background-size: cover;
+                        color: $white;
                         cursor: pointer;
                       }
                       .css-sgtua3 {
@@ -328,6 +332,7 @@
                   line-height: 1.3em;
                   background-repeat: no-repeat;
                   background-size: cover;
+                  color: $white;
                 }
               }
               .css-84wpv7 {
@@ -335,6 +340,7 @@
                 margin: 0px;
                 background-repeat: no-repeat;
                 background-size: cover;
+                color: $white;
                 .css-11r4quq {
                   box-sizing: border-box;
                   margin: 0px 8px 0px 0px;
@@ -342,6 +348,7 @@
                   background-repeat: no-repeat;
                   background-size: cover;
                   font-size: 16px;
+                  color: $white;
                   font-weight: bold;
                 }
               }
@@ -414,7 +421,7 @@
                     word-break: break-all;
                     margin-left: 8px;
                     .user-info-title {
-                      color: #626973;
+                      color: $black;
                       display: flex;
                       font-size: 14px;
                       justify-content: flex-start;
@@ -429,7 +436,7 @@
                       white-space: normal;
                       word-break: break-all;
                       .name-user-link {
-                        color: #000;
+                        color: $white;
                         cursor: pointer;
                         text-decoration: none;
                         .name-user-span {
@@ -509,7 +516,7 @@
                       word-break: break-all;
                       margin-left: 8px;
                       .user-info-title {
-                        color: #626973;
+                        color: $black;
                         display: flex;
                         font-size: 14px;
                         justify-content: flex-start;
@@ -524,7 +531,7 @@
                         white-space: normal;
                         word-break: break-all;
                         .name-user-link {
-                          color: #000;
+                          color: $white;
                           cursor: pointer;
                           text-decoration: none;
                           .name-user-span {

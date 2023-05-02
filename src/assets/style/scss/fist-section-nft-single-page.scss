@@ -11,7 +11,6 @@
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $white;
   display: flex;
   .all-container {
     max-width: 1272px;
@@ -86,10 +85,10 @@
               background-repeat: no-repeat;
               background-size: cover;
               display: flex;
-              color: $black;
+              color: $white;
               a {
                 text-decoration: none;
-                color: $black;
+                color: $white;
               }
             }
             .show-container {
@@ -104,7 +103,7 @@
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 margin-top: 16px;
                 .section-container {
-                  background: $dark-green-opacity;
+                  background: $white;
                   border: 1px solid $darkgreen;
                   border-radius: 4px;
                   box-sizing: border-box;
@@ -137,7 +136,7 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    color: $darkestgreen;
+                    color: $darkgreen;
                   }
                   .sub-title-section {
                     word-wrap: break-word;
