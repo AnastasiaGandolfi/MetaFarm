@@ -1,4 +1,53 @@
 .filter-bc-section-container {
     display: flex;
+    box-sizing: border-box;
+    margin-bottom: 24px;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .bc-container {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0px;
+        flex: 1 1 0%;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+
+        .button-container-collection {
+            box-sizing: border-box;
+            margin: 0px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            height: unset;
+            overflow: unset;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+
+            @media screen and (min-width: 992px) {
+                top: calc(109px);
+            }
+
+            @media screen and (min-width: 992px) {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 992px) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+.text-collection-name {
+    text-align: left;
+    padding: 20px;
 }

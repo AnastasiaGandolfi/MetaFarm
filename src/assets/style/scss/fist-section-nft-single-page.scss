@@ -40,6 +40,7 @@
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
+
         display: flex;
         .information-container {
           width: 40%;
@@ -52,7 +53,6 @@
           display: flex;
           .image-container {
             box-sizing: border-box;
-            margin: -10px;
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -85,9 +85,10 @@
               background-repeat: no-repeat;
               background-size: cover;
               display: flex;
+              color: $white;
               a {
                 text-decoration: none;
-                color: $black;
+                color: $white;
               }
             }
             .show-container {
@@ -119,7 +120,7 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    color: $darkgreen;
+                    color: $dark-charcoal;
                     font-size: 12px;
                     font-weight: 600;
                     line-height: 14px;
@@ -135,10 +136,11 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    color: $darkgreen;
                   }
                   .sub-title-section {
                     word-wrap: break-word;
-                    color: $darkgreen;
+                    color: $darkestgreen;
                     font-size: 12px;
                     font-style: normal;
                     font-weight: 600;

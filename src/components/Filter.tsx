@@ -2,8 +2,43 @@ import React from 'react'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 
 export default function Filter() {
+    const elements = [
+        {
+            name: "Azuki",
+            logo: "https://media.nft.crypto.com/75c36624-6eb1-487f-aa5a-1de8c3b71538/original.jpeg",
+        },
+        {
+            name: "Bored Ape Yacht Club",
+            logo: "https://media.nft.crypto.com/77ffeae9-9666-4da9-9386-a87b73c2b6d7/original.png",
+        },
+        {
+            name: "Otherdeed for Otherside",
+            logo: "https://media.nft.crypto.com/5d705f0f-8553-41cc-babb-973e96dc86d8/original.jpeg",
+        },
+        {
+            name: "BEANZ Official",
+            logo: "https://media.nft.crypto.com/20ffa91a-45e3-4235-bc8e-4a72adf9d039/original.png",
+        },
+        {
+            name: "Mutant Ape Yacht Club",
+            logo: "https://media.nft.crypto.com/6b32b537-c7a7-4820-a640-e39576aa8508/original.png",
+        },
+        {
+            name: "Doodles",
+            logo: "https://media.nft.crypto.com/ad95ecc9-6d0a-4a97-bf21-2e1cf9747a93/original.jpeg",
+        },
+        {
+            name: "Mutant Ape Yacht Club",
+            logo: "https://media.nft.crypto.com/6b32b537-c7a7-4820-a640-e39576aa8508/original.png",
+        },
+        {
+            name: "Mutant Ape Yacht Club",
+            logo: "https://media.nft.crypto.com/6b32b537-c7a7-4820-a640-e39576aa8508/original.png",
+        },
+    ];
+
     return (
-        <div style={{ marginTop: "25px" }}>
+        <div>
             <div className="filter-container">
                 <div className="filter-panel-container">
                     <div className="filter-panel filter-style" data-scroll-lock-scrollable="true">
@@ -39,116 +74,40 @@ export default function Filter() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <label className="checkbox-row collection-row filter-row">
-                                            <div className="title-container">
-                                                <div className="checkbox-wrapper checkbox-container">
-                                                    <input type="checkbox" className="styles-checkbox" />
-                                                </div>
-                                                <div className="filter-style">
-                                                    <img src="https://media.nft.crypto.com/75c36624-6eb1-487f-aa5a-1de8c3b71538/original.jpeg" className="styles-img" />
-                                                </div>
-                                                <div className="collection-name" style={{ wordBreak: "break-all" }}>
-                                                    Azuki</div>
-                                            </div>
-                                            <div className="check-container">
-                                                <span className="icon-card">
-                                                    <BsFillPatchCheckFill />
-                                                </span>
-                                            </div>
-                                        </label>
-                                        <label className="checkbox-row collection-row filter-row">
-                                            <div className="title-container">
-                                                <div className="checkbox-wrapper checkbox-container">
-                                                    <input type="checkbox" className="styles-checkbox" />
-                                                </div>
-                                                <div className="filter-style">
-                                                    <img src="https://media.nft.crypto.com/77ffeae9-9666-4da9-9386-a87b73c2b6d7/original.png" className="styles-img" />
-                                                </div>
-                                                <div className="collection-name" style={{ wordBreak: "break-all" }}>Bored Ape Yacht Club</div>
-                                            </div>
-                                            <div className="check-container">
-                                                <span className="icon-card">
-                                                    < BsFillPatchCheckFill />
-                                                </span>
-                                            </div>
-                                        </label>
+                                        {
+                                            elements.map((el) => {
+                                                return (
+                                                    <label className="checkbox-row collection-row filter-row">
+                                                        <div className="title-container">
+                                                            <div className="checkbox-wrapper checkbox-container">
+                                                                <input type="checkbox" className="styles-checkbox" />
+                                                            </div>
+                                                            <div className="filter-style">
+                                                                <img src={el.logo} className="styles-img" />
+                                                            </div>
+                                                            <div className="collection-name" style={{ wordBreak: "break-all" }}>
+                                                                {el.name}</div>
+                                                        </div>
+                                                        <div className="check-container">
+                                                            <span className="icon-card">
+                                                                <BsFillPatchCheckFill />
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                )
+                                            })
+                                        }
                                     </div>
-                                    <label className="checkbox-row collection-row filter-row">
-                                        <div className="title-container">
-                                            <div className="checkbox-wrapper checkbox-container">
-                                                <input type="checkbox" className="styles-checkbox" />
-                                            </div>
-                                            <div className="filter-style">
-                                                <img src="https://media.nft.crypto.com/5d705f0f-8553-41cc-babb-973e96dc86d8/original.jpeg" className="styles-img" />
-                                            </div>
-                                            <div className="collection-name" style={{ wordBreak: "break-all" }}>Otherdeed for Otherside</div>
-                                        </div>
-                                        <div className="check-container">
-                                            <span className="icon-card">
-                                                <BsFillPatchCheckFill />
-                                            </span>
-                                        </div>
-                                    </label>
-                                    <label className="checkbox-row collection-row filter-row">
-                                        <div className="title-container">
-                                            <div className="checkbox-wrapper checkbox-container">
-                                                <input type="checkbox" className="styles-checkbox" />
-                                            </div>
-                                            <div className="filter-style">
-                                                <img src="https://media.nft.crypto.com/20ffa91a-45e3-4235-bc8e-4a72adf9d039/original.png" className="styles-img" />
-                                            </div>
-                                            <div className="collection-name" style={{ wordBreak: "break-all" }}>
-                                                BEANZ Official</div>
-                                        </div>
-                                        <div className="check-container">
-                                            <span className="icon-card">
-                                                <BsFillPatchCheckFill />
-                                            </span>
-                                        </div>
-                                    </label>
-                                    <label className="checkbox-row collection-row filter-row">
-                                        <div className="title-container">
-                                            <div className="checkbox-wrapper checkbox-container">
-                                                <input type="checkbox" className="styles-checkbox" />
-                                            </div>
-                                            <div className="filter-style">
-                                                <img src="https://media.nft.crypto.com/6b32b537-c7a7-4820-a640-e39576aa8508/original.png" className="styles-img" />
-                                            </div>
-                                            <div className="collection-name" style={{ wordBreak: "break-all" }}>
-                                                Mutant Ape Yacht Club</div>
-                                        </div>
-                                        <div className="check-container">
-                                            <span className="icon-card">
-                                                <BsFillPatchCheckFill />
-                                            </span>
-                                        </div>
-                                    </label>
-                                    <label className="checkbox-row collection-row filter-row">
-                                        <div className="title-container">
-                                            <div className="checkbox-wrapper checkbox-container">
-                                                <input type="checkbox" className="styles-checkbox" />
-                                            </div>
-                                            <div className="filter-style">
-                                                <img src="https://media.nft.crypto.com/ad95ecc9-6d0a-4a97-bf21-2e1cf9747a93/original.jpeg" className="styles-img" />
-                                            </div>
-                                            <div className="collection-name" style={{ wordBreak: "break-all" }}>
-                                                Doodles</div>
-                                        </div>
-                                        <div className="check-container">
-                                            <span className="icon-card">
-                                                <BsFillPatchCheckFill />
-                                            </span>
-                                        </div>
-                                    </label>
                                 </div>
                             </div>
-                        </div>
-                        <div className="separator">
+                            <div className="separator">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
+
 

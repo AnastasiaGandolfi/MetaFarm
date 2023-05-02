@@ -1,4 +1,3 @@
-
 .css-1xifris {
   box-sizing: border-box;
   margin: 0px;
@@ -107,7 +106,7 @@
               display: flex;
               align-items: center;
               .nft-summary {
-                color: $black;
+                color: $white;
                 font-size: 29px;
                 font-weight: 700;
                 margin-right: 8px;
@@ -124,7 +123,7 @@
                 display: flex;
                 flex: 0 0 auto;
                 text-align: center;
-                border: 1px solid $darkgreen;
+                border: 1px solid $white;
                 box-sizing: border-box;
                 border-radius: 30px;
                 min-width: 45px;
@@ -134,7 +133,7 @@
                   box-sizing: border-box;
                   margin: 0px;
                   line-height: 1.3em;
-                  color: $darkgreen;
+                  color: $white;
                   width: 100%;
                   background-repeat: no-repeat;
                   background-size: cover;
@@ -166,7 +165,7 @@
                       box-sizing: border-box;
                       margin: 0px;
                       line-height: 1.3em;
-                      color: $black;
+                      color: $white;
                       background-repeat: no-repeat;
                       background-size: cover;
                       font-size: 16px;
@@ -178,7 +177,7 @@
                       box-sizing: border-box;
                       margin: 0px;
                       line-height: 1.3em;
-                      color: $black;
+                      color: $white;
                       background-repeat: no-repeat;
                       background-size: cover;
                       font-size: 29px;
@@ -214,6 +213,7 @@
                   margin-block-end: 1em;
                   margin-inline-start: 0px;
                   margin-inline-end: 0px;
+                  color: $white;
                 }
               }
               .nft-detail-container-tags {
@@ -223,9 +223,9 @@
                 .single-tag-detail {
                   padding-right: 10px;
                   .single-tag {
-                    border: 1px solid $darkgreen;
+                    border: 1px solid $white;
                     border-radius: 4px;
-                    color: $darkgreen;
+                    color: $white;
                     padding: 10px 5px;
                     text-transform: capitalize;
                   }
@@ -257,17 +257,13 @@
                   font-size: 16px;
                   font-weight: 600;
                   line-height: 22px;
-                  background-image: linear-gradient(
-                    90deg,
-                    $darkgreen,
-                    $mid-green
-                  );
+                  background-image: linear-gradient(90deg, $cyan-blue, $grey);
                   background-position: 0 100%;
                   background-repeat: no-repeat;
                   background-size: 100% 3px;
                   margin-right: 46px;
                   align-items: center;
-                  color: #000;
+                  color: $black;
                   cursor: pointer;
                   display: flex;
                   flex-direction: row;
@@ -293,7 +289,7 @@
                   background-size: 100% 3px;
                   margin-right: 46px;
                   align-items: center;
-                  color: #000;
+                  color: $white;
                   cursor: pointer;
                   display: flex;
                   flex-direction: row;
@@ -328,7 +324,6 @@
                   display: flex;
                   flex-direction: row;
                   .user-profile-link {
-                    color: #000;
                     cursor: pointer;
                     text-decoration: none;
                     background-color: transparent;
@@ -378,7 +373,7 @@
                     word-break: break-all;
                     margin-left: 8px;
                     .user-profile-title {
-                      color: #626973;
+                      color: $black;
                       display: flex;
                       font-size: 14px;
                       justify-content: flex-start;
@@ -396,7 +391,7 @@
                         white-space: normal;
                         word-break: break-all;
                         .user-profile-link {
-                          color: #000;
+                          color: $white;
                           cursor: pointer;
                           text-decoration: none;
                           .user-profile-name {
@@ -406,7 +401,7 @@
                             overflow: hidden;
                             white-space: normal;
                             word-break: break-all;
-                            color: #000;
+                            color: $white;
                             font-size: 16px;
                             font-weight: 600;
                             line-height: 22px;
@@ -437,11 +432,14 @@
                     box-sizing: border-box;
                     margin: 0px 8px 0px 0px;
                     line-height: 1.3em;
-                    color: rgb(98, 105, 115);
+                    color: $white;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 16px;
                     font-weight: normal;
+                    a {
+                      color: $white;
+                    }
                   }
                   .css-84wpv7 {
                     box-sizing: border-box;

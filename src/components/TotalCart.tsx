@@ -18,7 +18,9 @@ export function TotalCart() {
         <div className="css-j8ju1b">{totalPrice}</div>
       </div>
       <div className="css-xyr7jv">
-        <div className="css-ty9yqy">Check Out</div>
+        <a href="/signup">
+          <div className="css-ty9yqy">Check Out</div>
+        </a>
       </div>
     </div>
   );

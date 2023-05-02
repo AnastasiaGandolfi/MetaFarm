@@ -49,7 +49,7 @@ function TabPanel({
                   >
                     <path
                       d="M2 2V12H5.5V11H3V3H9V3.5H10V2H2ZM6 4V14H14V4H6ZM7 5H13V13H7V5Z"
-                      fill="#626973"
+                      fill="white"
                     ></path>
                   </svg>
                 </div>

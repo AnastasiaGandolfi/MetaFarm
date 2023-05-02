@@ -527,7 +527,7 @@ button.pill-dropdown {
   box-sizing: border-box;
   margin: 0px 0px 0px 8px;
   line-height: 1.3em;
-  color: #000000;
+  color: #C8C8C8;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 14px;
@@ -775,7 +775,7 @@ button.pill-dropdown {
         font-size: 12px;
         font-weight: 500;
         line-height: 16px;
-        color: #7b849b;
+        color: #FFFFFF;
         word-break: break-all;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1550,7 +1550,7 @@ body {
               display: flex;
               align-items: center; }
               .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-1xkdge7 .nft-summary {
-                color: #000000;
+                color: #FFFFFF;
                 font-size: 29px;
                 font-weight: 700;
                 margin-right: 8px;
@@ -1566,7 +1566,7 @@ body {
                 display: flex;
                 flex: 0 0 auto;
                 text-align: center;
-                border: 1px solid #239C82;
+                border: 1px solid #FFFFFF;
                 box-sizing: border-box;
                 border-radius: 30px;
                 min-width: 45px;
@@ -1576,7 +1576,7 @@ body {
                   box-sizing: border-box;
                   margin: 0px;
                   line-height: 1.3em;
-                  color: #239C82;
+                  color: #FFFFFF;
                   width: 100%;
                   background-repeat: no-repeat;
                   background-size: cover;
@@ -1604,7 +1604,7 @@ body {
                     box-sizing: border-box;
                     margin: 0px;
                     line-height: 1.3em;
-                    color: #000000;
+                    color: #FFFFFF;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 16px;
@@ -1613,7 +1613,7 @@ body {
                     box-sizing: border-box;
                     margin: 0px;
                     line-height: 1.3em;
-                    color: #000000;
+                    color: #FFFFFF;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 29px;
@@ -1642,7 +1642,8 @@ body {
                   margin-block-start: 1em;
                   margin-block-end: 1em;
                   margin-inline-start: 0px;
-                  margin-inline-end: 0px; }
+                  margin-inline-end: 0px;
+                  color: #FFFFFF; }
               .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-et2jx0 .nft-detail-container-tags {
                 display: flex;
                 margin: 16px 0;
@@ -1650,9 +1651,9 @@ body {
                 .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-et2jx0 .nft-detail-container-tags .single-tag-detail {
                   padding-right: 10px; }
                   .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-et2jx0 .nft-detail-container-tags .single-tag-detail .single-tag {
-                    border: 1px solid #239C82;
+                    border: 1px solid #FFFFFF;
                     border-radius: 4px;
-                    color: #239C82;
+                    color: #FFFFFF;
                     padding: 10px 5px;
                     text-transform: capitalize; }
           .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 {
@@ -1679,13 +1680,13 @@ body {
                   font-size: 16px;
                   font-weight: 600;
                   line-height: 22px;
-                  background-image: linear-gradient(90deg, #239C82, #7AE19C);
+                  background-image: linear-gradient(90deg, #2A2D33, #515866);
                   background-position: 0 100%;
                   background-repeat: no-repeat;
                   background-size: 100% 3px;
                   margin-right: 46px;
                   align-items: center;
-                  color: #000;
+                  color: #000000;
                   cursor: pointer;
                   display: flex;
                   flex-direction: row;
@@ -1709,7 +1710,7 @@ body {
                   background-size: 100% 3px;
                   margin-right: 46px;
                   align-items: center;
-                  color: #000;
+                  color: #FFFFFF;
                   cursor: pointer;
                   display: flex;
                   flex-direction: row;
@@ -1740,7 +1741,6 @@ body {
                   display: flex;
                   flex-direction: row; }
                   .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 .owner-list .owner-tab-container .user-profile-container .user-profile-link {
-                    color: #000;
                     cursor: pointer;
                     text-decoration: none;
                     background-color: transparent; }
@@ -1786,7 +1786,7 @@ body {
                     word-break: break-all;
                     margin-left: 8px; }
                     .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 .owner-list .owner-tab-container .user-profile-container .user-profile .user-profile-title {
-                      color: #626973;
+                      color: #000000;
                       display: flex;
                       font-size: 14px;
                       justify-content: flex-start;
@@ -1803,7 +1803,7 @@ body {
                         white-space: normal;
                         word-break: break-all; }
                         .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 .owner-list .owner-tab-container .user-profile-container .user-profile .wallet-container .user-name-container .user-profile-link {
-                          color: #000;
+                          color: #FFFFFF;
                           cursor: pointer;
                           text-decoration: none; }
                           .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 .owner-list .owner-tab-container .user-profile-container .user-profile .wallet-container .user-name-container .user-profile-link .user-profile-name {
@@ -1813,7 +1813,7 @@ body {
                             overflow: hidden;
                             white-space: normal;
                             word-break: break-all;
-                            color: #000;
+                            color: #FFFFFF;
                             font-size: 16px;
                             font-weight: 600;
                             line-height: 22px;
@@ -1838,11 +1838,13 @@ body {
                     box-sizing: border-box;
                     margin: 0px 8px 0px 0px;
                     line-height: 1.3em;
-                    color: #626973;
+                    color: #FFFFFF;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 16px;
                     font-weight: normal; }
+                    .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 .owner-list .owner-tab-container .css-1tfcze1 .css-1wiov8 a {
+                      color: #FFFFFF; }
                   .css-1xifris .all-container .page-container .section-container .statistic-container .css-znm2i9 .owner-list .owner-tab-container .css-1tfcze1 .css-84wpv7 {
                     box-sizing: border-box;
                     margin: 0px;
@@ -1926,7 +1928,6 @@ body {
           display: flex; }
           .css-1xifris .all-container .page-container .section-container .information-container .image-container {
             box-sizing: border-box;
-            margin: -10px;
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -1957,10 +1958,11 @@ body {
               width: 100%;
               background-repeat: no-repeat;
               background-size: cover;
-              display: flex; }
+              display: flex;
+              color: #FFFFFF; }
               .css-1xifris .all-container .page-container .section-container .information-container .details-container .text-container a {
                 text-decoration: none;
-                color: #000000; }
+                color: #FFFFFF; }
             .css-1xifris .all-container .page-container .section-container .information-container .details-container .show-container {
               height: auto;
               overflow: unset;
@@ -1990,7 +1992,7 @@ body {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    color: #239C82;
+                    color: #333;
                     font-size: 12px;
                     font-weight: 600;
                     line-height: 14px;
@@ -2004,10 +2006,11 @@ body {
                     letter-spacing: 0;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    white-space: nowrap; }
+                    white-space: nowrap;
+                    color: #239C82; }
                   .css-1xifris .all-container .page-container .section-container .information-container .details-container .show-container .grid-container .section-container .sub-title-section {
                     word-wrap: break-word;
-                    color: #239C82;
+                    color: #1D2D2B;
                     font-size: 12px;
                     font-style: normal;
                     font-weight: 600;
@@ -2102,12 +2105,12 @@ body {
                     display: inline-flex;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    color: #239C82; }
+                    color: #FFFFFF; }
                   .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .back-container .css-nrqnxi .back-section-text {
                     box-sizing: border-box;
                     margin: 0px;
                     line-height: 1.3em;
-                    color: #239C82;
+                    color: #FFFFFF;
                     background-repeat: no-repeat;
                     background-size: cover;
                     font-size: 18px;
@@ -2146,12 +2149,13 @@ body {
                       .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-nrqnxi .css-g9ogwi .bsHeart {
                         width: 24px !important;
                         height: 23px;
-                        color: #239C82; }
+                        color: #FFFFFF; }
                     .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-nrqnxi .css-1nhwfv9 {
                       box-sizing: border-box;
                       margin: 0px 0px 0px 8px;
                       background-repeat: no-repeat;
-                      background-size: cover; }
+                      background-size: cover;
+                      color: #C8C8C8; }
                   .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-2fead {
                     box-sizing: border-box;
                     margin: 0px 16px;
@@ -2163,7 +2167,8 @@ body {
                       box-sizing: border-box;
                       margin: 0px 0px 0px 8px;
                       background-repeat: no-repeat;
-                      background-size: cover; }
+                      background-size: cover;
+                      color: #C8C8C8; }
                   .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-84wpv7 {
                     box-sizing: border-box;
                     margin: 0px;
@@ -2227,14 +2232,14 @@ body {
                               background-repeat: no-repeat;
                               background-size: cover;
                               display: flex; }
-                              .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-84wpv7 .css-14bjdul .css-95mwbsu .css-1jmocn .css-sgtua3 .css-19fff7r a {
+                              .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-84wpv7 .css-14bjdul .css-95mwbsu .css-1jmocn .css-sgtua3 .css-19fff7r .css-20ggg8s {
                                 text-decoration: none;
                                 margin-bottom: 8px;
-                                color: #000000; }
-                              .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-84wpv7 .css-14bjdul .css-95mwbsu .css-1jmocn .css-sgtua3 .css-19fff7r .text-small {
                                 font-size: 14px;
                                 font-weight: normal;
                                 color: #000000; }
+                                .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-nrqnxi .css-84wpv7 .css-14bjdul .css-95mwbsu .css-1jmocn .css-sgtua3 .css-19fff7r .css-20ggg8s span {
+                                  margin-left: 8px; }
                 .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-fb99im {
                   box-sizing: border-box;
                   margin: 0px 0px 0px auto;
@@ -2256,6 +2261,7 @@ body {
                         margin: 0px;
                         background-repeat: no-repeat;
                         background-size: cover;
+                        color: #FFFFFF;
                         cursor: pointer; }
                       .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-fb99im .css-14bjdul .css-95mwbsu .css-sgtua3 {
                         animation: rotateMenu 800ms ease-in-out forwards;
@@ -2289,6 +2295,8 @@ body {
                             margin-bottom: 8px;
                             background: transparent;
                             color: #000000; }
+                          .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-fb99im .css-14bjdul .css-95mwbsu .css-sgtua3 .css-19fff7r span {
+                            margin-left: 8px; }
                           .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .icon-container .css-8g204a .css-fb99im .css-14bjdul .css-95mwbsu .css-sgtua3 .css-19fff7r .text-small {
                             font-size: 14px;
                             font-weight: normal;
@@ -2309,12 +2317,14 @@ body {
                   margin: 0px 8px 0px 0px;
                   line-height: 1.3em;
                   background-repeat: no-repeat;
-                  background-size: cover; }
+                  background-size: cover;
+                  color: #FFFFFF; }
               .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-1j9aoqx .css-84wpv7 {
                 box-sizing: border-box;
                 margin: 0px;
                 background-repeat: no-repeat;
-                background-size: cover; }
+                background-size: cover;
+                color: #FFFFFF; }
                 .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-1j9aoqx .css-84wpv7 .css-11r4quq {
                   box-sizing: border-box;
                   margin: 0px 8px 0px 0px;
@@ -2322,6 +2332,7 @@ body {
                   background-repeat: no-repeat;
                   background-size: cover;
                   font-size: 16px;
+                  color: #FFFFFF;
                   font-weight: bold; }
               .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .css-1j9aoqx .center-icon {
                 align-self: center; }
@@ -2384,7 +2395,7 @@ body {
                     word-break: break-all;
                     margin-left: 8px; }
                     .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .nft-summary-collection-container .css-1m1tg02 .user-profile .user-info-container .user-info-title {
-                      color: #626973;
+                      color: #000000;
                       display: flex;
                       font-size: 14px;
                       justify-content: flex-start;
@@ -2398,7 +2409,7 @@ body {
                       white-space: normal;
                       word-break: break-all; }
                       .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .nft-summary-collection-container .css-1m1tg02 .user-profile .user-info-container .name-user .name-user-link {
-                        color: #000;
+                        color: #FFFFFF;
                         cursor: pointer;
                         text-decoration: none; }
                         .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .nft-summary-collection-container .css-1m1tg02 .user-profile .user-info-container .name-user .name-user-link .name-user-span {
@@ -2466,7 +2477,7 @@ body {
                       word-break: break-all;
                       margin-left: 8px; }
                       .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .nft-summary-collection-container .css-117j5e .css-17kuy89 .css-148glow .user-info-container .user-info-title {
-                        color: #626973;
+                        color: #000000;
                         display: flex;
                         font-size: 14px;
                         justify-content: flex-start;
@@ -2480,7 +2491,7 @@ body {
                         white-space: normal;
                         word-break: break-all; }
                         .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .nft-summary-collection-container .css-117j5e .css-17kuy89 .css-148glow .user-info-container .name-user .name-user-link {
-                          color: #000;
+                          color: #FFFFFF;
                           cursor: pointer;
                           text-decoration: none; }
                           .css-1xifris .all-container .page-container .section-container .statistic-container .top-statistic-container .nft-summary-collection-container .css-117j5e .css-17kuy89 .css-148glow .user-info-container .name-user .name-user-link .name-user-span {
@@ -2765,10 +2776,10 @@ body {
         margin: 24px; } }
     .filter-container .filter-panel-container .filter-panel {
       background-color: #239C82;
-      height: 100%;
+      border-radius: 16px;
+      height: 100vh;
       position: sticky;
       flex: 1 1;
-      overflow-y: auto;
       width: 100%; }
       @media screen and (max-width: 992px) {
         .filter-container .filter-panel-container .filter-panel {
@@ -2783,28 +2794,17 @@ body {
         @media screen and (min-width: 992px) {
           .filter-container .filter-panel-container .filter-panel .filters {
             width: 322px; } }
-        .filter-container .filter-panel-container .filter-panel .filters .title-row {
+        @media screen and (min-width: 992px) {
+          .filter-container .filter-panel-container .filter-panel .filters .title-row {
+            padding: 10px 16px 10px 12px; } }
+        .filter-container .filter-panel-container .filter-panel .filters .title-row .title-container {
+          box-sizing: border-box;
+          margin: 0px;
+          -webkit-box-align: center;
           align-items: center;
-          justify-content: space-between; }
-          @media screen and (min-width: 992px) {
-            .filter-container .filter-panel-container .filter-panel .filters .title-row {
-              padding: 10px 16px 10px 12px; } }
-          .filter-container .filter-panel-container .filter-panel .filters .title-row .title-container {
-            box-sizing: border-box;
-            margin: 0px;
-            -webkit-box-align: center;
-            align-items: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex; }
-            .filter-container .filter-panel-container .filter-panel .filters .title-row .title-container .title {
-              line-height: 1.3em;
-              background-repeat: no-repeat;
-              background-size: cover;
-              font-size: 18px;
-              font-weight: 600;
-              box-sizing: border-box;
-              margin: 0px; }
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex; }
         .filter-container .filter-panel-container .filter-panel .filters .separator {
           align-items: center;
           display: flex;
@@ -2817,20 +2817,9 @@ body {
           background-repeat: no-repeat;
           background-size: cover;
           display: flex; }
-          .filter-container .filter-panel-container .filter-panel .filters .filter-card .title-row {
-            align-items: center;
-            justify-content: space-between; }
+          @media screen and (max-width: 992px) {
             .filter-container .filter-panel-container .filter-panel .filters .filter-card .title-row .title {
-              line-height: 1.3em;
-              background-repeat: no-repeat;
-              background-size: cover;
-              font-size: 18px;
-              font-weight: 600;
-              box-sizing: border-box;
-              margin: 0px; }
-              @media screen and (max-width: 992px) {
-                .filter-container .filter-panel-container .filter-panel .filters .filter-card .title-row .title {
-                  padding: 10px 0px; } }
+              padding: 10px 0px; } }
           .filter-container .filter-panel-container .filter-panel .filters .filter-card .filter-container {
             display: block; }
             .filter-container .filter-panel-container .filter-panel .filters .filter-card .filter-container .search-bar-container {
@@ -2958,9 +2947,64 @@ body {
   background-size: cover;
   display: flex; }
 
+.title {
+  line-height: 1.3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 5px; }
+
+.title-row {
+  align-items: center;
+  justify-content: space-between; }
+
 .filter-bc-section-container {
   display: flex;
-  flex-wrap: wrap; }
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .filter-bc-section-container .bc-container {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; }
+    .filter-bc-section-container .bc-container .button-container-collection {
+      box-sizing: border-box;
+      margin: 0px;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      height: unset;
+      overflow: unset;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex; }
+      @media screen and (min-width: 992px) {
+        .filter-bc-section-container .bc-container .button-container-collection {
+          top: calc(109px); } }
+      @media screen and (min-width: 992px) {
+        .filter-bc-section-container .bc-container .button-container-collection {
+          width: 100%; } }
+      @media screen and (min-width: 992px) {
+        .filter-bc-section-container .bc-container .button-container-collection {
+          padding-left: 0px;
+          padding-right: 0px; } }
+
+.text-collection-name {
+  text-align: left;
+  padding: 20px; }
 
 .login-container {
   position: relative;

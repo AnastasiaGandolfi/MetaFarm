@@ -78,7 +78,7 @@ export function HomePage() {
     if (!isLoadingTopCreators) {
       console.log(dataTopCreators)
       for (const creator of dataTopCreators) {
-        newCreators.push(<CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} />);
+        newCreators.push(<a href="/creatorPage"><CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} /></a>);
       }
     }
     setTopCreators(newCreators);
