@@ -446,7 +446,9 @@ button.pill-dropdown {
 
 .image-card-collection {
   position: relative;
-  border-radius: 16px; }
+  border-radius: 16px;
+  width: 350px;
+  height: 350px; }
 
 .small-image-container {
   position: absolute;
@@ -965,6 +967,8 @@ button.pill-dropdown {
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap; }
+  .card-container-collection a {
+    text-decoration: none; }
 
 @media (max-width: 768px) {
   .button-container-collection {
@@ -1072,7 +1076,9 @@ button.pill-dropdown {
     gap: 15px;
     margin: 10px; }
     .container-card-brand-logo .container-icon-card-brand-logo .small-image-collection {
-      border-radius: 50%; }
+      border-radius: 50%;
+      width: 50px;
+      height: 50px; }
   .container-card-brand-logo .container-stats-card-brand-logo {
     height: 44px;
     width: 350px;
@@ -1348,7 +1354,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 50px;
     margin-top: 20px; }
   .container-top-collection .top-collection-title {
     display: grid;

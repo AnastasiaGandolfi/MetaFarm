@@ -21,16 +21,40 @@ import { BackButton } from "../components/BackButton";
 import { IconSocialAndOption } from "../components/IconSocialAndOption";
 import { SummaryCollection } from "../components/SummaryCollection";
 
+import useSWR from "swr";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+const fetcher = (url) => fetch(url).then((result) => result.json());
+
+function useNFT(id) {
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:3001/api/getNFTById/${id}`,
+    fetcher
+  );
+  const [NFT, setNFT] = useState([]);
+  return [data, error, isLoading, NFT, setNFT];
+}
+
 export function NftPage() {
+  const { id } = useParams();
+  console.log(id);
+  const [dataNFT, errorNFT, isLoadingNFT, NFT, setNFT] = useNFT(id);
+  useEffect(() => {
+    if (!isLoadingNFT) {
+      setNFT(dataNFT);
+    }
+  }, [isLoadingNFT]);
+
   return (
-    <div className="css-1xifris">
-      <Navbar />
+    <div className="css-1xifris" style={{backgroundColor:"white"}}>
+      {NFT && 
+      <>
       <div className="all-container">
         <div className="page-container">
           <div className="section-container">
             <div className="information-container">
               <div className="image-container">
-                <CardCollection image={esempioImage} />
+                <CardCollection image={NFT.src} />
               </div>
               <Details
                 text="Properties"
@@ -38,7 +62,7 @@ export function NftPage() {
                 icon={<BsCaretDownFill />}
                 elementsDetails={[
                   <DetailsElement
-                    title="Bacground"
+                    title="Background"
                     description="Teal"
                     subtitle="10% have this trait"
                   />,
@@ -116,8 +140,8 @@ export function NftPage() {
                   </svg>
                 </div>
                 <SummaryCollection
-                  creator={"Crypto.com"}
-                  collection={"Lions"}
+                  creator={NFT.creator}
+                  collection={NFT.cname}
                 />
                 <div className="css-xmzy0r">
                   <div className="css-v0b2st">
@@ -197,7 +221,7 @@ export function NftPage() {
                   </div>
                 </div>
                 <div className="css-1xkdge7">
-                  <div className="nft-summary">Carota Club #8756</div>
+                  <div className="nft-summary">{NFT.name}</div>
                   <div className="css-9h7yvd">
                     <div className="css-1cufir3">Marketplace</div>
                   </div>
@@ -209,7 +233,7 @@ export function NftPage() {
                         <div className="css-15o39v9">$</div>
                       </span>
                       <span className="css-1otewz">
-                        <div className="css-4z733i">175</div>
+                        <div className="css-4z733i">{NFT.price}</div>
                       </span>
                     </div>
                   </div>
@@ -239,7 +263,7 @@ export function NftPage() {
                 <div className="css-et2jx0">
                   <div className="nft-detail-container">
                     <div className="css-1ropvg2">
-                      <p>Carota Club #8756</p>
+                      <p>{NFT.nname}</p>
                     </div>
                   </div>
                   <div className="nft-detail-container-tags">
@@ -258,10 +282,10 @@ export function NftPage() {
             link={
               "https://media.nft.crypto.com/fa8dcbfb-0129-421a-b495-aa2857f37853/original.jpeg?d=lg-logo"
             }
-            nftName="Carota Club #"
-            collection="Carota Club"
+            nftName={NFT.nname}
+            collection={NFT.cname}
             nftSerialNumber={8756}
-            cost={175}
+            cost={NFT.price}
           />
         </div>
       </div>
@@ -281,6 +305,8 @@ export function NftPage() {
           "Cookies Preference",
         ]}
       />
+      </>
+      }
     </div>
   );
 }

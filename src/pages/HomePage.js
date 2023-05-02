@@ -20,7 +20,7 @@ const fetcher = (url) => fetch(url).then((result) => result.json());
 
 function useBrands() {
   const { data, error, isLoading } = useSWR(
-    `https://metafarm.me/api/getBrands`,
+    `http://localhost:3001/api/getBrands`,
     fetcher
   );
   const [brands, setBrands] = useState([]);
@@ -29,7 +29,7 @@ function useBrands() {
 
 function useFeaturedCollections() {
   const { data, error, isLoading } = useSWR(
-    `https://metafarm.me/api/getFeaturedCollections`,
+    `http://localhost:3001/api/getFeaturedCollections`,
     fetcher
   );
   const [featuredCollections, setFeaturedCollections] = useState([]);
@@ -38,14 +38,12 @@ function useFeaturedCollections() {
 
 function useCreators() {
   const { data, error, isLoading } = useSWR(
-    `https://metafarm.me/api/getTopCreators`,
+    `http://localhost:3001/api/getTopCreators`,
     fetcher
   );
   const [topCreators, setTopCreators] = useState([]);
   return [data, error, isLoading, topCreators, setTopCreators];
 }
-
-const cardsBestAutor = [<CardBestAuthor paragraph=" $2,000,000+ " />];
 
 export function HomePage() {
   const [dataBrands, errorBrands, isLoadingBrands, brands, setBrands] = useBrands();
