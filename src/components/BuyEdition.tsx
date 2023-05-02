@@ -57,7 +57,9 @@ export function BuyEdition({
               </div>
             </div>
             <div className="css-178q20">
-              <button className="css-v5o7gi">Buy Now</button>
+              <a href="/signup">
+                <button className="css-v5o7gi">Buy Now</button>
+              </a>
             </div>
           </div>
         </div>
