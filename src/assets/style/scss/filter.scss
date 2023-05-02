@@ -24,20 +24,6 @@
     display: flex;
 }
 
-@mixin title {
-    line-height: 1.3em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 18px;
-    font-weight: 600;
-    box-sizing: border-box;
-    margin: 0px;
-}
-
-@mixin title-row {
-    align-items: center;
-    justify-content: space-between;
-}
 
 .filter-container {
     @include filter-container;
@@ -68,36 +54,34 @@
 
         .filter-panel {
             background-color: $darkgreen;
-            height: 100%;
+            border-radius: 16px;
+            height: 100vh;
             position: sticky;
             flex: 1 1;
-            overflow-y: auto;
             width: 100%;
+            //overflow-y: auto;
 
             @media screen and (max-width: 992px) {
                 padding: 20px;
             }
 
             .filters {
-                @include filters();
+                @include filters;
+
 
                 @media screen and (min-width: 992px) {
                     width: 322px;
                 }
 
                 .title-row {
-                    @include title-row;
+
 
                     @media screen and (min-width: 992px) {
                         padding: 10px 16px 10px 12px;
                     }
 
                     .title-container {
-                        @include title-container();
-
-                        .title {
-                            @include title;
-                        }
+                        @include title-container;
                     }
                 }
 
@@ -112,10 +96,10 @@
                     @include filters;
 
                     .title-row {
-                        @include title-row;
+
 
                         .title {
-                            @include title;
+
                             @media screen and (max-width: 992px) {
                                 padding: 10px 0px;
                             }
@@ -288,4 +272,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+
+}
+
+.title {
+    line-height: 1.3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 5px;
+}
+
+.title-row {
+    align-items: center;
+    justify-content: space-between;
 }

@@ -307,7 +307,7 @@ export function BestCollectionItems(): JSX.Element {
 
   return (
     <div>
-      <h1 className="best-collection-title">Top Collectibles</h1>
+      {/* <h1 className="best-collection-title">Top Collectibles</h1> */}
       <div className="button-container-collection">
         <div className="sort-by">
           <p style={{ color: "white", fontSize: "24px" }}>Sort by</p>

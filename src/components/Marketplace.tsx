@@ -1,4 +1,3 @@
-import React from 'react'
 import { Navbar } from '../components/Navbar'
 import { Carousel } from '../components/Carousel'
 import { CardCollection } from '../components/CardCollection';
@@ -9,7 +8,6 @@ import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { Footer } from '../components/Footer';
 import Filter from '../components/Filter';
-import { Card } from '../components/Card';
 
 const cardsCollection: JSX.Element[] = [
     <CardCollection
@@ -109,30 +107,20 @@ export default function Marketplace() {
             </div>
             <div className="main-content">
                 <div className="feature-section">
-                    <div className="feature-title">
-                        <h1 className="feature-title">Top Collection</h1>
+                    <div>
+                        <div className='text-collection-name'>Top Collection</div>
                     </div>
-                    <Carousel elements={cardsCollection} display={2} />
+                    <Carousel elements={cardsCollection} display={4} />
                 </div>
             </div>
+            <div className="text-collection-name">Explore</div>
             <div className='filter-bc-section-container'>
-                <Filter />
-                <div className="card-container-collection">
-                    {cardData.map((card, index) => (
-                        <Card
-                            key={index}
-                            image={card.image}
-                            smallImage={card.smallImage}
-                            mainTitle={card.mainTitle}
-                            subtitle={card.subtitle}
-                            body={card.body}
-                            paragraph={card.paragraph}
-                            price={card.price}
-                            venditeTotali={card.venditeTotali}
-                        />
-                    ))}
+                <div>
+                    <Filter />
                 </div>
-
+                <div className='bc-container'>
+                    <BestCollectionItems />
+                </div>
             </div>
             <div className="footer-home">
                 <Footer
