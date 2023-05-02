@@ -2,11 +2,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
-import firstImg from "../assets/img/grano.jpg";
-import secondImg from "../assets/img/phone.jpg";
-import thirdImg from "../assets/img/panorama.jpg";
-import fourthImg from "../assets/img/spighe.jpg";
-import fifthImg from "../assets/img/campi.jpg";
+import firstImg from "../assets/img/grano.png";
+import secondImg from "../assets/img/phone.png";
+import thirdImg from "../assets/img/panorama.png";
+import fourthImg from "../assets/img/spighe.png";
+import fifthImg from "../assets/img/campi.png";
 import { Navbar } from "../components/Navbar";
 import { FormField } from "../components/FormField";
 import { CheckboxFormField } from "../components/CheckboxFormField";
@@ -97,6 +97,7 @@ export class About extends React.Component {
                                             className="slide"
                                             style={{
                                                 backgroundImage: `url(${firstImg})`,
+                                                
                                             }}
                                         >
                                             <div className="text-container">
