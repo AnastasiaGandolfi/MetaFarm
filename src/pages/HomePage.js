@@ -78,7 +78,7 @@ export function HomePage() {
     if (!isLoadingTopCreators) {
       console.log(dataTopCreators)
       for (const creator of dataTopCreators) {
-        newCreators.push(<a href="/creatorPage"><CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} /></a>);
+        newCreators.push(<a href="/creatorPage" style={{textDecoration:"none"}}><CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} /></a>);
       }
     }
     setTopCreators(newCreators);
@@ -164,7 +164,7 @@ export function HomePage() {
         </div>
         <div className="best-collection-section">
           <div className="best-collection-title">
-            <h1 className="best-collection-title"></h1>
+            <h1 className="best-collection-title">Top Collectibles</h1>
           </div>
           <BestCollectionItems />
         </div>

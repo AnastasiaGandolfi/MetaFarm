@@ -322,7 +322,7 @@ export function Root() {
                 owners={8}
                 floorprice="2.3K"
                 volumetraded="1.1B"
-                description="this is the description of the creator"
+                description=""
               />
             }
           />

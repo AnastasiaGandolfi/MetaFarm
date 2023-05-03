@@ -72,7 +72,7 @@ function Create() {
         }}
       />
 
-      <div className="right-section">
+      <div className="right-section" style={{position:"fixed", top: "0px"}}>
         <div className="lines">
           <div className="line"></div>
           <div className="line"></div>

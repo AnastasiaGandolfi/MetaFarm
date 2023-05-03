@@ -199,7 +199,6 @@ export class About extends React.Component {
                                                 <div className="text-slide">
                                                     <h4 className="slide-title text-head">Subscribe for the latest news, drops & collectibles</h4>
                                                     <FormField />
-                                                    <CheckboxFormField />{" "}
                                                     <span className="written-content">
                                                         By entering my email and subscribing I confirm and agree to the
                                                         above.
