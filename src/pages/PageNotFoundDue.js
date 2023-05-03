@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import pompelmoImage from "../assets/img/Pompelmo.png";
 import fourOrangeImage from "../assets/img/fourorange (1).png";
 import { Link } from "react-router-dom";
-// import "animate.css";
+import "animate.css";
 
 function PageNotFound() {
   const lineOneRef = useRef(null);
@@ -25,7 +25,7 @@ function PageNotFound() {
     });
   };
   return (
-    <div className="page-not-found-due">
+    <div className="page-not-found-due" style={{marginTop:"20px"}}>
       <div className="text-container">
         <div className="terminal">
           <h1 className="error animate__animated animate__flash">
@@ -47,7 +47,7 @@ function PageNotFound() {
           >
             {" "}
             Go back to our Home Page to avoid the citrusy consequences!{" "}
-            <Link to="/home">go back</Link>
+            <Link to="/">go back</Link>
           </p>
           <p className="output typing-demo line-three" ref={lineThreeRef}>
             Good luck.

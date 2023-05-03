@@ -304,11 +304,12 @@ export function Root() {
             path="/components"
             element={<Components elements={ComponentElements} />}
           />
-          <Route path="/single-nft-page" element={<NftPage />} />
+          <Route path="/single-nft-page/:id" element={<NftPage />} />
 
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/page-not-found" element={<PageNotFoundDue />} />
+          <Route path="/*" element={<PageNotFoundDue/>}/>
 
           <Route
             path="/CreatorPage"

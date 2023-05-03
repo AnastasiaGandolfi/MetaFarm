@@ -20,13 +20,13 @@ export function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-brand">
-        <img
+        <a href="/"><img
           className="logo"
           src={logo}
           alt="logo"
           width="50px"
           height="50px"
-        ></img>
+        ></img></a>
         <InputSearch />
       </div>
       <div className="navbar-links">

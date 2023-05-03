@@ -5,7 +5,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/img/logo-nobg.png";
 import { FaExclamationCircle } from "react-icons/fa";
-// import 'animate.css';
+ import 'animate.css';
 
 function Create() {
   const [email, setEmail] = useState("");

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e90201f2.css",
+    "main.js": "/static/js/main.689fef6f.js",
+    "static/media/panorama.jpg": "/static/media/panorama.882b6b49c9ba87d321b9.jpg",
+    "static/media/phone.jpg": "/static/media/phone.56130ff217e2ca7d754e.jpg",
+    "static/media/campi.jpg": "/static/media/campi.6cd7ee90f72b55136e67.jpg",
+    "static/media/spighe.jpg": "/static/media/spighe.32df84f2aa0c1b3ab679.jpg",
+    "static/media/grano.jpg": "/static/media/grano.1a17497313c0317a4a8f.jpg",
+    "static/media/original.png": "/static/media/original.3beadf48b9033fe8526e.png",
+    "static/media/fourorange (1).png": "/static/media/fourorange (1).df221be28efa76ebd66a.png",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Pompelmo.png": "/static/media/Pompelmo.604822141d6fef508312.png",
+    "static/media/leaves.png": "/static/media/leaves.8bf4943565b06723cb2b.png",
+    "static/media/logo-nobg.png": "/static/media/logo-nobg.bac0a0b87865467fe8b5.png",
+    "static/media/esempio-image-card.avif": "/static/media/esempio-image-card.ac8f77e73bd690294c30.avif",
+    "static/media/small-image.avif": "/static/media/small-image.809a8e71beb28026d5c6.avif",
+    "index.html": "/index.html",
+    "main.e90201f2.css.map": "/static/css/main.e90201f2.css.map",
+    "main.689fef6f.js.map": "/static/js/main.689fef6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e90201f2.css",
+    "static/js/main.689fef6f.js"
+  ]
+}

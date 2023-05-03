@@ -45,8 +45,6 @@ function useCreators() {
   return [data, error, isLoading, topCreators, setTopCreators];
 }
 
-const cardsBestAutor = [<CardBestAuthor paragraph=" $2,000,000+ " />];
-
 export function HomePage() {
   const [dataBrands, errorBrands, isLoadingBrands, brands, setBrands] = useBrands();
   const [
@@ -80,7 +78,7 @@ export function HomePage() {
     if (!isLoadingTopCreators) {
       console.log(dataTopCreators)
       for (const creator of dataTopCreators) {
-        newCreators.push(<CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} />);
+        newCreators.push(<a href="/creatorPage"><CardBestAuthor name={creator.name} src={creator.src} paragraph={creator.volume} /></a>);
       }
     }
     setTopCreators(newCreators);
