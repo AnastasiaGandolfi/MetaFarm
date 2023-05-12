@@ -81,7 +81,7 @@ const cardDataMostLikes: CardData[] = [
     price: "$9.99",
     venditeTotali: "Total Sales: $10K",
   },
-]
+];
 const cardDataMostViews: CardData[] = [
   {
     image: esempioImage,
@@ -113,7 +113,7 @@ const cardDataMostViews: CardData[] = [
     price: "$9.99",
     venditeTotali: "Total Sales: $10K",
   },
-]
+];
 const cardDataSalesVolume: CardData[] = [
   {
     image: esempioImage,
@@ -145,7 +145,7 @@ const cardDataSalesVolume: CardData[] = [
     price: "$9.99",
     venditeTotali: "Total Sales: $10K",
   },
-]
+];
 
 const cardDataToday: CardData[] = [
   {
@@ -296,9 +296,9 @@ export function BestCollectionItems(): JSX.Element {
       case 5:
         setCards(cardDataMostViews);
         break;
-        case 6:
-          setCards(cardDataSalesVolume);
-          break;
+      case 6:
+        setCards(cardDataSalesVolume);
+        break;
       default:
         setCards(cardData);
         break;
@@ -315,9 +315,21 @@ export function BestCollectionItems(): JSX.Element {
             type="pill-dropdown"
             text={<span>Sales Volume</span>}
             dropdownElement={[
-              <DropdownElement type="dropdown-element" text="Sales Volume" handle={() => handleFilterClick(6)} />,
-              <DropdownElement type="dropdown-element" text="Most Likes"  handle={() => handleFilterClick(4)} />,
-              <DropdownElement type="dropdown-element" text="Most Views" handle={() => handleFilterClick(5)}/>,
+              <DropdownElement
+                type="dropdown-element"
+                text="Sales Volume"
+                handle={() => handleFilterClick(6)}
+              />,
+              <DropdownElement
+                type="dropdown-element"
+                text="Most Likes"
+                handle={() => handleFilterClick(4)}
+              />,
+              <DropdownElement
+                type="dropdown-element"
+                text="Most Views"
+                handle={() => handleFilterClick(5)}
+              />,
             ]}
           />
         </div>
@@ -342,10 +354,10 @@ export function BestCollectionItems(): JSX.Element {
           </div> */}
         </div>
       </div>
-      <div className="card-container-collection" >
+      <div className="card-container-collection">
         {cards.map((card, index) => (
           <Card
-            key={index}
+            chiave={index}
             image={card.image}
             smallImage={card.smallImage}
             mainTitle={card.mainTitle}

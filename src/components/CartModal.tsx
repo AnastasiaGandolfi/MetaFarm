@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { useContext } from "react";
 import CartContext from "../CartContext";
@@ -9,6 +9,7 @@ import { CartItem } from "./CartItem";
 export function CartModal() {
   const { items } = useContext(CartContext);
   const [show, setShow] = useState(false);
+
   const toggleModal = () => {
     show ? setShow(false) : setShow(true);
   };
