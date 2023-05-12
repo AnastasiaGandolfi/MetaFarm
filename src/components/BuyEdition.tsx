@@ -1,33 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import CartContext from "../CartContext";
-
+import Cookies from "js-cookie";
 export function BuyEdition({
   link,
   nftName,
   collection,
-  nftSerialNumber,
   cost,
 }: {
   link: string;
   nftName: string;
   collection: string;
-  nftSerialNumber: number;
   cost: number;
 }) {
   const { addToCart, aviableButton, flag } = useContext(CartContext);
   const { removeToCart } = useContext(CartContext);
   const { items } = useContext(CartContext);
-  const nftNameAndNumber = `${nftName}${nftSerialNumber}`;
 
-  function handleFlag(flag: boolean) {
-    if (!flag) {
-      addToCart(nftNameAndNumber, link, collection, nftSerialNumber, cost);
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
+  function handleFlag() {
+    if (!items.some((item) => item.name === nftName)) {
+      addToCart(nftName, link, collection, cost);
     } else {
-      removeToCart(items, nftSerialNumber, cost);
+      removeToCart(items, nftName, cost);
     }
   }
-
+  function classAvaiable() {
+    if (!items.some((item) => item.name === nftName)) {
+      return "css-aeet0h-available";
+    } else {
+      return "css-aeet0h-not-available";
+    }
+  }
   return (
     <div className="buy-Edition-container">
       <div className="asset-container">
@@ -36,10 +42,7 @@ export function BuyEdition({
         </div>
         <div className="asset-information">
           <div className="css-10a3ax5">
-            <div className="css-ligk6yf">
-              {nftName}
-              {nftSerialNumber}
-            </div>
+            <div className="css-ligk6yf">{nftName}</div>
           </div>
         </div>
       </div>
@@ -49,10 +52,14 @@ export function BuyEdition({
             <div className="css-dgr9ig">
               <div className="css-178q20">
                 <button
-                  className={String(aviableButton())}
-                  onClick={() => handleFlag(flag)}
+                  className={classAvaiable()}
+                  onClick={() => handleFlag()}
                 >
-                  {!flag ? <div>Add To Cart</div> : <div>Remove From Cart</div>}
+                  {!items.some((item: any) => item.name === nftName) ? (
+                    <div>Add To Cart</div>
+                  ) : (
+                    <div>Remove From Cart</div>
+                  )}
                 </button>
               </div>
             </div>
