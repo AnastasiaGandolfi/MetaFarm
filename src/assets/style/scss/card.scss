@@ -1,150 +1,149 @@
 .card-container {
-    height: 500px;
-    width: 280px; 
-    background-color:#fff; 
-    border-radius: 16px; 
+  height: 500px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 16px;
 
-    .card-wrapper {
-        position: relative;
-
-    }
- 
-  .card-vendite-totali {
-    position:absolute; 
-    top: 10px;
-    left: 10px;
-    background-color: $darkgreen; 
-    border-radius: 16px; 
-    width: 80%;
-    height: 10%; 
-    z-index: 1;
-    color: #fff; 
-    text-align: center; 
-    border: 1px solid $black; 
-    font-size: 1rem;
-    
+  .card-wrapper {
+    position: relative;
   }
 
-.image-card {
-    position: relative; 
-    width: 100%; 
-    object-fit: cover; 
-    border-radius: 16px 16px 0px 0px; 
+  .card-vendite-totali {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: $darkgreen;
+    border-radius: 16px;
+    width: 80%;
+    height: 10%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    border: 1px solid $black;
+    font-size: 1rem;
+  }
+
+  .image-card {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
     max-width: 100%;
-  
-}
-   
-.title-container-card {
+  }
+
+  .title-container-card {
     display: flex;
     align-items: center;
     line-height: 1.2;
   }
-  
-  .small-image-card{
+
+  .small-image-card {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-left: 5px;  
+    margin-left: 5px;
   }
 
   .icon-class-card {
     font-size: 20px;
     margin-left: 10px;
-}
+  }
   .main-title-card {
-        color: $darkgreen; 
-        padding-top: 10px; 
-        padding-left: 10px; 
-       
+    color: $darkgreen;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .subtitle-card {
+    color: $darkgreen;
+    padding-left: 10px;
+  }
 
-    }
-    .subtitle-card {
-        color: $darkgreen; 
-        padding-left: 10px; 
+  .icon-card-uno {
+    float: right;
+    margin-right: 5px;
+  }
 
-}
+  .main-content-card {
+    color: $black;
+    padding-left: 10px;
+  }
 
-.icon-card-uno {
-    float: right; 
-    margin-right: 5px; 
+  .price-title-card {
+    color: $darkgreen;
+    padding-left: 10px;
+  }
+  .price-tag-card {
+    color: $darkgreen;
+    padding-left: 20px;
+  }
+  .btn-wrapper-card {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 
-}
-
-    .main-content-card {
-        color: $black; 
-        padding-left: 10px; 
-    }
-
-    .price-title-card {
-        color: $darkgreen; 
-        padding-left: 10px; 
-    }
-    .price-tag-card{
-        color: $darkgreen; 
-        padding-left: 20px; 
-    }
-    .btn-wrapper-card{
-        display: flex; 
-        flex-direction: row; 
-        justify-items: center;
-        justify-content: center; 
-        margin-left: 10px; 
-        flex-wrap: wrap;
-        padding-bottom: 20px;
-
-    
     .btn-card {
-    background-color: $darkgreen; 
-    border-radius: 16px; 
-    padding: 5px 10px;
-    color: white;
-    margin-right: 10px;
-    width: 120px;
+      z-index: 1000;
+      background-color: $darkgreen;
+      border-radius: 16px;
+      padding: 5px 10px;
+      color: white;
+      margin-right: 10px;
+      width: 120px;
     }
-}
+    .btn-card-remove {
+      z-index: 1000;
+      background-color: red;
+      border-radius: 16px;
+      padding: 5px 10px;
+      color: white;
+      margin-right: 10px;
+      width: 120px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .card-container {
-      width: 100%;
-      height: auto;
-    }
-   
+  .card-container {
+    width: 100%;
+    height: auto;
   }
+}
 
+//CardCollection
+.card-collection-wrapper {
+  position: relative;
+}
+.image-card-collection {
+  position: relative;
+  border-radius: 16px;
+  width: 350px;
+  height: 350px;
+}
 
-  //CardCollection 
-  .card-collection-wrapper {
-    position: relative; 
-  }
-  .image-card-collection {
-    position: relative; 
-    border-radius: 16px; 
-    width:350px;
-    height:350px;
- }
-
- .small-image-container {
+.small-image-container {
   position: absolute;
-  z-index: 1; 
-  bottom: 15px; 
+  z-index: 1;
+  bottom: 15px;
   display: flex;
   align-items: center;
-  height: 40px; 
-  width: 40px; 
+  height: 40px;
+  width: 40px;
 
   .small-image-collection {
-    border-radius: 50%; 
-    margin-left: 20px; 
+    border-radius: 50%;
+    margin-left: 20px;
   }
 
   .card-collection-title {
-    color: $white; 
+    color: $white;
     margin: 0;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 20px; 
-    width:100%;
+    margin-left: 20px;
+    width: 100%;
   }
-
 }
