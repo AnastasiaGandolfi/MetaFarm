@@ -16,6 +16,7 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "fetcher": "^0.3.0",
     "js-cookie": "^3.0.5",

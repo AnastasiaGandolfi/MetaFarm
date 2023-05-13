@@ -6,9 +6,19 @@ import SelectLanguage from "./SelectLanguage";
 import { ButtonDropdown } from "./ButtonDropdown";
 import { NavbarModal } from "./NavbarModal";
 import { useLocation } from "react-router-dom";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export function Navbar() {
+  const [email, setEmail] = useState("");
   const location = useLocation();
+  useEffect(() => {
+    let rawEmail = localStorage.getItem("email");
+    if (rawEmail) {
+      setEmail(JSON.parse(rawEmail));
+    }
+  }, [email]);
+
   if (
     location.pathname === "/signup" ||
     location.pathname === "/page-not-found" ||
@@ -17,16 +27,27 @@ export function Navbar() {
     return null;
   }
 
+  const logout = () => {
+    axios.post("https://metafarm.me/api/logout").then(() => {
+      localStorage.removeItem("email");
+      setEmail((prevstate) => {
+        return "";
+      });
+    });
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-brand">
-        <a href="/"><img
-          className="logo"
-          src={logo}
-          alt="logo"
-          width="50px"
-          height="50px"
-        ></img></a>
+        <a href="/">
+          <img
+            className="logo"
+            src={logo}
+            alt="logo"
+            width="50px"
+            height="50px"
+          ></img>
+        </a>
         <InputSearch />
       </div>
       <div className="navbar-links">
@@ -51,10 +72,27 @@ export function Navbar() {
           Create
         </a>{" "}
         |
-        <a className="text-button" href="/signup">
-          Sign in
-        </a>
-        <a href="/signup"><button className="register">Sign up</button></a> |
+        {!email && (
+          <>
+            <a className="text-button" href="/signup">
+              Sign in
+            </a>
+            <a href="/signup">
+              <button className="register">Sign up</button>
+            </a>
+          </>
+        )}
+        {email && (
+          <>
+            <a className="text-button" href="/">
+              {email}
+            </a>
+            <button className="register" onClick={logout}>
+              Logout
+            </button>
+          </>
+        )}{" "}
+        |
         <SelectLanguage />
         <CartModal />
       </div>
