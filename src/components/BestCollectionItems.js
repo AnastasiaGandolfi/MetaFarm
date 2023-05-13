@@ -42,6 +42,7 @@ export function BestCollectionItems() {
     setTopCollections,
   ] = useTopCollections();
   useEffect(() => {
+    console.log(isLoadingTopCollections)
     if (!isLoadingTopCollections) {
       let k = 0;
       console.log(dataTopCollections);
@@ -147,9 +148,10 @@ export function BestCollectionItems() {
         }
         k++;
       }
+      setCards(cardDataToday);
     }
-    setCards(cardDataToday);
-  }, [isLoadingTopCollections]);
+    
+  }, [dataTopCollections, isLoadingTopCollections, setTopCollections]);
 
   function handleFilterClick(index) {
     switch (index) {
@@ -179,7 +181,6 @@ export function BestCollectionItems() {
 
   return (
     <div>
-      <h1 className="best-collection-title">Top Collectibles</h1>
       <div className="button-container-collection">
         <div className="sort-by">
           <p style={{ color: "white", fontSize: "24px" }}>Sort by</p>

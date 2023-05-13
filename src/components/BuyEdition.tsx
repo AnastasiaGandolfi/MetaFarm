@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import CartContext from "../CartContext";
-import Cookies from "js-cookie";
 export function BuyEdition({
   link,
   nftName,

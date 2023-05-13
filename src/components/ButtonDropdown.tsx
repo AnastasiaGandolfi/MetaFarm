@@ -61,7 +61,7 @@ export function ButtonDropdown({
             {dropdownElement.map((item) =>
               typeof item === "string" ? (
                 <a
-                  href="#"
+                  href="/creatorPage"
                   onClick={handleVisibility}
                   className="navbar-dropdown-element"
                 >

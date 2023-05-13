@@ -92,7 +92,7 @@ export function ComponentBestCollection(){
         <div className="container-top-collection" style={{color:"white"}}>
 
       <div className="button-container-top-collection">
-        <div className="sort-by">
+        {/* <div className="sort-by">
           <p style={{ color: "white", fontSize: "24px" }}>Sort by</p>
           <ButtonDropdown
             type="pill-dropdown"
@@ -104,8 +104,8 @@ export function ComponentBestCollection(){
               <DropdownElement type="dropdown-element" text="Floor Price %" />,
             ]}
           />
-        </div>
-        <div className="date-filters">
+        </div> */}
+        <div className="date-filters" style={{position: "absolute", right: "10%"}}>
           <Button
             type="pill-one"
             text="Today"
@@ -123,7 +123,7 @@ export function ComponentBestCollection(){
           />
         </div>
       </div>
-      <div className="container-card-best-collection">
+      <div className="container-card-best-collection" style={{marginTop:"60px"}}>
         {collections.map((collection) => (
           <div>{collection}</div>
         ))}
