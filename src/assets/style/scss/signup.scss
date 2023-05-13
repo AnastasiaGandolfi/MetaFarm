@@ -10,7 +10,7 @@ background: radial-gradient(circle, #239c82 4%, #1d2d2b 56%, #000000 100%);
 }
 
 
-form {
+.form {
   background-color: $cyan-blue;
   border-radius: 15px;
   padding: 50px;
@@ -106,7 +106,7 @@ label {
 }
 .footer-links {
 	position: absolute;
-	bottom: 100px;
+	bottom: 90px;
    display: flex;
   justify-content: center;
   align-items: center;
