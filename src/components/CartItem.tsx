@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { MdVerified, MdClear } from "react-icons/md";
 import CartContext from "../CartContext";
+import { string } from "yargs";
 
 export function CartItem() {
   const { items } = useContext(CartContext);
-  const { removeToCart } = useContext(CartContext);
-  function handleRemove(nftSerialNumber: number, price: number): void {
-    removeToCart(items, nftSerialNumber, price);
+  const { removeToCart, addToCart } = useContext(CartContext);
+  function handleRemove(nftName: string, price: number): void {
+    removeToCart(items, nftName, price);
   }
   return (
     <div>
@@ -32,7 +33,7 @@ export function CartItem() {
           <div className="css-q1q1q7">
             <div
               className="css-17bbcc5"
-              onClick={() => handleRemove(item.serialNumber, item.price)}
+              onClick={() => handleRemove(item.name, item.price)}
             >
               <MdClear />
             </div>
@@ -41,4 +42,13 @@ export function CartItem() {
       ))}
     </div>
   );
+}
+function addToCart(
+  nftNameAndNumber: any,
+  link: any,
+  collection: any,
+  nftSerialNumber: any,
+  cost: any
+) {
+  throw new Error("Function not implemented.");
 }

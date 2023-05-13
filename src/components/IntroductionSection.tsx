@@ -6,7 +6,7 @@ export function IntroductionSection() {
     <div className="introduction-section">
       <img src={logoImage} className="logo-image animate__animated animate__zoomIn " alt=""/>
       <h2 className="intro-text">Find out more about the project</h2>
-      <a href="/about"><button className="intro-button">Check out</button></a>
+      <a href="/about"><button className="intro-button">Discover now!</button></a>
     </div>
   )
 }

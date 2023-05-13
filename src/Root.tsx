@@ -36,7 +36,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { Carousel } from "./components/Carousel";
 import CardBestCollection from "./components/CardBestCollection";
 import { DropdownElement } from "./components/DropdownElement";
-import  HeroCard from "./components/HeroCard";
+import HeroCard from "./components/HeroCard";
 import { ComponentBestCollection } from "./components/ComponentBestCollection";
 import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
@@ -65,7 +65,7 @@ const cardsBestAutor: JSX.Element[] = [
   <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
   <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
   <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
-  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />
+  <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
 ];
 
 const cardsCollection: JSX.Element[] = [
@@ -157,13 +157,16 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     title: "Carousel",
   },
   {
-    element: <HeroCarousel />, title: "HeroCarousel"},
+    element: <HeroCarousel />,
+    title: "HeroCarousel",
+  },
   { element: <SwitchButton />, title: "Switch-Button" },
   { element: <SelectLanguage />, title: "SelectLanguage" },
- 
+
   {
     element: (
       <Card
+        chiave={0}
         image={esempioImage}
         smallImage={smallImage}
         mainTitle="Loaded Lions"
@@ -201,7 +204,7 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
     title: "Card-Collection",
   },
   {
-    element: <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src=""/>,
+    element: <CardBestAuthor paragraph=" $2,000,000+ " name="Antonio" src="" />,
     title: "card-best-author",
   },
   { element: <CartModal />, title: "Cart Modal" },
@@ -278,7 +281,11 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   },
   {
     element: (
-      <HeroCard date="Mon, April 17 " title="Card title" subtitle="Subtitle"     src= 'url("https://media.nft.crypto.com/4f21e1eb-c29d-491c-8b4d-008352b1676b/original.png?d=lg-cover")'
+      <HeroCard
+        date="Mon, April 17 "
+        title="Card title"
+        subtitle="Subtitle"
+        src='url("https://media.nft.crypto.com/4f21e1eb-c29d-491c-8b4d-008352b1676b/original.png?d=lg-cover")'
       />
     ),
     title: "HeroCard",
@@ -294,7 +301,6 @@ export function Root() {
         <Navbar />
 
         <Routes>
-
           <Route path="/" element={<HomePage />} />
 
           <Route path="/about" element={<About />} />
@@ -309,7 +315,7 @@ export function Root() {
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/page-not-found" element={<PageNotFoundDue />} />
-          <Route path="/*" element={<PageNotFoundDue/>}/>
+          <Route path="/*" element={<PageNotFoundDue />} />
 
           <Route
             path="/CreatorPage"

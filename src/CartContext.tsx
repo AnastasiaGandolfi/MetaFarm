@@ -4,7 +4,6 @@ type Cart = {
   name: string;
   link: string;
   collection: string;
-  serialNumber: number;
   price: number;
 };
 const CartContext = createContext({
@@ -16,16 +15,14 @@ const CartContext = createContext({
     name: string,
     link: string,
     collection: string,
-    serialNumber: number,
     price: number
   ) => {},
-  removeToCart: (
-    cartArray: Array<Cart>,
-    nftSerialNumber: number,
-    price: number
-  ) => {},
+  removeToCart: (cartArray: Array<Cart>, nftName: string, price: number) => {},
 });
-const cartArray: Array<Cart> = [];
+const cartArray: Array<Cart> = JSON.parse(
+  localStorage.getItem("items") || "[]"
+);
+console.log(cartArray);
 export function CartProvider({ children }: { children: JSX.Element }) {
   const [items, setItems] = useState(cartArray);
   const [flag, setFlag] = useState(false);
@@ -34,24 +31,20 @@ export function CartProvider({ children }: { children: JSX.Element }) {
     name: string,
     link: string,
     collection: string,
-    serialNumber: number,
     price: number
   ) => {
-    setItems((cartArray) => [
-      ...cartArray,
-      { name, link, collection, serialNumber, price },
-    ]);
+    setItems((cartArray) => [...cartArray, { name, link, collection, price }]);
     setFlag(true);
     setTotal(totalPrice + price);
   };
 
   const removeToCart = (
     cartArray: Array<Cart>,
-    nftSerialNumber: number,
+    nftName: string,
     price: number
   ) => {
     const nextCartItems = cartArray.filter(
-      (cartItem) => cartItem.serialNumber !== nftSerialNumber
+      (cartItem) => cartItem.name !== nftName
     );
     setItems(nextCartItems);
     setFlag(false);
