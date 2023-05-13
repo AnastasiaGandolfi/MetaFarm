@@ -41,7 +41,7 @@ const BoxDiv: React.FC<{}> = () => {
           <div className="backdrop"></div>
           <div className="select-language-modal">
             <div className="box-select-language">
-              <div className="title-select-language ">Seleziona la lingua</div>
+              <div className="title-select-language ">Select language</div>
               <svg onClick={handleClose}
                 width="24"
                 height="24"

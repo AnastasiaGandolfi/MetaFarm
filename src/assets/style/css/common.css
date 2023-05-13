@@ -3416,6 +3416,9 @@ img.four-image {
   height: 500px;
   animation: shake 0.3s ease-in-out infinite; }
 
+.error {
+  font-size: 3rem; }
+
 .noise {
   pointer-events: none;
   position: fixed;
@@ -3473,6 +3476,7 @@ img.four-image {
     .page-not-found-due .terminal h1 {
       color: #7AE19C; }
     .page-not-found-due .terminal .output {
+      font-size: 2rem;
       color: #7AE19C;
       text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8); }
       .page-not-found-due .terminal .output::before {

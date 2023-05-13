@@ -17,13 +17,18 @@ function PageNotFound() {
   }, [lineThreeRef]);
 
   const handleLineOneAnimationEnd = () => {
-    lineTwoRef.current.style.opacity = "1";
-    lineTwoRef.current.classList.add("animate");
-    lineTwoRef.current.addEventListener("animationend", () => {
-      lineThreeRef.current.style.opacity = "1";
-      lineThreeRef.current.classList.add("animate");
-    });
+    if (lineTwoRef.current) {
+      lineTwoRef.current.style.opacity = "1";
+      lineTwoRef.current.classList.add("animate");
+      lineTwoRef.current.addEventListener("animationend", () => {
+        if (lineThreeRef.current) {
+          lineThreeRef.current.style.opacity = "1";
+          lineThreeRef.current.classList.add("animate");
+        }
+      });
+    }
   };
+  
   return (
     <div className="page-not-found-due" style={{marginTop:"20px"}}>
       <div className="text-container">
@@ -47,7 +52,7 @@ function PageNotFound() {
           >
             {" "}
             Go back to our Home Page to avoid the citrusy consequences!{" "}
-            <Link to="/">go back</Link>
+            <Link to="/home">go back</Link>
           </p>
           <p className="output typing-demo line-three" ref={lineThreeRef}>
             Good luck.
