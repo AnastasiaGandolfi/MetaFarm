@@ -10,12 +10,16 @@ function PageNotFound() {
   const lineThreeRef = useRef(null);
 
   useEffect(() => {
-    lineThreeRef.current.classList.add("animate");
+    if (lineThreeRef.current) {
+      lineThreeRef.current.classList.add("animate");
+    }
     return () => {
-      lineThreeRef.current.classList.remove("animate");
+      if (lineThreeRef.current) {
+        lineThreeRef.current.classList.remove("animate");
+      }
     };
   }, [lineThreeRef]);
-
+  
   const handleLineOneAnimationEnd = () => {
     if (lineTwoRef.current) {
       lineTwoRef.current.style.opacity = "1";
@@ -52,7 +56,7 @@ function PageNotFound() {
           >
             {" "}
             Go back to our Home Page to avoid the citrusy consequences!{" "}
-            <Link to="/home">go back</Link>
+            <Link to="/">go back</Link>
           </p>
           <p className="output typing-demo line-three" ref={lineThreeRef}>
             Good luck.
@@ -71,4 +75,3 @@ function PageNotFound() {
 }
 
 export default PageNotFound;
-
