@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import List from "./List";
 
 export const InputSearch = () => {
+  const { t } = useTranslation();
   const [inputText, setInputText] = useState("");
   const [showList, setShowList] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   let inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //convert input text to lower case
     var lowerCase = e.target.value.toLowerCase();
     setInputText(lowerCase);
     setIsLoading(true);
@@ -24,6 +25,7 @@ export const InputSearch = () => {
       setIsLoading(false);
     }, 500);
   };
+  const placeholder = t("inputSearch.placeholder").toString(); // Convert to string
 
   return (
     <div>
@@ -36,7 +38,7 @@ export const InputSearch = () => {
             name="searchBox"
             className="input-search"
             type="search"
-            placeholder="Search"
+            placeholder={placeholder}
             onChange={inputHandler}
             onClick={handleClick}
             onBlur={handleClick}

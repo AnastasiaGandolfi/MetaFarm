@@ -49,6 +49,10 @@ import original from "../src/assets/images/original.png";
 import HeroCarousel from "./components/HeroCarousel";
 import iconcreator from "../src/assets/images/icon-creator.jpeg";
 import { CartProvider } from "./CartContext";
+import { I18nextProvider } from 'react-i18next';
+import i18n from 'i18next';
+// import enTranslation from './languages/en.json';
+// import esTranslation from './languages/en.json';
 
 const cardArray: JSX.Element[] = [
   <CardBrandLogo name="azienda 1" src="" />,
@@ -294,6 +298,21 @@ const ComponentElements: { element: JSX.Element; title: string }[] = [
   { element: <Filter />, title: "Filter" },
 ];
 
+// Set up i18n configuration
+i18n.init({
+  interpolation: { escapeValue: false },
+  lng: 'en',
+  resources: {
+    en: {
+      translation: require('./languages/en.json'),
+    },
+    es: {
+      translation: require('./languages/es.json'),
+    },
+    // Add more languages as needed
+  },
+});
+
 export function Root() {
   return (
     <CartProvider>
@@ -301,7 +320,7 @@ export function Root() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<I18nextProvider i18n={i18n}><HomePage /></I18nextProvider>} />
 
           <Route path="/about" element={<About />} />
           <Route path="/create" element={<Create />} />

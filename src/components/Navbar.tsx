@@ -1,3 +1,5 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/img/leaves.png";
 import { InputSearch } from "./InputSearch";
 import { FaHamburger } from "react-icons/fa";
@@ -10,6 +12,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export function Navbar() {
+  const { t } = useTranslation();
+  
   const [email, setEmail] = useState("");
   const location = useLocation();
   useEffect(() => {
@@ -52,10 +56,10 @@ export function Navbar() {
       </div>
       <div className="navbar-links">
         <a className="text-button" href="/about">
-          The project
+          {t("navbar.project")}
         </a>
         <a className="text-button" href="/marketPlace">
-          MarketPlace
+          {t("navbar.marketplace")}
         </a>
         <ButtonDropdown
           type="navbar-dropdown text-button"
@@ -69,16 +73,16 @@ export function Navbar() {
           ]}
         />
         <a className="text-button" href="/create">
-          Create
+          {t("navbar.create")}
         </a>{" "}
         |
         {!email && (
           <>
             <a className="text-button" href="/signup">
-              Sign in
+              {t("navbar.signIn")}
             </a>
             <a href="/signup">
-              <button className="register">Sign up</button>
+              <button className="register">{t("navbar.signUp")}</button>
             </a>
           </>
         )}
@@ -88,7 +92,7 @@ export function Navbar() {
               {email}
             </a>
             <button className="register" onClick={logout}>
-              Logout
+              {t("navbar.logout")}
             </button>
           </>
         )}{" "}
