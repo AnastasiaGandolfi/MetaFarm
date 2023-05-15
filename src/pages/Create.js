@@ -225,8 +225,8 @@ function Create() {
           A digital gallery to showcase your collection
         </p>
       </div>
-      <form onSubmit={handleSubmit} style={{ marginBottom:"100px"}}>
-        <h1 className="title-login">Diventa un autore</h1>
+      <form className="form" onSubmit={handleSubmit} style={{ marginBottom:"100px"}}>
+        <h1 className="title-login">Unleash your creative potential!</h1>
         <div className="form-group">
           <label htmlFor="name" style={{ color: "white" }}>
           Full Legal Name

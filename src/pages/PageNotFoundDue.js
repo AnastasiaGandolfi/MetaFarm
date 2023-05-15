@@ -19,7 +19,8 @@ function PageNotFound() {
       }
     };
   }, [lineThreeRef]);
-  
+//  a condition to check if lineThreeRef.current is not
+// null before trying to access its classList property 
   const handleLineOneAnimationEnd = () => {
     if (lineTwoRef.current) {
       lineTwoRef.current.style.opacity = "1";
