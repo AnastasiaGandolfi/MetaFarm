@@ -4,35 +4,42 @@ import { Card } from "./Card";
 import SwitchButton from "./SwitchButton";
 import esempioImage from "../assets/images/esempio-image-card.avif";
 import smallImage from "../assets/images/small-image.avif";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { DropdownElement } from "./DropdownElement";
 import useSWR from "swr";
 import { useEffect } from "react";
+import FilterContext from "./FilterContext"
 
-const fetcher = (url) => fetch(url).then((result) => result.json());
+const fetcher = (args) => fetch(args[0], {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ filter: args[1] }),
+})
+.then((result) => result.json());
 
-function useTopCollections() {
+function useTopCollections(selectedCollections) {
   const { data, error, isLoading } = useSWR(
-    `https://metafarm.me/api/getNFT`,
-    fetcher
+    [`http://localhost:5000/api/getNFT`, selectedCollections],
+    fetcher,
   );
   const [topCollections, setTopCollections] = useState([]);
   return [data, error, isLoading, topCollections, setTopCollections];
 }
 
-const cardData = [];
-const cardDataMostLikes = [];
-const cardDataMostViews = [];
-const cardDataSalesVolume = [];
+let cardData = [];
+let cardDataMostLikes = [];
+let cardDataMostViews = [];
+let cardDataSalesVolume = [];
 
-const cardDataToday = [];
-
-const cardDataLast7Days = [];
-
-const cardDataLast30Days = [];
+let cardDataToday = [];
+let cardDataLast7Days = [];
+let cardDataLast30Days = [];
 
 export function BestCollectionItems() {
   const [cards, setCards] = useState([]);
+  const { filterCollections, setFilterCollections } = useContext(FilterContext)
 
   const [
     dataTopCollections,
@@ -40,21 +47,33 @@ export function BestCollectionItems() {
     isLoadingTopCollections,
     topCollections,
     setTopCollections,
-  ] = useTopCollections();
+  ] = useTopCollections(filterCollections ? filterCollections : []);
+
   useEffect(() => {
+
+    const cardData = [];
+    cardDataMostLikes = [];
+    cardDataMostViews = [];
+    cardDataSalesVolume = [];
+
+    cardDataToday = [];
+    cardDataLast7Days = [];
+    cardDataLast30Days = [];
+
     console.log(isLoadingTopCollections)
+
     if (!isLoadingTopCollections) {
       let k = 0;
       console.log(dataTopCollections);
       for (const collection of dataTopCollections) {
-        const { id, nname, src, cname, price, owner, creator } = collection;
-        console.log(id);
+        const { id, nname, src, cname, price, owner, creator, logo } = collection;
+        /* console.log(id); */
         if (k < 12) {
           cardDataToday.push(
             <Card
               chiave={id}
               image={src}
-              smallImage="https://metafarm.me/static/media/leaves.8bf4943565b06723cb2b.png"
+              smallImage={logo}
               mainTitle={cname}
               subtitle={nname}
               body={Math.ceil(Math.random() * 10) + " Minted"}
@@ -150,7 +169,7 @@ export function BestCollectionItems() {
       }
       setCards(cardDataToday);
     }
-    
+
   }, [dataTopCollections, isLoadingTopCollections, setTopCollections]);
 
   function handleFilterClick(index) {

@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 1221px) {
+        justify-content: center;
+    }
+
     .bc-container {
         max-width: 100%;
         box-sizing: border-box;

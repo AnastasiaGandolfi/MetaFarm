@@ -32,6 +32,7 @@
         display: flex;
         box-sizing: border-box;
         margin: 0px 24px 0px 0px;
+        margin-left: 30px;
         flex-direction: column;
         flex-shrink: 0;
         padding-bottom: 72px;
@@ -41,25 +42,26 @@
         left: 0;
         user-select: none;
 
+
         @media screen and (min-width: 992px) {
             top: calc(110px);
             height: calc((100vh - 74px) - 36px);
             padding-top: 4px;
             position: sticky;
-            width: 326px;
+            width: 100%;
+            height: auto;
             z-index: auto;
             margin: 24px;
-
         }
 
         .filter-panel {
             background-color: $darkgreen;
             border-radius: 16px;
-            height: 100vh;
+            height: auto;
             position: sticky;
             flex: 1 1;
             width: 100%;
-            //overflow-y: auto;
+            overflow: auto;
 
             @media screen and (max-width: 992px) {
                 padding: 20px;
@@ -68,9 +70,8 @@
             .filters {
                 @include filters;
 
-
                 @media screen and (min-width: 992px) {
-                    width: 322px;
+                    width: 100%;
                 }
 
                 .title-row {
