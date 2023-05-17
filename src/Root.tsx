@@ -41,7 +41,7 @@ import { ComponentBestCollection } from "./components/ComponentBestCollection";
 import { NftPage } from "./pages/single-nft-page";
 import { About } from "./pages/About";
 import Filter from "./components/Filter";
-import Marketplace from "./components/Marketplace";
+import Marketplace from "./components/Marketplace.js";
 import Signup from "./pages/Signup";
 import Create from "./pages/Create";
 import CreatorPage from "./pages/CreatorPage";

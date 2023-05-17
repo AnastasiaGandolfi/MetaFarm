@@ -26,8 +26,8 @@ export function Card({
   paragraph,
   price,
   venditeTotali,
-}: CardInterface) {
-  console.log(chiave);
+}: CardInterface) {/*
+  console.log(chiave); */
   const { items, addToCart, removeToCart } = useContext(CartContext);
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));

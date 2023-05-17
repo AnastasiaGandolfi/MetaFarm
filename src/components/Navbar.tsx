@@ -22,7 +22,8 @@ export function Navbar() {
   if (
     location.pathname === "/signup" ||
     location.pathname === "/page-not-found" ||
-    location.pathname === "/create"
+    location.pathname === "/create" ||
+    location.pathname === "/about"
   ) {
     return null;
   }

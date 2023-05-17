@@ -17,6 +17,13 @@ export function About() {
     return (
         <>
             <div className="App">
+                <div className="home-button-container">
+                    <a href="/">
+                        <button className="home-button">
+                            Home
+                        </button>
+                    </a>
+                </div>
                 <ScrollContainer>
                     <ScrollPage page={0}>
                         <div className="custom-section fp-auto-height-responsive">
@@ -26,7 +33,7 @@ export function About() {
                                         <h4 className="slide-title text-head">Invest in Sustainable Agriculture with <span>Metafarm's</span> Unique NFTs</h4>
                                         <p className="slide-content text-subtle">The buying and selling of NFTs between agricultural companies and customers is here.</p>
                                         <div className="marketplace-button">
-                                            <a href="/signin">
+                                            <a href="/signup">
                                                 <button className="register">Sign up</button>
                                             </a>
                                         </div>
@@ -51,7 +58,7 @@ export function About() {
                                             <h4 className="slide-title text-head">Are you an agricultural company?</h4>
                                             <p className="slide-content text-subtle">Transform your agricultural assets into valuable NFTs with <span>Metafarm</span> and generate revenue for your company.</p>
                                             <div className="marketplace-button">
-                                                <a href="/signin">
+                                                <a href="/signup">
                                                     <button className="register">Sign up</button>
                                                 </a>
                                             </div>
