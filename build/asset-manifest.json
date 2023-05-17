@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fcd2f2d2.css",
+    "main.js": "/static/js/main.2a25ba62.js",
+    "static/media/vista-dall'alto.jpg": "/static/media/vista-dall'alto.393a8555d4efe40eaa74.jpg",
+    "static/media/uomini-d-affari.jpg": "/static/media/uomini-d-affari.702c31d61b36227adb01.jpg",
+    "static/media/original.png": "/static/media/original.3beadf48b9033fe8526e.png",
+    "static/media/barattolo.jpg": "/static/media/barattolo.3d172922aadf8c96bb65.jpg",
+    "static/media/fourorange (1).png": "/static/media/fourorange (1).df221be28efa76ebd66a.png",
+    "static/media/money.png": "/static/media/money.0b24cc41d634071a560e.png",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Pompelmo.png": "/static/media/Pompelmo.604822141d6fef508312.png",
+    "static/media/ntf-about.png": "/static/media/ntf-about.8c2aa744205d7ac7493e.png",
+    "static/media/leaves.png": "/static/media/leaves.8bf4943565b06723cb2b.png",
+    "static/media/logo-nobg.png": "/static/media/logo-nobg.bac0a0b87865467fe8b5.png",
+    "static/media/esempio-image-card.avif": "/static/media/esempio-image-card.ac8f77e73bd690294c30.avif",
+    "static/media/small-image.avif": "/static/media/small-image.809a8e71beb28026d5c6.avif",
+    "index.html": "/index.html",
+    "main.fcd2f2d2.css.map": "/static/css/main.fcd2f2d2.css.map",
+    "main.2a25ba62.js.map": "/static/js/main.2a25ba62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcd2f2d2.css",
+    "static/js/main.2a25ba62.js"
+  ]
+}
