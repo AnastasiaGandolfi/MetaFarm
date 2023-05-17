@@ -21,7 +21,7 @@ const fetcher = (args) => fetch(args[0], {
 
 function useTopCollections(selectedCollections) {
   const { data, error, isLoading } = useSWR(
-    [`http://localhost:5000/api/getNFT`, selectedCollections],
+    [`https://metafarm.me/api/getNFT`, selectedCollections],
     fetcher,
   );
   const [topCollections, setTopCollections] = useState([]);

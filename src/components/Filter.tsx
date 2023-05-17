@@ -14,7 +14,7 @@ export default function Filter(): JSX.Element {
     const [collections, setCollections] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/getCollections')
+        fetch('https://metafarm.me/api/getCollections')
             .then(response => response.json())
             .then(data => {
                 setCollections(data)
