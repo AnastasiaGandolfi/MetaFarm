@@ -48,11 +48,13 @@
     font-size: 20px;
     margin-left: 10px;
   }
+
   .main-title-card {
     color: $darkgreen;
     padding-top: 10px;
     padding-left: 10px;
   }
+
   .subtitle-card {
     color: $darkgreen;
     padding-left: 10px;
@@ -72,10 +74,12 @@
     color: $darkgreen;
     padding-left: 10px;
   }
+
   .price-tag-card {
     color: $darkgreen;
     padding-left: 20px;
   }
+
   .btn-wrapper-card {
     display: flex;
     flex-direction: row;
@@ -94,6 +98,7 @@
       margin-right: 10px;
       width: 120px;
     }
+
     .btn-card-remove {
       z-index: 1000;
       background-color: red;
@@ -117,6 +122,7 @@
 .card-collection-wrapper {
   position: relative;
 }
+
 .image-card-collection {
   position: relative;
   border-radius: 16px;
@@ -130,20 +136,29 @@
   bottom: 15px;
   display: flex;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 
   .small-image-collection {
     border-radius: 50%;
     margin-left: 20px;
+    height: 40px;
+    width: 40px;
   }
 
-  .card-collection-title {
-    color: $white;
-    margin: 0;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 20px;
-    width: 100%;
+  .card-collection-title-container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    .card-collection-title {
+      color: $darkestgreen;
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+      width: 100%;
+    }
   }
 }

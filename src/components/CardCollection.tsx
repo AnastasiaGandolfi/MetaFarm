@@ -9,13 +9,15 @@ type CardImage = {
 export function CardCollection({ image, smallImage, paragraph }: CardImage) {
   return (
     <div className="card-collection-wrapper" style={{ margin: "10px" }}>
-      <img className="image-card-collection" src={image} alt=""/>
+      <img className="image-card-collection" src={image} alt="" />
       <div className="small-image-container">
-        <img className="small-image-collection" src={smallImage} alt=""/>
-        <span>
-          {" "}
-          <p className="card-collection-title">{paragraph}</p>{" "}
-        </span>
+        <img className="small-image-collection" src={smallImage} alt="" />
+        <div className="card-collection-title-container">
+          <span>
+            {" "}
+            <p className="card-collection-title">{paragraph}</p>{" "}
+          </span>
+        </div>
       </div>
     </div>
   );
