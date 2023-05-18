@@ -1145,11 +1145,12 @@ button.pill-dropdown {
     height: 80vh;
     width: 100%; }
     .App .custom-section .slide {
-      position: relative;
       height: 80vh;
       width: 100%;
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
       background-size: cover;
       gap: 20px;
       /* &::before {
@@ -1161,111 +1162,115 @@ button.pill-dropdown {
             left: 0px;
             background-color: rgba(255, 255, 255, 0.25);
         } */ }
-      .App .custom-section .slide .hero-img {
-        pointer-events: none;
-        position: absolute;
-        right: 0;
-        top: 0; }
-        .App .custom-section .slide .hero-img img {
-          max-width: 100%; }
-        @media screen and (max-width: 1080px) {
-          .App .custom-section .slide .hero-img {
-            display: none; } }
       .App .custom-section .slide .text-container {
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
-        margin-top: 100px;
-        margin-left: 100px; }
-        .App .custom-section .slide .text-container .text-slide {
-          color: #FFFFFF; }
-          @media only screen and (max-width: 480px) {
-            .App .custom-section .slide .text-container .text-slide {
-              width: 100%; } }
-          .App .custom-section .slide .text-container .text-slide .slide-title {
-            background: linear-gradient(276.35deg, #239C82 23.24%, #DBF0EC 106.43%);
-            -webkit-text-fill-color: transparent;
-            border: 0;
-            -webkit-background-clip: text; }
-            @media screen and (max-width: 992px) {
-              .App .custom-section .slide .text-container .text-slide .slide-title {
-                font-size: 40px; } }
-            @media screen and (max-width: 768px) {
-              .App .custom-section .slide .text-container .text-slide .slide-title {
-                font-size: 30px; } }
-            .App .custom-section .slide .text-container .text-slide .slide-title span {
-              color: #239C82; }
-          .App .custom-section .slide .text-container .text-slide .register {
-            background-color: #DBF0EC;
-            color: #239C82;
-            padding: 10px 20px 10px 20px;
-            cursor: pointer;
-            position: relative; }
-            .App .custom-section .slide .text-container .text-slide .register:hover {
-              background-color: #FFFFFF; }
-          .App .custom-section .slide .text-container .text-slide .form-container {
-            margin: 20px 0px; }
-            .App .custom-section .slide .text-container .text-slide .form-container .form-field {
-              align-items: center; }
-              .App .custom-section .slide .text-container .text-slide .form-container .form-field .form-field-input {
-                width: 70%; }
-      .App .custom-section .slide .img-container {
-        min-height: 80rem;
-        position: relative;
-        width: 70%;
-        left: auto;
-        right: 0;
-        margin-top: 150px; }
-        @media screen and (max-width: 1080px) {
-          .App .custom-section .slide .img-container {
-            display: none; } }
-        .App .custom-section .slide .img-container .img-first-page {
-          opacity: 0.7;
-          border-radius: 5rem;
-          position: absolute;
-          width: 70%;
-          height: auto;
-          max-width: 500px; }
-          .App .custom-section .slide .img-container .img-first-page:first-child {
-            top: 25rem;
-            left: 12rem; }
-          .App .custom-section .slide .img-container .img-first-page:nth-child(2) {
-            filter: drop-shadow(-0.8rem -0.8rem 2.5rem rgba(0, 0, 0, 0.35));
-            left: 27rem;
-            top: 38rem; }
-        .App .custom-section .slide .img-container .top-right-img {
-          border-radius: 5rem;
-          opacity: 0.7;
-          position: absolute;
-          height: auto;
-          width: 100%;
-          max-width: 700px;
-          right: 10rem;
-          top: 28rem; }
-        .App .custom-section .slide .img-container .right-img {
-          position: absolute;
-          left: 10rem;
-          top: 20rem;
-          height: auto;
-          width: 100%;
-          max-width: 700px; }
-        .App .custom-section .slide .img-container .last-img {
-          top: 25rem;
-          max-width: 600px; }
-    .App .custom-section .start-slide {
-      justify-content: flex-start; }
-    .App .custom-section .center-slide {
+        margin: 0 50px; }
+      @media only screen and (max-width: 1080px) {
+        .App .custom-section .slide {
+          max-width: 100vw;
+          width: auto;
+          margin: 0; } }
+      .App .custom-section .slide .text-slide {
+        color: #FFFFFF; }
+        .App .custom-section .slide .text-slide .slide-title {
+          background: linear-gradient(276.35deg, #239C82 23.24%, #DBF0EC 106.43%);
+          -webkit-text-fill-color: transparent;
+          border: 0;
+          -webkit-background-clip: text; }
+          @media screen and (max-width: 992px) {
+            .App .custom-section .slide .text-slide .slide-title {
+              font-size: 40px; } }
+          @media screen and (max-width: 768px) {
+            .App .custom-section .slide .text-slide .slide-title {
+              font-size: 30px; } }
+          .App .custom-section .slide .text-slide .slide-title span {
+            color: #239C82; }
+        .App .custom-section .slide .text-slide .register {
+          background-color: #DBF0EC;
+          color: #239C82;
+          padding: 10px 20px 10px 20px;
+          cursor: pointer;
+          position: relative; }
+          .App .custom-section .slide .text-slide .register:hover {
+            background-color: #FFFFFF; }
+        .App .custom-section .slide .text-slide .form-container {
+          margin: 20px 0px; }
+          .App .custom-section .slide .text-slide .form-container .form-field {
+            align-items: center; }
+            .App .custom-section .slide .text-slide .form-container .form-field .form-field-input {
+              width: 70%; }
+    .App .custom-section .img-container {
+      flex: 1;
+      display: flex;
       justify-content: center;
-      text-align: center;
-      margin: 0; }
-      .App .custom-section .center-slide .text-container {
+      align-items: center;
+      position: relative;
+      flex-direction: column; }
+      @media screen and (max-width: 1080px) {
+        .App .custom-section .img-container {
+          display: none; } }
+      .App .custom-section .img-container .top-right-img {
+        border-radius: 5rem;
+        opacity: 0.7;
+        height: auto;
+        width: 100%;
+        max-width: 700px;
+        margin: 100px 55px 0px 0px;
+        border: 5px solid #DBF0EC; }
+      .App .custom-section .img-container .img-first-page {
+        opacity: 0.7;
+        border-radius: 5rem;
+        max-width: 500px;
+        max-height: 100%;
+        position: absolute;
+        margin: 80px 55px 0px 20px;
+        height: auto;
+        width: 100%;
+        border: 5px solid #DBF0EC; }
+        .App .custom-section .img-container .img-first-page:first-child {
+          top: 20rem;
+          left: 25rem; }
+        .App .custom-section .img-container .img-first-page:nth-child(2) {
+          filter: drop-shadow(-0.8rem -0.8rem 2.5rem rgba(0, 0, 0, 0.35));
+          top: 3rem;
+          left: 3rem; }
+      .App .custom-section .img-container .right-img {
+        height: auto;
+        width: 100%;
+        max-width: 800px; }
+      .App .custom-section .img-container .last-img {
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+        margin: 80px 55px 0px 20px; }
+  .App .start-slide {
+    justify-content: flex-start; }
+    @media screen and (max-width: 1080px) {
+      .App .start-slide {
+        justify-content: center;
+        text-align: center;
         margin: 0; }
-    .App .custom-section .end-slide {
-      justify-content: flex-end;
-      text-align: right; }
-      .App .custom-section .end-slide .text-container {
-        margin-right: 100px; }
+        .App .start-slide .text-container {
+          margin-left: 0; } }
+  .App .center-slide {
+    justify-content: center;
+    text-align: center;
+    margin: 0; }
+    .App .center-slide .text-container {
+      margin: 0; }
+  .App .end-slide {
+    justify-content: flex-end;
+    text-align: right; }
+    @media screen and (max-width: 1080px) {
+      .App .end-slide {
+        justify-content: center;
+        text-align: center;
+        margin: 0; } }
+    .App .end-slide .text-container {
+      margin-right: 100px; }
 
 .hero-card-container {
   display: flex;
