@@ -1,0 +1,19 @@
+{
+    "navbar": {
+    "project": "Проект",
+    "marketplace": "Маркетплейс",
+    "topCollection": "Топ колекція",
+    "create": "Створити",
+    "signIn": "Увійти",
+    "signUp": "Зареєструватися",
+    "logout": "Вийти"
+    },
+    "inputSearch": {
+    "placeholder": "Пошук"
+    },
+    "intro-text": "Дізнайтеся більше про проект",
+    "intro-button": "Дізнатися зараз!",
+    "hero.title": "Купуйте, продавайте та демонструйте NFT",
+    "sub-title.home": "від провідних творців та брендів",
+    "selectLanguage.title": "Виберіть мову"
+    }

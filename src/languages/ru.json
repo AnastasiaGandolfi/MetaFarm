@@ -1,0 +1,19 @@
+{
+    "navbar": {
+    "project": "Проект",
+    "marketplace": "Маркетплейс",
+    "topCollection": "Топ коллекция",
+    "create": "Создать",
+    "signIn": "Войти",
+    "signUp": "Зарегистрироваться",
+    "logout": "Выйти"
+    },
+    "inputSearch": {
+    "placeholder": "Поиск"
+    },
+    "intro-text": "Узнайте больше о проекте",
+    "intro-button": "Узнать сейчас!",
+    "hero.title": "Покупайте, продавайте и демонстрируйте NFT",
+    "sub-title.home": "от ведущих создателей и брендов",
+    "selectLanguage.title": "Выберите язык"
+    }

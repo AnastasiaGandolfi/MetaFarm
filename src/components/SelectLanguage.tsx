@@ -5,6 +5,9 @@ const languages = [
   { name: 'Español', prefix: 'es' },
   { name: 'English', prefix: 'en' },
   { name: 'Italiano', prefix: 'it' },
+  { name: 'Русский', prefix: 'ru' },
+  { name: 'Українська', prefix: 'ua' },
+  { name: 'Veneto', prefix: 'veneto' },
   // Add more languages as needed
 ];
 
