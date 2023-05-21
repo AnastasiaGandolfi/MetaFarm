@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "project": "El proyecto",
+    "marketplace": "MarketPlace",
+    "topCollection": "Colección destacada",
+    "create": "Crear",
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "logout": "Cerrar sesión"
+  },
+  "inputSearch": {
+    "placeholder": "Busca"
+  },
+  "intro-text": "Descubre más sobre el proyecto",
+  "intro-button": "¡Descubre ahora!",
+  "hero.title": "Comprar, vender y exhibir NFTS",
+  "sub-title.home": "de creadores y marcas líderes",
+  "selectLanguage.title": "Seleccione el idioma"
+}

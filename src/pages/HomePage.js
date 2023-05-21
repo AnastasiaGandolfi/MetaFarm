@@ -16,6 +16,12 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { ComponentBestCollection } from "../components/ComponentBestCollection";
 import useSWR from "swr";
 import { useEffect, useState } from "react";
+import English from "../languages/en.json"
+import Spanish from "../languages/es.json";
+import Italian from "../languages/it.json";
+import { useTranslation } from "react-i18next"; 
+
+
 const fetcher = (url) => fetch(url).then((result) => result.json());
 
 function useBrands() {
@@ -46,6 +52,8 @@ function useCreators() {
 }
 
 export function HomePage() {
+  const { t, i18n } = useTranslation(); // Initialize the translation hook
+  
   const [dataBrands, errorBrands, isLoadingBrands, brands, setBrands] = useBrands();
   const [
     dataFeaturedCollections,
@@ -108,8 +116,8 @@ export function HomePage() {
       <div className="main-content">
         <IntroductionSection />
         <div className="hero-card-home-wrapper">
-          <h1 className="hero-title">Buy, sell, and showcase NFTS</h1>
-          <h4 className="sub-title-home">from leading creators and brands</h4>
+          <h1 className="hero-title">{t("hero.title")}</h1>
+          <h4 className="sub-title-home">{t("sub-title.home")}</h4>
           <HeroCarousel />
         </div>
 

@@ -1,0 +1,19 @@
+{
+        "navbar": {
+          "project": "The project",
+          "marketplace": "MarketPlace",
+          "topCollection": "Top Collection",
+          "create": "Create",
+          "signIn": "Sign in",
+          "signUp": "Sign up",
+          "logout": "Logout"
+        },
+        "inputSearch": {
+            "placeholder": "Search"
+          },
+          "intro-text": "Find out more about the project",
+          "intro-button": "Discover now!",
+    "hero.title": "Buy, sell, and showcase NFTS",
+    "sub-title.home": "from leading creators and brands",
+    "selectLanguage.title" : "Select language"
+}
