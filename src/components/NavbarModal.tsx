@@ -25,8 +25,8 @@ export function NavbarModal() {
         </div>
         <div className="cart-modal-content" style={{ marginTop: "-200px" }}>
           <div className="navbar-responsive">
-            <a className="text-button" href="/marketPlace">
-              MarketPlace
+            <a className="text-button" href="/marketplace">
+              Marketplace
             </a>
 
             <a className="text-button" href="/drop">
@@ -51,7 +51,7 @@ export function NavbarModal() {
 
             <div style={{ display: "flex", alignItems:"center", gap:"30px" }}>
               <a className="text-button" href="/login">
-                Sign in 
+                Sign in
               </a>
               |
               <button className="register">Sign up</button>

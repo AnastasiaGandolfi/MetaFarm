@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+
   .all-container {
     max-width: 1272px;
     padding-top: 153px;
@@ -25,6 +26,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+
     .page-container {
       flex-direction: column;
       box-sizing: border-box;
@@ -33,6 +35,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
+
       .section-container {
         box-sizing: border-box;
         margin: 0px 0px 24px;
@@ -41,6 +44,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
+
         .statistic-container {
           width: 60%;
           margin-left: 48px;
@@ -49,6 +53,7 @@
           background-repeat: no-repeat;
           background-size: cover;
           display: flex;
+
           .top-statistic-container {
             box-sizing: border-box;
             margin: 0px;
@@ -57,6 +62,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
+
             .icon-container {
               box-sizing: border-box;
               margin: 16px 0px 0px;
@@ -64,12 +70,18 @@
               background-repeat: no-repeat;
               background-size: cover;
               display: flex;
+
               .back-container {
                 box-sizing: border-box;
                 margin: 0px 0px 24px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: flex;
+
+                a {
+                  text-decoration: none;
+                }
+
                 .css-nrqnxi {
                   box-sizing: border-box;
                   margin: 0px;
@@ -79,6 +91,7 @@
                   background-size: cover;
                   display: flex;
                   cursor: pointer;
+
                   .back-section {
                     box-sizing: border-box;
                     margin: 0px 8px 0px 0px;
@@ -88,6 +101,7 @@
                     background-size: cover;
                     color: $white;
                   }
+
                   .back-section-text {
                     box-sizing: border-box;
                     margin: 0px;
@@ -100,6 +114,7 @@
                   }
                 }
               }
+
               .css-8g204a {
                 box-sizing: border-box;
                 margin: 0px 0px 24px;
@@ -110,6 +125,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: flex;
+
                 .css-nrqnxi {
                   box-sizing: border-box;
                   margin: 0px;
@@ -118,6 +134,7 @@
                   background-repeat: no-repeat;
                   background-size: cover;
                   display: flex;
+
                   .css-nrqnxi {
                     box-sizing: border-box;
                     margin: 0px;
@@ -126,17 +143,20 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     display: flex;
+
                     .css-g9ogwi {
                       padding: 0px;
                       background: transparent;
                       width: 24px;
                       height: 23px;
+
                       .bsHeart {
                         width: 24px !important;
                         height: 23px;
                         color: $white;
                       }
                     }
+
                     .css-1nhwfv9 {
                       box-sizing: border-box;
                       margin: 0px 0px 0px 8px;
@@ -145,6 +165,7 @@
                       color: $light-grey;
                     }
                   }
+
                   .css-2fead {
                     box-sizing: border-box;
                     margin: 0px 16px;
@@ -152,6 +173,7 @@
                     background-size: cover;
                     display: flex;
                     align-items: center;
+
                     .css-1nhwfv9 {
                       box-sizing: border-box;
                       margin: 0px 0px 0px 8px;
@@ -160,6 +182,7 @@
                       color: $light-grey;
                     }
                   }
+
                   .css-84wpv7 {
                     box-sizing: border-box;
                     margin: 0px;
@@ -173,9 +196,11 @@
                       background-repeat: no-repeat;
                       background-size: cover;
                       display: flex;
+
                       .css-95mwbsu {
                         width: 100%;
                         display: flex;
+
                         .css-1jmocn {
                           box-sizing: border-box;
                           margin: 0px;
@@ -183,12 +208,14 @@
                           position: relative;
                           background-repeat: no-repeat;
                           background-size: cover;
+
                           .css-84wp7 {
                             box-sizing: border-box;
                             margin: 0px;
                             background-repeat: no-repeat;
                             background-size: cover;
                             cursor: pointer;
+
                             .css-nrqnxi {
                               box-sizing: border-box;
                               margin: 0px;
@@ -200,6 +227,7 @@
                               color: $darkgreen;
                             }
                           }
+
                           .css-sgtua3 {
                             animation: rotateMenu 800ms ease-in-out forwards;
                             transform-origin: top center;
@@ -218,6 +246,7 @@
                             white-space: nowrap;
                             overflow: hidden;
                             min-width: 135px;
+
                             .css-19fff7r {
                               box-sizing: border-box;
                               margin: 0px;
@@ -226,12 +255,14 @@
                               background-repeat: no-repeat;
                               background-size: cover;
                               display: flex;
+
                               .css-20ggg8s {
                                 text-decoration: none;
                                 margin-bottom: 8px;
                                 font-size: 14px;
                                 font-weight: normal;
                                 color: $black;
+
                                 span {
                                   margin-left: 8px;
                                 }
@@ -243,12 +274,14 @@
                     }
                   }
                 }
+
                 .css-fb99im {
                   box-sizing: border-box;
                   margin: 0px 0px 0px auto;
                   background-repeat: no-repeat;
                   background-size: cover;
                   display: flex;
+
                   .css-14bjdul {
                     box-sizing: border-box;
                     margin: 0px;
@@ -256,9 +289,11 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     display: flex;
+
                     .css-95mwbsu {
                       width: 100%;
                       display: flex;
+
                       .css-84wpv7 {
                         box-sizing: border-box;
                         margin: 0px;
@@ -267,6 +302,7 @@
                         color: $white;
                         cursor: pointer;
                       }
+
                       .css-sgtua3 {
                         animation: rotateMenu 800ms ease-in-out forwards;
                         transform-origin: top center;
@@ -285,6 +321,7 @@
                         border-radius: 15px;
                         white-space: nowrap;
                         overflow: hidden;
+
                         .css-19fff7r {
                           box-sizing: border-box;
                           margin: 0px;
@@ -293,6 +330,7 @@
                           background-repeat: no-repeat;
                           background-size: cover;
                           display: flex;
+
                           button {
                             text-decoration: none;
                             padding: 0px;
@@ -300,9 +338,11 @@
                             background: transparent;
                             color: $black;
                           }
+
                           span {
                             margin-left: 8px;
                           }
+
                           .text-small {
                             font-size: 14px;
                             font-weight: normal;
@@ -315,17 +355,20 @@
                 }
               }
             }
+
             .css-1j9aoqx {
               box-sizing: border-box;
               margin: 0px 0px 24px;
               background-repeat: no-repeat;
               background-size: cover;
               display: flex;
+
               .css-84wpv7 {
                 box-sizing: border-box;
                 margin: 0px;
                 background-repeat: no-repeat;
                 background-size: cover;
+
                 .css-18oip3 {
                   box-sizing: border-box;
                   margin: 0px 8px 0px 0px;
@@ -335,12 +378,14 @@
                   color: $white;
                 }
               }
+
               .css-84wpv7 {
                 box-sizing: border-box;
                 margin: 0px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 color: $white;
+
                 .css-11r4quq {
                   box-sizing: border-box;
                   margin: 0px 8px 0px 0px;
@@ -352,13 +397,16 @@
                   font-weight: bold;
                 }
               }
+
               .center-icon {
                 align-self: center;
               }
             }
+
             .nft-summary-collection-container {
               display: flex;
               flex-direction: row;
+
               .css-1m1tg02 {
                 box-sizing: border-box;
                 margin: 0px 0px 16px;
@@ -366,14 +414,17 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: flex;
+
                 .user-profile {
                   flex: 1 1;
                   align-items: center;
                   display: flex;
                   flex-direction: row;
+
                   .rounded-image {
                     color: $black;
                     cursor: pointer;
+
                     .css-wpyvqd {
                       box-sizing: border-box;
                       margin: 0px;
@@ -382,8 +433,10 @@
                       position: relative;
                       background-repeat: no-repeat;
                       background-size: cover;
+
                       .css-12pdu1u {
                         box-sizing: border-box;
+
                         .css-ze1kp1 {
                           box-sizing: border-box;
                           margin: 0px;
@@ -396,6 +449,7 @@
                           text-indent: -10000px;
                         }
                       }
+
                       .css-1fe9f2b {
                         box-sizing: border-box;
                         margin: 0px;
@@ -405,6 +459,7 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         display: flex;
+
                         .verified-icon {
                           color: $darkgreen;
                           border-radius: 50%;
@@ -412,6 +467,7 @@
                       }
                     }
                   }
+
                   .user-info-container {
                     -webkit-line-clamp: 1;
                     -webkit-box-orient: vertical;
@@ -420,6 +476,7 @@
                     white-space: normal;
                     word-break: break-all;
                     margin-left: 8px;
+
                     .user-info-title {
                       color: $black;
                       display: flex;
@@ -427,6 +484,7 @@
                       justify-content: flex-start;
                       line-height: 21px;
                     }
+
                     .name-user {
                       display: flex;
                       -webkit-line-clamp: 1;
@@ -435,10 +493,12 @@
                       overflow: hidden;
                       white-space: normal;
                       word-break: break-all;
+
                       .name-user-link {
                         color: $white;
                         cursor: pointer;
                         text-decoration: none;
+
                         .name-user-span {
                           font-weight: 400;
                         }
@@ -447,6 +507,7 @@
                   }
                 }
               }
+
               .css-117j5e {
                 box-sizing: border-box;
                 margin: 0px;
@@ -454,21 +515,25 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: flex;
+
                 .css-17kuy89 {
                   box-sizing: border-box;
                   margin: 0px;
                   background-repeat: no-repeat;
                   background-size: cover;
                   display: flex;
+
                   .css-148glow {
                     box-sizing: border-box;
                     margin: 0px 8px 0px 0px;
                     background-repeat: no-repeat;
                     background-size: cover;
                     display: flex;
+
                     .collection-detail-container {
                       color: $black;
                       cursor: pointer;
+
                       .css-wpyvqd {
                         box-sizing: border-box;
                         margin: 0px;
@@ -477,8 +542,10 @@
                         position: relative;
                         background-repeat: no-repeat;
                         background-size: cover;
+
                         .css-12pdu1u {
                           box-sizing: border-box;
+
                           .css-ze1kp1 {
                             box-sizing: border-box;
                             margin: 0px;
@@ -491,6 +558,7 @@
                             text-indent: -10000px;
                           }
                         }
+
                         .css-1fe9f2b {
                           box-sizing: border-box;
                           margin: 0px;
@@ -500,6 +568,7 @@
                           background-repeat: no-repeat;
                           background-size: cover;
                           display: flex;
+
                           .verified-icon {
                             color: $darkgreen;
                             border-radius: 50%;
@@ -507,6 +576,7 @@
                         }
                       }
                     }
+
                     .user-info-container {
                       -webkit-line-clamp: 1;
                       -webkit-box-orient: vertical;
@@ -515,6 +585,7 @@
                       white-space: normal;
                       word-break: break-all;
                       margin-left: 8px;
+
                       .user-info-title {
                         color: $black;
                         display: flex;
@@ -522,6 +593,7 @@
                         justify-content: flex-start;
                         line-height: 21px;
                       }
+
                       .name-user {
                         display: flex;
                         -webkit-line-clamp: 1;
@@ -530,10 +602,12 @@
                         overflow: hidden;
                         white-space: normal;
                         word-break: break-all;
+
                         .name-user-link {
                           color: $white;
                           cursor: pointer;
                           text-decoration: none;
+
                           .name-user-span {
                             font-weight: 400;
                           }

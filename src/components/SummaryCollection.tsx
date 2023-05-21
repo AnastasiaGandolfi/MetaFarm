@@ -4,9 +4,11 @@ import { UserInfo } from "./UserInfo";
 export function SummaryCollection({
   creator,
   collection,
+  logo,
 }: {
   creator: string;
   collection: string;
+  logo: string,
 }) {
   return (
     <div className="nft-summary-collection-container">
@@ -34,9 +36,7 @@ export function SummaryCollection({
           <div className="css-148glow">
             <a href="#" className="collection-detail-container">
               <UserInfo
-                imglink={
-                  "https://media.nft.crypto.com/273dc24c-5b5f-45d9-83d3-5db578bdce79/original.gif"
-                }
+                imglink={logo}
               />
             </a>
             <div className="user-info-container">

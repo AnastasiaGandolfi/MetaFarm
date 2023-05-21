@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 
 export function Navbar() {
   const { t } = useTranslation();
-  
+
   const [email, setEmail] = useState("");
   const location = useLocation();
   useEffect(() => {
@@ -59,7 +59,7 @@ export function Navbar() {
         <a className="text-button" href="/about">
           {t("navbar.project")}
         </a>
-        <a className="text-button" href="/marketPlace">
+        <a className="text-button" href="/marketplace">
           {t("navbar.marketplace")}
         </a>
         <ButtonDropdown

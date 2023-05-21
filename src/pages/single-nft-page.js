@@ -142,6 +142,7 @@ export function NftPage() {
                     <SummaryCollection
                       creator={NFT.creator}
                       collection={NFT.cname}
+                      logo={NFT.logo}
                     />
                     <div className="css-xmzy0r">
                       <div className="css-v0b2st">
